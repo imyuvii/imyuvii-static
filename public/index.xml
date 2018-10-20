@@ -2,87 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Call me Yuvi</title>
-    <link>//localhost:50987/</link>
+    <link>//localhost:49979/</link>
     <description>Recent content on Call me Yuvi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Mar 2018 20:18:53 -0500</lastBuildDate>
     
-	<atom:link href="//localhost:50987/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//localhost:49979/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Video post</title>
-      <link>//localhost:50987/portfolio/video-post/</link>
+      <link>//localhost:49979/portfolio/video-post/</link>
       <pubDate>Fri, 16 Mar 2018 20:18:53 -0500</pubDate>
       
-      <guid>//localhost:50987/portfolio/video-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pharetra magna ac placerat vestibulum lectus mauris. Eget lorem dolor sed viverra ipsum. Elementum nisi quis eleifend quam adipiscing. Aliquet nec ullamcorper sit amet risus. Auctor neque vitae tempus quam pellentesque. Tincidunt lobortis feugiat vivamus at augue.</description>
-    </item>
-    
-    <item>
-      <title>Video post</title>
-      <link>//localhost:50987/posts/video-post/</link>
-      <pubDate>Fri, 16 Mar 2018 20:18:53 -0500</pubDate>
-      
-      <guid>//localhost:50987/posts/video-post/</guid>
+      <guid>//localhost:49979/portfolio/video-post/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pharetra magna ac placerat vestibulum lectus mauris. Eget lorem dolor sed viverra ipsum. Elementum nisi quis eleifend quam adipiscing. Aliquet nec ullamcorper sit amet risus. Auctor neque vitae tempus quam pellentesque. Tincidunt lobortis feugiat vivamus at augue.</description>
     </item>
     
     <item>
       <title>Long Form Post</title>
-      <link>//localhost:50987/portfolio/long-form-post/</link>
+      <link>//localhost:49979/portfolio/long-form-post/</link>
       <pubDate>Thu, 08 Mar 2018 20:18:53 -0500</pubDate>
       
-      <guid>//localhost:50987/portfolio/long-form-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pharetra magna ac placerat vestibulum lectus mauris. Eget lorem dolor sed viverra ipsum. Elementum nisi quis eleifend quam adipiscing. Aliquet nec ullamcorper sit amet risus. Auctor neque vitae tempus quam pellentesque. Tincidunt lobortis feugiat vivamus at augue.</description>
-    </item>
-    
-    <item>
-      <title>Long Form Post</title>
-      <link>//localhost:50987/posts/long-form-post/</link>
-      <pubDate>Thu, 08 Mar 2018 20:18:53 -0500</pubDate>
-      
-      <guid>//localhost:50987/posts/long-form-post/</guid>
+      <guid>//localhost:49979/portfolio/long-form-post/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pharetra magna ac placerat vestibulum lectus mauris. Eget lorem dolor sed viverra ipsum. Elementum nisi quis eleifend quam adipiscing. Aliquet nec ullamcorper sit amet risus. Auctor neque vitae tempus quam pellentesque. Tincidunt lobortis feugiat vivamus at augue.</description>
     </item>
     
     <item>
       <title>Image post</title>
-      <link>//localhost:50987/portfolio/image-post/</link>
+      <link>//localhost:49979/portfolio/image-post/</link>
       <pubDate>Mon, 19 Feb 2018 12:41:46 -0500</pubDate>
       
-      <guid>//localhost:50987/portfolio/image-post/</guid>
-      <description>Hello! I&amp;rsquo;m a blog post with an image.</description>
-    </item>
-    
-    <item>
-      <title>Image post</title>
-      <link>//localhost:50987/posts/image-post/</link>
-      <pubDate>Mon, 19 Feb 2018 12:41:46 -0500</pubDate>
-      
-      <guid>//localhost:50987/posts/image-post/</guid>
+      <guid>//localhost:49979/portfolio/image-post/</guid>
       <description>Hello! I&amp;rsquo;m a blog post with an image.</description>
     </item>
     
     <item>
       <title>Code Poetry</title>
-      <link>//localhost:50987/portfolio/code-poetry/</link>
+      <link>//localhost:49979/portfolio/code-poetry/</link>
       <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/portfolio/code-poetry/</guid>
-      <description>Pseudo code poem.
-if (this === that): try write_new_poem() except not_a_poet as e: return  Or just one long line&amp;hellip;
-console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay toooooooooooooooooooo looooooooooooooooooooooooooooooong&amp;#39;)  An embedded gist using shortcode:
- </description>
-    </item>
-    
-    <item>
-      <title>Code Poetry</title>
-      <link>//localhost:50987/posts/code-poetry/</link>
-      <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
-      
-      <guid>//localhost:50987/posts/code-poetry/</guid>
+      <guid>//localhost:49979/portfolio/code-poetry/</guid>
       <description>Pseudo code poem.
 if (this === that): try write_new_poem() except not_a_poet as e: return  Or just one long line&amp;hellip;
 console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay toooooooooooooooooooo looooooooooooooooooooooooooooooong&amp;#39;)  An embedded gist using shortcode:
@@ -91,76 +52,39 @@ console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     
     <item>
       <title>About</title>
-      <link>//localhost:50987/about/</link>
+      <link>//localhost:49979/about/</link>
       <pubDate>Tue, 13 Feb 2018 13:42:49 -0500</pubDate>
       
-      <guid>//localhost:50987/about/</guid>
-      <description>Hello, I&amp;rsquo;m Sam. I&amp;rsquo;m a theme for Hugo. I&amp;rsquo;m an extremely customizable, content-focused theme that lets you showcase your work your way.
-I have slick minimalist templates for list pages (such as a list of blog posts) and single pages (a page to read one blog post). You can use tags on your content, and view content by tags.
-I also have a simple responsive gallery built with CSS grid. It&amp;rsquo;ll look great on any screen, and all you have to do is provide a folder of images.</description>
+      <guid>//localhost:49979/about/</guid>
+      <description>Hello, I&amp;rsquo;m Yuvi. I am a web developer. If you are on the look-out for a creative yet professional web developer that has all these three qualities to build your web space so it can stand out from the crowd, then I’m the right person.
+As a proficient web developer who has over 8 years of experience, I am confident to say that not only have I managed to build some great websites and web applications but have also gained added perfection in all the codes that I have written so far.</description>
     </item>
     
     <item>
       <title>Dear Jane, regarding Mr. Bennet</title>
-      <link>//localhost:50987/portfolio/dear-jane/</link>
+      <link>//localhost:49979/portfolio/dear-jane/</link>
       <pubDate>Sun, 11 Feb 2018 12:34:41 -0500</pubDate>
       
-      <guid>//localhost:50987/portfolio/dear-jane/</guid>
-      <description>Chapter One It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters.</description>
-    </item>
-    
-    <item>
-      <title>Dear Jane, regarding Mr. Bennet</title>
-      <link>//localhost:50987/posts/dear-jane/</link>
-      <pubDate>Sun, 11 Feb 2018 12:34:41 -0500</pubDate>
-      
-      <guid>//localhost:50987/posts/dear-jane/</guid>
+      <guid>//localhost:49979/portfolio/dear-jane/</guid>
       <description>Chapter One It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
 However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters.</description>
     </item>
     
     <item>
       <title>Oh, Alice</title>
-      <link>//localhost:50987/portfolio/oh-alice/</link>
+      <link>//localhost:49979/portfolio/oh-alice/</link>
       <pubDate>Fri, 09 Feb 2018 12:32:12 -0500</pubDate>
       
-      <guid>//localhost:50987/portfolio/oh-alice/</guid>
-      <description>Nor did such soothing scenes, however temporary, fail of at least as temporary an effect on Ahab. But if these secret golden keys did seem to open in him his own secret golden treasuries, yet did his breath upon them prove but tarnishing. Alice opened the door and found that it led into a small passage, not much larger than a rat-hole: she knelt down and looked along the passage into the loveliest garden you ever saw.</description>
-    </item>
-    
-    <item>
-      <title>Oh, Alice</title>
-      <link>//localhost:50987/posts/oh-alice/</link>
-      <pubDate>Fri, 09 Feb 2018 12:32:12 -0500</pubDate>
-      
-      <guid>//localhost:50987/posts/oh-alice/</guid>
+      <guid>//localhost:49979/portfolio/oh-alice/</guid>
       <description>Nor did such soothing scenes, however temporary, fail of at least as temporary an effect on Ahab. But if these secret golden keys did seem to open in him his own secret golden treasuries, yet did his breath upon them prove but tarnishing. Alice opened the door and found that it led into a small passage, not much larger than a rat-hole: she knelt down and looked along the passage into the loveliest garden you ever saw.</description>
     </item>
     
     <item>
       <title>A Poem</title>
-      <link>//localhost:50987/portfolio/a-poem/</link>
+      <link>//localhost:49979/portfolio/a-poem/</link>
       <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
       
-      <guid>//localhost:50987/portfolio/a-poem/</guid>
-      <description>Now pleasing sleep had seal&amp;rsquo;d each mortal eye,
-Stretch&amp;rsquo;d in the tents the Grecian leaders lie:
-The immortals slumber&amp;rsquo;d on their thrones above;
-All, but the ever-wakeful eyes of Jove.(76)
-To honour Thetis&amp;rsquo; son he bends his care,
-And plunge the Greeks in all the woes of war:
-Then bids an empty phantom rise to sight,
-And thus commands the vision of the night.
-&amp;ldquo;Fly hence, deluding Dream! and light as air,(77)</description>
-    </item>
-    
-    <item>
-      <title>A Poem</title>
-      <link>//localhost:50987/posts/a-poem/</link>
-      <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
-      
-      <guid>//localhost:50987/posts/a-poem/</guid>
+      <guid>//localhost:49979/portfolio/a-poem/</guid>
       <description>Now pleasing sleep had seal&amp;rsquo;d each mortal eye,
 Stretch&amp;rsquo;d in the tents the Grecian leaders lie:
 The immortals slumber&amp;rsquo;d on their thrones above;
@@ -174,48 +98,48 @@ And thus commands the vision of the night.
     
     <item>
       <title>SCP command to transferring files between servers</title>
-      <link>//localhost:50987/posts/scp-command-transferring-files/</link>
+      <link>//localhost:49979/posts/scp-command-transferring-files/</link>
       <pubDate>Sat, 18 Mar 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/scp-command-transferring-files/</guid>
+      <guid>//localhost:49979/posts/scp-command-transferring-files/</guid>
       <description>In this tutorial, you will learn how to copy files or folders between hosts. The command we will be using is SCP command. SCP (Secure Copy) is a command line tool to copy or transfer files across hosts. It uses the same kind of security mechanism like the ssh program. Infact it uses an ssh connection in the background to perform the file transfer. scp refers both to the “protocol” that defines how secure copy should work and the “program” (command) which is installed as a part of OpenSSH suite of tools.</description>
     </item>
     
     <item>
       <title>MySQL Import/Export large databases</title>
-      <link>//localhost:50987/posts/mysql-import-export-large-databases/</link>
+      <link>//localhost:49979/posts/mysql-import-export-large-databases/</link>
       <pubDate>Wed, 15 Mar 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/mysql-import-export-large-databases/</guid>
+      <guid>//localhost:49979/posts/mysql-import-export-large-databases/</guid>
       <description>When working with MySQL I often use tools like PhpMyAdmin or sequelPro, which is a nice GUI way to manipulate MySQL database. But it won’t work sometime while importing/exporting larger databases. So sometimes you need to do mysql import on the command line.
 Export a Large Database $ mysqldump -u [USERNAME] -p [DBNAME] | gzip &amp;gt; [/path_to_file/DBNAME].sql.gz MySQL Import a Large Database # First, unzip the file. $ gzip -d [/path_to_file/DBNAME].</description>
     </item>
     
     <item>
       <title>Things You need to know before hiring SEO agency</title>
-      <link>//localhost:50987/posts/hiring-seo-agency/</link>
+      <link>//localhost:49979/posts/hiring-seo-agency/</link>
       <pubDate>Mon, 27 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/hiring-seo-agency/</guid>
+      <guid>//localhost:49979/posts/hiring-seo-agency/</guid>
       <description>Working as Web Developer since 2010 I’ve had the opportunity to interact with thousands of clients and potential clients. As soon as website goes to production client keen to hiring SEO team and they seeking for your help. From the conversation with many of my client, I found out there are a long list of misconceptions when it comes to SEO.
 Here are some of the common misunderstandings I see amongst my client when it comes to SEO.</description>
     </item>
     
     <item>
       <title>Install PhpMyAdmin on centOS</title>
-      <link>//localhost:50987/posts/install-phpmyadmin-centos/</link>
+      <link>//localhost:49979/posts/install-phpmyadmin-centos/</link>
       <pubDate>Wed, 22 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/install-phpmyadmin-centos/</guid>
+      <guid>//localhost:49979/posts/install-phpmyadmin-centos/</guid>
       <description>What is PhpMyAdmin? PhpMyAdmin is one of the most popular applications for MySQL databases management. It is a free tool written in PHP. Through this software you can create, alter, drop, delete, import and export MySQL database tables. You can run MySQL queries, optimize, repair and check tables, change collation and execute other database management commands. Install PhpMyAdmin isn’t an easy task. You need to do several configuration after installation.</description>
     </item>
     
     <item>
       <title>How to start, stop and restart apache</title>
-      <link>//localhost:50987/posts/start-stop-restart-apache/</link>
+      <link>//localhost:49979/posts/start-stop-restart-apache/</link>
       <pubDate>Tue, 21 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/start-stop-restart-apache/</guid>
+      <guid>//localhost:49979/posts/start-stop-restart-apache/</guid>
       <description>Apache is primarily used to serve both static content and dynamic Web pages on the World Wide Web. Many web applications are designed expecting the environment and features that Apache provides.It can be started or restarted using any one of the following methods
 Apache on MacOS Use following commands to start/stop/restart apache
 $ sudo /usr/sbin/apachectl start $ sudo /usr/sbin/apachectl stop $ sudo /usr/sbin/apachectl restart On CentOS The httpd RPM installs the /etc/init.</description>
@@ -223,39 +147,39 @@ $ sudo /usr/sbin/apachectl start $ sudo /usr/sbin/apachectl stop $ sudo /usr/sbi
     
     <item>
       <title>How to optimize website performance</title>
-      <link>//localhost:50987/posts/optimize-website-performance/</link>
+      <link>//localhost:49979/posts/optimize-website-performance/</link>
       <pubDate>Sun, 19 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/optimize-website-performance/</guid>
+      <guid>//localhost:49979/posts/optimize-website-performance/</guid>
       <description>What is website optimization? Website optimization (often referred to as conversion optimization) is the process of systematically improving the performance of your website to meet your business objectives. Read full article to understand importance of website optimization, And if you are in hurry than jump to Optimise website section.
 Whether your goal is to get more leads, sales, or reduce customer service phone calls, website optimization can be used to make your website more effective at meeting those goals.</description>
     </item>
     
     <item>
       <title>Writing output to your own log file</title>
-      <link>//localhost:50987/posts/writing-log-file/</link>
+      <link>//localhost:49979/posts/writing-log-file/</link>
       <pubDate>Thu, 02 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/writing-log-file/</guid>
+      <guid>//localhost:49979/posts/writing-log-file/</guid>
       <description>Not able to trace issue in production environment? There are many ways to do so, XDEBUG is one of preferred way to debug php website remotely. However, installing and configuring it can be a lengthy process, Specially when web hosting is not in your control. In order to fix the issue in one of my client’s website, I came up with a solution where I can output desired part of code in my own log file.</description>
     </item>
     
     <item>
       <title>Display code on your WordPress post</title>
-      <link>//localhost:50987/posts/display-code-block-wordpress/</link>
+      <link>//localhost:49979/posts/display-code-block-wordpress/</link>
       <pubDate>Fri, 27 Jan 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/display-code-block-wordpress/</guid>
+      <guid>//localhost:49979/posts/display-code-block-wordpress/</guid>
       <description>Many bloggers do not run a development blog, so they don’t need to add sample code snippets in their posts very often. For rare occasions, you can add code by encoding the code into HTML entities. Like this &amp;amp;gt;?php echo &amp;quot;Hello World&amp;quot;; ?&amp;amp;lt;
 Why Displaying Code is Difficult To understand why displaying code is difficult you need to know some basic HTML. The code for making some bold text is to surround it in a tag.</description>
     </item>
     
     <item>
       <title>Configure virtual hosts on CentOS</title>
-      <link>//localhost:50987/posts/configure-virtual-host-centos/</link>
+      <link>//localhost:49979/posts/configure-virtual-host-centos/</link>
       <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/configure-virtual-host-centos/</guid>
+      <guid>//localhost:49979/posts/configure-virtual-host-centos/</guid>
       <description>About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
 In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
     </item>
