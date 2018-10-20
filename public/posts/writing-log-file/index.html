@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="//localhost:50987/">
+
+<meta name="twitter:image" content="//localhost:50987/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="//localhost:50987/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="//localhost:50987/tn.png">
+
+<link rel="shortcut icon" href="//localhost:50987/sam.ico" id="favicon">
+<link rel="stylesheet" href="//localhost:50987/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Writing output to your own log file
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Writing output to your own log file</div>
+
+        
+<div class="section" id="content">
+    Thu Feb 02, 2017 &#183; 287 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="//localhost:50987/tags/wordpress">
+                wordpress
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="//localhost:50987/tags/log">
+                log
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Not able to trace issue in production environment? There are many ways to do so, XDEBUG is one of preferred way to debug php website remotely. However, installing and configuring it can be a lengthy process, Specially when web hosting is not in your control. In order to fix the issue in one of my client’s website, I came up with a solution where I can output desired part of code in my own log file. Well, It is not a perpetual solution but it does the trick.</p>
+
+<h3 id="writing-your-own-log-file">Writing your own log file</h3>
+
+<ul>
+<li>Copy and paste following method in end of the file</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">function custom_logs($message) { 
+    if(is_array($message)) { 
+        $message = json_encode($message); 
+    } 
+    $file = fopen(&#34;../custom_logs.log&#34;,&#34;a&#34;); 
+    echo fwrite($file, &#34;\n&#34; . date(&#39;Y-m-d h:i:s&#39;) . &#34; :: &#34; . $message); 
+    fclose($file); 
+}</code></pre></div>
+<ul>
+<li>Call method from anywhere in the file, For example add following code to <code>wp-content/themes/&lt;your_theme&gt;/header.php</code></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">custom_logs(&#34;Hey! I am in a header&#34;);
+$array_value = array(&#34;foo&#34;,&#34;bar&#34;);
+custom_logs($array_value);</code></pre></div>
+<ul>
+<li>find the custom_logs.log in web root of your WordPress installation. Assume you have access your website three times than output will be</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-composer log" data-lang="composer log">2017-02-01 09:41:49 :: Hey! I am in a header
+2017-02-01 09:41:49 :: [&#34;foo&#34;,&#34;bar&#34;]
+2017-02-01 11:14:19 :: Hey! I am in a header
+2017-02-01 11:14:19 :: [&#34;foo&#34;,&#34;bar&#34;]
+2017-02-01 07:10:32 :: Hey! I am in a header
+2017-02-01 07:10:32 :: [&#34;foo&#34;,&#34;bar&#34;]</code></pre></div>
+<p>Congratulations, you have just created your own log file. I am sure this is one of the compelling thing to do as a developer!</p>
+
+<p>I hope this is useful to a few of you. There is always an room for improvements. Leave a note in the comments if you have any cool tricks for writing log file. I’m always on the lookout for fun hacks.</p>
+
+<p>Checkout other article written on <a href="/posts/ssh-config-file-rescue/">SSH config file</a>.</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="//localhost:50987/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+<script data-no-instant>document.write('<script src="/livereload.js?port=50987&mindelay=10"></' + 'script>')</script></body>
+
+</html>

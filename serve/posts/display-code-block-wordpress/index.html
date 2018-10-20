@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Display code on your WordPress post
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Display code on your WordPress post</div>
+
+        
+<div class="section" id="content">
+    Fri Jan 27, 2017 &#183; 329 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/wordpress">
+                wordpress
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Many bloggers do not run a development blog, so they don’t need to add sample code snippets in their posts very often. For rare occasions, you can add code by encoding the code into HTML entities. Like this <code>&amp;gt;?php echo &quot;Hello World&quot;; ?&amp;lt;</code></p>
+
+<h3 id="why-displaying-code-is-difficult">Why Displaying Code is Difficult</h3>
+
+<p>To understand why displaying code is difficult you need to know some basic HTML. The code for making some bold text is to surround it in a tag. To create the bold text in that sentence I actually wrote <code>&lt;strong&gt;bold text&lt;/bold&gt;</code> into my WordPress editor.</p>
+
+<p>Showing code on your site can be tricky if you don’t know how.
+So far so good, but now for the hard part: What if I want to show you how I did it?</p>
+
+<p>Any time I type <code>&lt;strong&gt;</code> into the editor it gets interpreted as <strong>HTML</strong> code, which means it will disappear and instead be used to embolden the text.</p>
+
+<h3 id="how-to-display-code-block">How to display code block</h3>
+
+<p>The problem with converting code into HTML entities is that it is difficult to do manually. You can use online tools like <a href="https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder">this one</a>, to convert code into HTML entities.</p>
+
+<p>By converting PHP, HTML, JavaScript code into HTML entities, you can paste them into your WordPress posts. For additional styling you can wrap code between <code>&lt;code&gt;</code> and <code>&lt;/code&gt;</code> tags.</p>
+
+<p>Here is the tutorial on how I added a code block in my previous blog <a href="/posts/configure-virtual-host-centos/">Configure virtual host on CentOS</a>.</p>
+
+<ul>
+<li><p>Copy your code and encode it from <a href="https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder">this one</a>.</p></li>
+
+<li><p>Switch your editor to text from visual and paste encoded code in between <code>&lt;pre&gt;&lt;/pre&gt;</code> tags.</p></li>
+
+<li><p>Add following css to enhance code block styling</p></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">pre</span> { <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#fafafa</span>; <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#eaeaea</span>; <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>; }</code></pre></div>
+<ul>
+<li>This is how your code block will look like</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">html</span>&gt; 
+&lt;<span style="color:#f92672">head</span>&gt;&lt;<span style="color:#f92672">title</span>&gt;Welcome to Example.com!&lt;/<span style="color:#f92672">title</span>&gt;&lt;/<span style="color:#f92672">head</span>&gt; 
+&lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">h1</span>&gt;Success! The example.com virtual host is working!&lt;/<span style="color:#f92672">h1</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<p>We hope this article helped you find the best syntax highlighter plugin for WordPress. If you like this article than please follow me on <a href="https://twitter.com/imyuvii">twitter</a></p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>

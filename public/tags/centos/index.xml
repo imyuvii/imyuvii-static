@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Centos on Call me Yuvi</title>
+    <link>//localhost:50987/tags/centos/</link>
+    <description>Recent content in Centos on Call me Yuvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Jan 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="//localhost:50987/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configure virtual hosts on CentOS</title>
+      <link>//localhost:50987/posts/configure-virtual-host-centos/</link>
+      <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
+      
+      <guid>//localhost:50987/posts/configure-virtual-host-centos/</guid>
+      <description>About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
+In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
+    </item>
+    
+  </channel>
+</rss>

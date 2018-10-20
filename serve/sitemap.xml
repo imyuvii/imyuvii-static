@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/portfolio/video-post/</loc>
+    <lastmod>2018-03-16T20:18:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/video-post/</loc>
+    <lastmod>2018-03-16T20:18:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/long-form-post/</loc>
+    <lastmod>2018-03-08T20:18:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/long-form-post/</loc>
+    <lastmod>2018-03-08T20:18:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/image-post/</loc>
+    <lastmod>2018-02-19T12:41:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/image-post/</loc>
+    <lastmod>2018-02-19T12:41:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/code-poetry/</loc>
+    <lastmod>2018-02-13T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/code-poetry/</loc>
+    <lastmod>2018-02-13T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/mysql-import-export-large-databases/</loc>
+    <lastmod>2018-02-13T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2018-02-13T13:42:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/</loc>
+    <lastmod>2018-02-13T12:21:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2018-02-13T12:21:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/dear-jane/</loc>
+    <lastmod>2018-02-11T12:34:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dear-jane/</loc>
+    <lastmod>2018-02-11T12:34:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/oh-alice/</loc>
+    <lastmod>2018-02-09T12:32:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/oh-alice/</loc>
+    <lastmod>2018-02-09T12:32:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/a-poem/</loc>
+    <lastmod>2018-02-01T12:35:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-poem/</loc>
+    <lastmod>2018-02-01T12:35:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/hiring-seo-agency/</loc>
+    <lastmod>2017-02-27T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/install-phpmyadmin-centos/</loc>
+    <lastmod>2017-02-22T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/start-stop-restart-apache/</loc>
+    <lastmod>2017-02-21T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/optimize-website-performance/</loc>
+    <lastmod>2017-02-19T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/writing-log-file/</loc>
+    <lastmod>2017-02-02T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/display-code-block-wordpress/</loc>
+    <lastmod>2017-01-27T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/configure-virtual-host-centos/</loc>
+    <lastmod>2017-01-26T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/apache/</loc>
+    <lastmod>2017-02-21T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/blog/</loc>
+    <lastmod>2018-03-16T20:18:53-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-03-16T20:18:53-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/centos/</loc>
+    <lastmod>2017-01-26T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/classic/</loc>
+    <lastmod>2018-02-11T12:34:41-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/code/</loc>
+    <lastmod>2018-03-08T20:18:53-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/log/</loc>
+    <lastmod>2017-02-02T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mysql/</loc>
+    <lastmod>2017-02-22T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/gallery/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/poem/</loc>
+    <lastmod>2018-02-13T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/story/</loc>
+    <lastmod>2018-02-19T12:41:46-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2017-02-21T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/web/</loc>
+    <lastmod>2017-02-27T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/wordpress/</loc>
+    <lastmod>2017-02-02T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

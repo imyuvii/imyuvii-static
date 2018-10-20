@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysql on Call me Yuvi</title>
+    <link>/tags/mysql/</link>
+    <description>Recent content in Mysql on Call me Yuvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Feb 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install PhpMyAdmin on centOS</title>
+      <link>/posts/install-phpmyadmin-centos/</link>
+      <pubDate>Wed, 22 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/install-phpmyadmin-centos/</guid>
+      <description>What is PhpMyAdmin? PhpMyAdmin is one of the most popular applications for MySQL databases management. It is a free tool written in PHP. Through this software you can create, alter, drop, delete, import and export MySQL database tables. You can run MySQL queries, optimize, repair and check tables, change collation and execute other database management commands. Install PhpMyAdmin isn’t an easy task. You need to do several configuration after installation.</description>
+    </item>
+    
+  </channel>
+</rss>

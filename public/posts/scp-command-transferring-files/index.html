@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="//localhost:50987/">
+
+<meta name="twitter:image" content="//localhost:50987/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="//localhost:50987/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="//localhost:50987/tn.png">
+
+<link rel="shortcut icon" href="//localhost:50987/sam.ico" id="favicon">
+<link rel="stylesheet" href="//localhost:50987/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        SCP command to transferring files between servers
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">SCP command to transferring files between servers</div>
+
+        
+<div class="section" id="content">
+    Sat Mar 18, 2017 &#183; 330 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="//localhost:50987/tags/scp">
+                scp
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="//localhost:50987/tags/filecopy">
+                filecopy
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>In this tutorial, you will learn how to copy files or folders between hosts. The command we will be using is SCP command. SCP (Secure Copy) is a command line tool to copy or transfer files across hosts. It uses the same kind of security mechanism like the ssh program. Infact it uses an ssh connection in the background to perform the file transfer. scp refers both to the “protocol” that defines how secure copy should work and the “program” (command) which is installed as a part of OpenSSH suite of tools.</p>
+
+<h4 id="scp-command">SCP Command</h4>
+
+<p>Secure copy or <code>SCP</code> command, copy files and directories between remote hosts without starting an FTP session or logging into the remote systems explicitly. The SCP command uses SSH to transfer data, so it requires a password or passphrase for authentication. SCP encrypts both the file and any passwords exchanged so that anyone snooping on the network cannot view them.</p>
+
+<h5 id="uploading-file-to-a-remote-server">Uploading file to a remote server</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">scp ~/Desktop/phpinfo.php user1@example.com:/var/www/html/</code></pre></div>
+<h5 id="basic-syntax">Basic syntax</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">scp source_file_name username@destination_host:destination_folder</code></pre></div>
+<h5 id="downloading-file-from-a-remote-server">Downloading file from a remote server</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">scp user1@example.com:/var/www/html/phpinfo.php ~/Desktop/</code></pre></div>
+<h5 id="transferring-file-between-remote-servers">Transferring file between remote servers</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">scp user1@example1.com:/var/www/html/phpinfo.php user2@example2.com:/var/www/html/</code></pre></div>
+<h5 id="specifying-a-port-with-scp">Specifying a port with SCP</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">scp -P <span style="color:#ae81ff">8080</span> ~/Desktop/phpinfo.php user1@example.com:/var/www/html/</code></pre></div>
+<h5 id="using-private-key-pem">Using private key (.pem)</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">scp -i ~/Desktop/example.pem user1@example.com:/var/www/html ~/Desktop/.</code></pre></div>
+<h5 id="copy-whole-directory">Copy whole directory</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">scp -r user1@example.com:/var/www/html/* ~/Desktop/example/.</code></pre></div>
+<p>Linux administrator should be familiar with CLI environment. Since GUI mode in Linux servers is not a common to be installed. <a href="/ssh-config-file-rescue/">SSH</a> may the most popular protocol to enable Linux administrator to manage the servers via remote in secure way. Built-in with SSH command there is SCP command. SCP is used to copy file(s) between servers in secure way.</p>
+
+<h4 id="final-words">Final Words.</h4>
+
+<p>Well, that was it! I hope this will help you. of course, you can always have a quick look at this tutorial again if you forget something. Intention of my blog is to provide quick helps to the developers. I generally does not go much into the theories. I believe, the more you practice the more you learn.</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="//localhost:50987/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+<script data-no-instant>document.write('<script src="/livereload.js?port=50987&mindelay=10"></' + 'script>')</script></body>
+
+</html>

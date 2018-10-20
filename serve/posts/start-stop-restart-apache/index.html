@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        How to start, stop and restart apache
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">How to start, stop and restart apache</div>
+
+        
+<div class="section" id="content">
+    Tue Feb 21, 2017 &#183; 260 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/apache">
+                apache
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Apache is primarily used to serve both static content and dynamic Web pages on the World Wide Web. Many web applications are designed expecting the environment and features that Apache provides.It can be started or restarted using any one of the following methods</p>
+
+<h4 id="apache-on-macos">Apache on MacOS</h4>
+
+<p>Use following commands to start/stop/restart apache</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo /usr/sbin/apachectl start
+$ sudo /usr/sbin/apachectl stop
+$ sudo /usr/sbin/apachectl restart</code></pre></div>
+<h4 id="on-centos">On CentOS</h4>
+
+<p>The httpd RPM installs the <code>/etc/init.d/httpd</code> script, which can be accessed using the /sbin/service command.</p>
+
+<p>Starting httpd using the <strong>apachectl</strong> control script sets the environmental variables in /etc/sysconfig/httpd and starts httpd. You can also set the environment variables using the init script.</p>
+
+<p>To start the server using the <strong>apachectl</strong> control script as root type</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo apachectl start</code></pre></div>
+<p>You can also start httpd using /sbin/service httpd start. This starts httpd but does not set the environment variables. If you are using the default Listen directive in httpd.conf, which is port 80, you will need to have root privileges to start the apache server.</p>
+
+<p>To stop the server, as root type</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo apachectl stop</code></pre></div>
+<p>You can also stop httpd using <code>/sbin/service</code> httpd stop. The restart option is a shorthand way of stopping and then starting the Apache HTTP Server.</p>
+
+<p>You can restart the server as root by typing</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ apachectl restart <span style="color:#75715e"># or:
+</span><span style="color:#75715e"></span>$ /sbin/service httpd restart</code></pre></div>
+<p>Apache will display a message on the console or in the ErrorLog if it encounters an error while starting.</p>
+
+<h4 id="debian-ubuntu-specific-commands">Debian/Ubuntu Specific commands</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo service apache2 start
+$ sudo service apache2 stop
+$ sudo service apache2 restart</code></pre></div>
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>

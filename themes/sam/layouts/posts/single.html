@@ -1,0 +1,31 @@
+{{ define "section_content" }}
+<div class="section" id="content">
+    {{ .Date.Format (.Site.Params.dateForm | default "Mon Jan 02, 2006") }} &#183; {{ .WordCount }} words
+    {{ with .Params.tags }}
+    <div class="tag-container">
+        {{ range . }}
+        <span class="tag">
+            <a href="{{ "tags/" | absURL }}{{ . | urlize }}">
+                {{.}}
+            </a>
+        </span>
+        {{ end }}
+    </div>
+    {{ end }}
+    <hr/>
+    {{ .Content }}
+</div>
+<!--<div>
+    <h4>AUTHOR</h4>
+    <h5>Yuvraj Jhala</h5>
+    <p>
+        Yuvraj is a geek from way back, having worked in IT for more than 8 years. He is working with a great team of developers and marketers, and is also the Web Development Consultant for Xovak Studio. Yuvraj is passionate about keeping up-to-date with the latest web technologies.
+    </p>
+</div>-->
+{{ end }}
+
+{{ define "bottom-menu" }}
+<div class="section bottom-menu">
+    {{ partial "bottom_menu.html" (dict "Page" . "show_back_menu_item" true) }}
+</div>
+{{ end }}

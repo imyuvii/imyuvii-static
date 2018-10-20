@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="//localhost:50987/">
+
+<meta name="twitter:image" content="//localhost:50987/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="//localhost:50987/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="//localhost:50987/tn.png">
+
+<link rel="shortcut icon" href="//localhost:50987/sam.ico" id="favicon">
+<link rel="stylesheet" href="//localhost:50987/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        MySQL Import/Export large databases
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">MySQL Import/Export large databases</div>
+
+        
+<div class="section" id="content">
+    Wed Mar 15, 2017 &#183; 163 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="//localhost:50987/tags/mysql">
+                mysql
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="//localhost:50987/tags/mysqldump">
+                mysqldump
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>When working with MySQL I often use tools like <a href="/posts/install-phpmyadmin-on-centos/">PhpMyAdmin</a> or sequelPro, which is a nice GUI way to manipulate MySQL database. But it won’t work sometime while importing/exporting larger databases. So sometimes you need to do mysql import on the command line.</p>
+
+<h5 id="export-a-large-database">Export a Large Database</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ mysqldump -u <span style="color:#f92672">[</span>USERNAME<span style="color:#f92672">]</span> -p <span style="color:#f92672">[</span>DBNAME<span style="color:#f92672">]</span> | gzip &gt; <span style="color:#f92672">[</span>/path_to_file/DBNAME<span style="color:#f92672">]</span>.sql.gz</code></pre></div>
+<h5 id="mysql-import-a-large-database">MySQL Import a Large Database</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># First, unzip the file.
+</span><span style="color:#75715e"></span>$ gzip -d <span style="color:#f92672">[</span>/path_to_file/DBNAME<span style="color:#f92672">]</span>.sql.gz</code></pre></div>
+<h5 id="login-to-mysql">Login to mysql</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ <span style="color:#f92672">[</span>/path_to_mysql/<span style="color:#f92672">]</span>mysql -u <span style="color:#f92672">[</span>USERNAME<span style="color:#f92672">]</span> -p</code></pre></div>
+<h5 id="wipe-out-the-old-database-and-replace-it-with-the-new-dump">Wipe out the old database and replace it with the new dump</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">SHOW DATABASES;
+DROP DATABASE <span style="color:#f92672">[</span>DBNAME<span style="color:#f92672">]</span>;
+CREATE DATABASE <span style="color:#f92672">[</span>DBNAME<span style="color:#f92672">]</span>;
+USE <span style="color:#f92672">[</span>DBNAME<span style="color:#f92672">]</span>;
+SOURCE <span style="color:#f92672">[</span>/path_to_file/DBNAME<span style="color:#f92672">]</span>.sql;</code></pre></div>
+<h4 id="final-words">Final Words</h4>
+
+<p>Well, that was it! I hope this will help you. of course, you can always have a quick look at this tutorial again if you forget something. Intention of my blog is to provide quick helps to the developers. I generally does not go much into the theories. I believe, the more you practice the more you learn.</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="//localhost:50987/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+<script data-no-instant>document.write('<script src="/livereload.js?port=50987&mindelay=10"></' + 'script>')</script></body>
+
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on Call me Yuvi</title>
+    <link>/tags/wordpress/</link>
+    <description>Recent content in Wordpress on Call me Yuvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Feb 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing output to your own log file</title>
+      <link>/posts/writing-log-file/</link>
+      <pubDate>Thu, 02 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/writing-log-file/</guid>
+      <description>Not able to trace issue in production environment? There are many ways to do so, XDEBUG is one of preferred way to debug php website remotely. However, installing and configuring it can be a lengthy process, Specially when web hosting is not in your control. In order to fix the issue in one of my client’s website, I came up with a solution where I can output desired part of code in my own log file.</description>
+    </item>
+    
+    <item>
+      <title>Display code on your WordPress post</title>
+      <link>/posts/display-code-block-wordpress/</link>
+      <pubDate>Fri, 27 Jan 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/display-code-block-wordpress/</guid>
+      <description>Many bloggers do not run a development blog, so they don’t need to add sample code snippets in their posts very often. For rare occasions, you can add code by encoding the code into HTML entities. Like this &amp;amp;gt;?php echo &amp;quot;Hello World&amp;quot;; ?&amp;amp;lt;
+Why Displaying Code is Difficult To understand why displaying code is difficult you need to know some basic HTML. The code for making some bold text is to surround it in a tag.</description>
+    </item>
+    
+  </channel>
+</rss>

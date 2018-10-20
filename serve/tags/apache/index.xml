@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache on Call me Yuvi</title>
+    <link>/tags/apache/</link>
+    <description>Recent content in Apache on Call me Yuvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Feb 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to start, stop and restart apache</title>
+      <link>/posts/start-stop-restart-apache/</link>
+      <pubDate>Tue, 21 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/start-stop-restart-apache/</guid>
+      <description>Apache is primarily used to serve both static content and dynamic Web pages on the World Wide Web. Many web applications are designed expecting the environment and features that Apache provides.It can be started or restarted using any one of the following methods
+Apache on MacOS Use following commands to start/stop/restart apache
+$ sudo /usr/sbin/apachectl start $ sudo /usr/sbin/apachectl stop $ sudo /usr/sbin/apachectl restart On CentOS The httpd RPM installs the /etc/init.</description>
+    </item>
+    
+    <item>
+      <title>Configure virtual hosts on CentOS</title>
+      <link>/posts/configure-virtual-host-centos/</link>
+      <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/configure-virtual-host-centos/</guid>
+      <description>About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
+In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Call me Yuvi</title>
+    <link>/tags/web/</link>
+    <description>Recent content in Web on Call me Yuvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Feb 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things You need to know before hiring SEO agency</title>
+      <link>/posts/hiring-seo-agency/</link>
+      <pubDate>Mon, 27 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/hiring-seo-agency/</guid>
+      <description>Working as Web Developer since 2010 I’ve had the opportunity to interact with thousands of clients and potential clients. As soon as website goes to production client keen to hiring SEO team and they seeking for your help. From the conversation with many of my client, I found out there are a long list of misconceptions when it comes to SEO.
+Here are some of the common misunderstandings I see amongst my client when it comes to SEO.</description>
+    </item>
+    
+    <item>
+      <title>How to optimize website performance</title>
+      <link>/posts/optimize-website-performance/</link>
+      <pubDate>Sun, 19 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/optimize-website-performance/</guid>
+      <description>What is website optimization? Website optimization (often referred to as conversion optimization) is the process of systematically improving the performance of your website to meet your business objectives. Read full article to understand importance of website optimization, And if you are in hurry than jump to Optimise website section.
+Whether your goal is to get more leads, sales, or reduce customer service phone calls, website optimization can be used to make your website more effective at meeting those goals.</description>
+    </item>
+    
+  </channel>
+</rss>

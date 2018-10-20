@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="//localhost:1313/">
+
+<meta name="twitter:image" content="//localhost:1313/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="//localhost:1313/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="//localhost:1313/tn.png">
+
+<link rel="shortcut icon" href="//localhost:1313/sam.ico" id="favicon">
+<link rel="stylesheet" href="//localhost:1313/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Install PhpMyAdmin on centOS
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Install PhpMyAdmin on centOS</div>
+
+        
+<div class="section" id="content">
+    Wed Feb 22, 2017 &#183; 229 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="//localhost:1313/tags/mysql">
+                mysql
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<h4 id="what-is-phpmyadmin">What is PhpMyAdmin?</h4>
+
+<p>PhpMyAdmin is one of the most popular applications for MySQL databases management. It is a free tool written in PHP. Through this software you can create, alter, drop, delete, import and export MySQL database tables. You can run MySQL queries, optimize, repair and check tables, change collation and execute other database management commands. Install PhpMyAdmin isn’t an easy task. You need to do several configuration after installation.</p>
+
+<h4 id="how-to-install-phpmyadmin">How to install PhpMyAdmin?</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm <span style="color:#75715e">#Adding repository
+</span><span style="color:#75715e"></span>$ yum -y update
+$ yum -y install phpmyadmin #Install PhpMyAdmin</code></pre></div>
+<p>That’s it. You can start using it by url <code>http:///phpMyAdmin</code>, Ex. <a href="http://example.com/phpMyAdmin">http://example.com/phpMyAdmin</a></p>
+
+<h4 id="do-following-changes-if-you-face-403-forbidden-issue">Do following changes if you face 403 forbidden issue</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo nano /etc/httpd/conf.d/phpMyAdmin.conf</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apacheconfig" data-lang="apacheconfig">&lt;Directory /usr/share/phpMyAdmin/&gt;
+   AddDefaultCharset UTF-8
+   &lt;IfModule mod_authz_core.c&gt;
+     # Apache 2.4
+     &lt;RequireAny&gt;
+       Require all granted
+     &lt;/RequireAny&gt;
+   &lt;/IfModule&gt;
+   &lt;IfModule !mod_authz_core.c&gt;
+     # Apache 2.2
+     Order Deny,Allow
+     Deny from All
+     Allow from 127.0.0.1
+     Allow from ::1
+   &lt;/IfModule&gt;
+&lt;/Directory&gt;</code></pre></div>
+<p>In order to reinitialising changes, we need to restart the apache server.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo apachectl restart <span style="color:#75715e">#or:
+</span><span style="color:#75715e"></span>$ /sbin/service httpd restart</code></pre></div>
+<p>I hope that some of this is useful to a few of you. There is always room for an improvements, find out another unix commands and make best use of it. Leave a note in the comments if you have any cool tricks to install PhpMyAdmin. Also checkout my another blog on <a href="/posts/installing-lamp-stack-ubuntu/">installing Apache, php and mysql on Ubuntu server</a>.</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="//localhost:1313/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
