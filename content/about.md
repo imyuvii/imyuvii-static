@@ -10,5 +10,3 @@ As a proficient web developer who has over 8 years of experience, I am confident
 My coding expertise lies in PHP, Laravel, WordPress, Yii/Yii2, Hugo & HTML5. Furthermore, you may check out my portfolio which is parked at http://remote.com/imyuvii
                                        
 In my gigs you will get the creative flair, precision of skills and the timely delivery that you seek for your web projects. And, know that I also cater to after sales services; which mean that if your project needs added expansion or tune-up in the future, I will be here to furnish you with the required build.
-
-![Me](/about-1.jpg)

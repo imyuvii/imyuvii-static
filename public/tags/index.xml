@@ -2,111 +2,138 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Call me Yuvi</title>
-    <link>//localhost:50987/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Call me Yuvi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Feb 2017 13:56:12 -0500</lastBuildDate>
     
-	<atom:link href="//localhost:50987/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apache</title>
-      <link>//localhost:50987/tags/apache/</link>
+      <link>/tags/apache/</link>
       <pubDate>Tue, 21 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/apache/</guid>
+      <guid>/tags/apache/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>//localhost:50987/tags/blog/</link>
+      <link>/tags/blog/</link>
       <pubDate>Fri, 16 Mar 2018 20:18:53 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/blog/</guid>
+      <guid>/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Centos</title>
-      <link>//localhost:50987/tags/centos/</link>
+      <link>/tags/centos/</link>
       <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/centos/</guid>
+      <guid>/tags/centos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Classic</title>
-      <link>//localhost:50987/tags/classic/</link>
+      <link>/tags/classic/</link>
       <pubDate>Sun, 11 Feb 2018 12:34:41 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/classic/</guid>
+      <guid>/tags/classic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>//localhost:50987/tags/code/</link>
+      <link>/tags/code/</link>
       <pubDate>Thu, 08 Mar 2018 20:18:53 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/code/</guid>
+      <guid>/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Filecopy</title>
+      <link>/tags/filecopy/</link>
+      <pubDate>Sat, 18 Mar 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/filecopy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Log</title>
-      <link>//localhost:50987/tags/log/</link>
+      <link>/tags/log/</link>
       <pubDate>Thu, 02 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/log/</guid>
+      <guid>/tags/log/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mysql</title>
-      <link>//localhost:50987/tags/mysql/</link>
-      <pubDate>Wed, 22 Feb 2017 13:56:12 -0500</pubDate>
+      <link>/tags/mysql/</link>
+      <pubDate>Wed, 15 Mar 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/mysql/</guid>
+      <guid>/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysqldump</title>
+      <link>/tags/mysqldump/</link>
+      <pubDate>Wed, 15 Mar 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/mysqldump/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Poem</title>
-      <link>//localhost:50987/tags/poem/</link>
+      <link>/tags/poem/</link>
       <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/poem/</guid>
+      <guid>/tags/poem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scp</title>
+      <link>/tags/scp/</link>
+      <pubDate>Sat, 18 Mar 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/scp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Story</title>
-      <link>//localhost:50987/tags/story/</link>
+      <link>/tags/story/</link>
       <pubDate>Mon, 19 Feb 2018 12:41:46 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/story/</guid>
+      <guid>/tags/story/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web</title>
-      <link>//localhost:50987/tags/web/</link>
+      <link>/tags/web/</link>
       <pubDate>Mon, 27 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/web/</guid>
+      <guid>/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wordpress</title>
-      <link>//localhost:50987/tags/wordpress/</link>
+      <link>/tags/wordpress/</link>
       <pubDate>Thu, 02 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/tags/wordpress/</guid>
+      <guid>/tags/wordpress/</guid>
       <description></description>
     </item>
     

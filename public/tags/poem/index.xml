@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Poem on Call me Yuvi</title>
-    <link>//localhost:50987/tags/poem/</link>
+    <link>/tags/poem/</link>
     <description>Recent content in Poem on Call me Yuvi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Feb 2018 13:56:12 -0500</lastBuildDate>
     
-	<atom:link href="//localhost:50987/tags/poem/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/poem/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Code Poetry</title>
-      <link>//localhost:50987/portfolio/code-poetry/</link>
+      <link>/portfolio/code-poetry/</link>
       <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/portfolio/code-poetry/</guid>
+      <guid>/portfolio/code-poetry/</guid>
       <description>Pseudo code poem.
 if (this === that): try write_new_poem() except not_a_poet as e: return  Or just one long line&amp;hellip;
 console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay toooooooooooooooooooo looooooooooooooooooooooooooooooong&amp;#39;)  An embedded gist using shortcode:
@@ -25,22 +25,10 @@ console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     
     <item>
       <title>Code Poetry</title>
-      <link>//localhost:50987/posts/code-poetry/</link>
+      <link>/posts/code-poetry/</link>
       <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/code-poetry/</guid>
-      <description>Pseudo code poem.
-if (this === that): try write_new_poem() except not_a_poet as e: return  Or just one long line&amp;hellip;
-console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay toooooooooooooooooooo looooooooooooooooooooooooooooooong&amp;#39;)  An embedded gist using shortcode:
- </description>
-    </item>
-    
-    <item>
-      <title>Code Poetry</title>
-      <link>//localhost:50987/posts/mysql-import-export-large-databases/</link>
-      <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
-      
-      <guid>//localhost:50987/posts/mysql-import-export-large-databases/</guid>
+      <guid>/posts/code-poetry/</guid>
       <description>Pseudo code poem.
 if (this === that): try write_new_poem() except not_a_poet as e: return  Or just one long line&amp;hellip;
 console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay toooooooooooooooooooo looooooooooooooooooooooooooooooong&amp;#39;)  An embedded gist using shortcode:
@@ -49,10 +37,10 @@ console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     
     <item>
       <title>A Poem</title>
-      <link>//localhost:50987/portfolio/a-poem/</link>
+      <link>/portfolio/a-poem/</link>
       <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
       
-      <guid>//localhost:50987/portfolio/a-poem/</guid>
+      <guid>/portfolio/a-poem/</guid>
       <description>Now pleasing sleep had seal&amp;rsquo;d each mortal eye,
 Stretch&amp;rsquo;d in the tents the Grecian leaders lie:
 The immortals slumber&amp;rsquo;d on their thrones above;
@@ -66,10 +54,10 @@ And thus commands the vision of the night.
     
     <item>
       <title>A Poem</title>
-      <link>//localhost:50987/posts/a-poem/</link>
+      <link>/posts/a-poem/</link>
       <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
       
-      <guid>//localhost:50987/posts/a-poem/</guid>
+      <guid>/posts/a-poem/</guid>
       <description>Now pleasing sleep had seal&amp;rsquo;d each mortal eye,
 Stretch&amp;rsquo;d in the tents the Grecian leaders lie:
 The immortals slumber&amp;rsquo;d on their thrones above;
