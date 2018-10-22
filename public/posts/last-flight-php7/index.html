@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Last flight to PHP7
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Last flight to PHP7</div>
+
+        
+<div class="section" id="content">
+    Fri Mar 24, 2017 &#183; 738 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/php">
+                php
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/php7">
+                php7
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Eleven years after its 5.0 release, a new major version is finally coming our way!. PHP7 is out, and it’s time to get your code ready. I’ve already started migrating from <a href="http://php.net/manual/en/migration70.php">5.6 to 7</a>, Here is the official document for Migration PHP 5.6 to 7.</p>
+
+<p>But how will this impact your current PHP codebase? What really changed? How safe is it to update? This post will answer these questions and give you a taste of what’s to come with PHP7</p>
+
+<h4 id="performance">Performance</h4>
+
+<p>The most easily recognizable advantage of the new PHPNG engine is the significant performance improvement. Benchmarks for PHP7 consistently show speeds twice as fast as PHP 5.6 and many times even faster! Although these results are not guaranteed for your project, the benchmarks were tested against major projects, WordPress, so these numbers don’t come from abstract performance tests.</p>
+
+<p><img src="/posts/images/php7-performance.jpg" alt="PHP7 Performance" /></p>
+
+<h4 id="new-features">New features</h4>
+
+<h5 id="scalar-type-declarations">Scalar type declarations</h5>
+
+<p>Scalar type declarations come in two flavours: coercive (default) and strict. The following types for parameters can now be enforced (either coercively or strictly): strings (string), integers (int), floating-point numbers (float), and booleans (bool). They augment the other types introduced in PHP 5: class names, interfaces, array and callable.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<span style="color:#75715e">// Coercive mode
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sumOfInts</span>(<span style="color:#a6e22e">int</span> <span style="color:#f92672">...</span>$ints)
+{
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">array_sum</span>($ints);
+}
+<span style="color:#a6e22e">var_dump</span>(<span style="color:#a6e22e">sumOfInts</span>(<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#ae81ff">4.1</span>));
+</code></pre></div>
+<p>above example will output:</p>
+
+<p><code>int(9)</code></p>
+
+<h5 id="return-type-declarations">Return type declarations</h5>
+
+<p>Return type declarations specify the type of the value that will be returned from a function.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">function arraysSum(array ...$arrays): array
+{
+    return array_map(function(array $array): int {
+        return array_sum($array);
+    }, $arrays);
+}
+print_r(arraysSum([1,2,3], [4,5,6], [7,8,9]));</code></pre></div>
+<p>The above example will output:</p>
+
+<pre><code>Array
+(
+    [0] =&gt; 6
+    [1] =&gt; 15
+    [2] =&gt; 24
+)
+</code></pre>
+
+<h5 id="spaceship-operator">Spaceship operator</h5>
+
+<p>The spaceship operator is used for comparing two expressions. It returns -1, 0 or 1 when $a is respectively less than, equal to, or greater than $b.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">// Integers
+echo 1 <span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt; 1; // 0
+echo 1 <span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt; 2; // -1
+echo 2 <span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt; 1; // 1
+// Floats
+echo 1.5 <span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt; 1.5; // 0
+echo 1.5 <span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt; 2.5; // -1
+echo 2.5 <span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt; 1.5; // 1
+ 
+// Strings
+echo &#34;a&#34; <span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt; &#34;a&#34;; // 0
+echo &#34;a&#34; <span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt; &#34;b&#34;; // -1
+echo &#34;b&#34; <span style="color:#960050;background-color:#1e0010">&lt;</span>=&gt; &#34;a&#34;; // 1</code></pre></div>
+<h5 id="constant-arrays-using-define">Constant arrays using <em>define()</em></h5>
+
+<p>Array constants can now be defined with define(). In PHP 5.6, they could only be defined with const.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">define(&#39;FRAMEWORK&#39;, [
+    &#39;Laravel&#39;,
+    &#39;Yii&#39;,
+    &#39;Zend&#39;
+]);
+echo FRAMEWORK[1];</code></pre></div>
+<h5 id="unicode-code-point-escape-syntax">Unicode code point escape syntax</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">echo &#34;\u{aa}&#34;;
+echo &#34;\u{0000aa}&#34;;
+echo &#34;\u{9999}&#34;;</code></pre></div>
+<p>Above example will output:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ª
+ª <span style="color:#f92672">(</span>same as before but with optional leading <span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">&#39;</span>s<span style="color:#f92672">)</span>
+香</code></pre></div>
+<h5 id="filtered-unserialize">Filtered <em>unserialize()</em></h5>
+
+<p>This feature seeks to provide better security when unserializing objects on untrusted data. It prevents possible code injections by enabling the developer to whitelist classes that can be unserialized.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span> 
+<span style="color:#75715e">// converts all objects into __PHP_Incomplete_Class object $data = unserialize($foo, [&#34;allowed_classes&#34; =&gt; false]);
+</span><span style="color:#75715e">// converts all objects into __PHP_Incomplete_Class object except those of MyClass and MyClass2
+</span><span style="color:#75715e"></span>$data <span style="color:#f92672">=</span> <span style="color:#a6e22e">unserialize</span>($foo, [<span style="color:#e6db74">&#34;allowed_classes&#34;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#34;MyClass&#34;</span>, <span style="color:#e6db74">&#34;MyClass2&#34;</span>]]);
+<span style="color:#75715e">// default behaviour (same as omitting the second argument) that accepts all classes
+</span><span style="color:#75715e"></span>$data <span style="color:#f92672">=</span> <span style="color:#a6e22e">unserialize</span>($foo, [<span style="color:#e6db74">&#34;allowed_classes&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">true</span>]);
+</code></pre></div>
+<h5 id="session-options">Session options</h5>
+
+<p>session_start() now accepts an array of options that override the session configuration directives normally set in php.ini.</p>
+
+<p>These options have also been expanded to support session.lazy_write, which is on by default and causes PHP to only overwrite any session file if the session data has changed, and read_and_close, which is an option that can only be passed to session_start() to indicate that the session data should be read and then the session should immediately be closed unchanged.</p>
+
+<p>For example, to set session.cache_limiter to private and immediately close the session after reading it:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">session_start([
+    &#39;cache_limiter&#39; =&gt; &#39;private&#39;,
+    &#39;read_and_close&#39; =&gt; true,
+]);</code></pre></div>
+<h5 id="other-features">Other Features</h5>
+
+<ul>
+<li>Class member access on cloning has been added, e.g. (clone $foo)-&gt;bar().</li>
+<li>CSPRNG Functions.</li>
+<li>preg_replace_callback_array().</li>
+<li>preg_replace_callback_array().</li>
+</ul>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>There are quite a few other features added in PHP 7, like unicode support for emoji and international characters.</p>
+
+<p><code>echo &quot;\u{1F60D}&quot;; // outputs ?</code></p>
+
+<p>But this should give you a taste of what’s changing in PHP.</p>
+
+<p>Another big area that could cause trouble, are features that have been removed. This should really only be an issue if you’re working with an older code base, because the features that have been removed are primarily ones that have been deprecated for a long time. If you’ve been putting off making these necessary changes, the huge advantage in speed with PHP7 should help convince you, or management, to take the time needed to update your code.</p>
+
+<p>For more on deprecated feature check out the <a href="https://wiki.php.net/rfc/remove_deprecated_functionality_in_php7">php wiki</a>.</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>
