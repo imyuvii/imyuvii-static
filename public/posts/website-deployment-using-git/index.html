@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Website deployment using GIT
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Website deployment using GIT</div>
+
+        
+<div class="section" id="content">
+    Mon Apr 10, 2017 &#183; 637 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/deployment">
+                deployment
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/git">
+                git
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/ssh">
+                ssh
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Once you’ve put in all the hard work of creating a website, you need to get it on the web so people can navigate to it and access its content. This process is called deployment. Deployment is a fancy word for “getting your website on the web,”.  Website deployment isn’t a simple process, mainly because there are so many different ways to do it. In this article I don’t aim to document all possible methods. Rather, I will walk you through one method that will work for now.</p>
+
+<p>This tutorial assumes that you have following things ready:</p>
+
+<ul>
+<li>A local git repo with an online remote repository (github / bitbucket etc)</li>
+<li>A cloud server (Digitalocean, Google cloud, Amazon EC2 etc)
+
+<ul>
+<li>Your (PHP) scripts are served from your web root (in my case /var/www/html/)</li>
+<li>Webpages are executed by apache</li>
+<li>Apache’s home directory is <code>/var/www/</code></li>
+<li>(this describes a pretty standard apache setup on Redhat / Ubuntu / CentOS / Amazon AMI etc)
+<br /></li>
+</ul></li>
+</ul>
+
+<p>you should be able to do the same with Java, Perl, RoR, JSP etc. however you’ll need to recreate the (rather simple) PHP script.</p>
+
+<h4 id="1-on-your-local-machine">1. On your local machine</h4>
+
+<p>Here we add the <a href="https://gist.github.com/oodavid/1809044#file-deploy-php">deployment script</a> and push it to the origin, the deployment script runs git commands to PULL from the origin thus updating your server.
+In case if you miss the link: <a href="https://gist.github.com/oodavid/1809044#file-deploy-php">deploy.php</a></p>
+
+<p>Add, commit and push this to github</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git add deploy.php
+$ git commit -m <span style="color:#e6db74">&#39;Added the git deployment script&#39;</span> 
+$ git push -u origin master</code></pre></div>
+<h4 id="2-on-your-server">2. On your server</h4>
+
+<p>Here we install and setup git on the server, we also create an SSH key so the server can talk to the origin without using passwords etc</p>
+
+<p>Install git…</p>
+
+<p>On CentOS</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo yum install git</code></pre></div>
+<p>On Ubuntu</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo apt-get install git</code></pre></div>
+<p>After you’ve installed git, make sure it’s a relatively new version – old scripts quickly become problematic as github / bitbucket / whatever will have the latests and greatest, if you don’t have a recent version you’ll need to figure out how to upgrade it 🙂</p>
+
+<p>Setup git</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git config --global user.name <span style="color:#e6db74">&#34;Server&#34;</span>
+$ git config --global user.email <span style="color:#e6db74">&#34;server@server.com&#34;</span></code></pre></div>
+<p>Create an ssh directory for the apache user</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo mkdir /var/www/.ssh
+<span style="color:#75715e"># ubuntu
+</span><span style="color:#75715e"></span>$ sudo chown -R www-data:www-data /var/www/.ssh/
+<span style="color:#75715e">#CentOs
+</span><span style="color:#75715e"></span>$ sudo chown -R apache:apache /var/www/.ssh/ Generate a deploy key <span style="color:#66d9ef">for</span> apache user</code></pre></div>
+<p>Generate a deploy key for apache user</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo -Hu apache ssh-keygen -t rsa <span style="color:#75715e"># choose &#34;no passphrase&#34;
+</span><span style="color:#75715e"></span>$ sudo cat /var/www/.ssh/id_rsa.pub</code></pre></div>
+<h4 id="3-on-your-git-server-github-gitlab-bitbucket-etc">3. On your GIT server (github, gitlab, bitbucket etc.)</h4>
+
+<p>Here we add the SSH key to the origin to allow your server to talk without passwords. In the case of GitHub we also setup a post-receive hook which will automatically call the deploy URL thus triggering a PULL request from the server to the origin.</p>
+
+<p>GitHub instructions</p>
+
+<p>Add the SSH key to your user</p>
+
+<ul>
+<li><a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a></li>
+<li>Create a new key</li>
+<li>Paste the deploy key you generated on the server</li>
+<li>Set up service hook</li>
+<li><a href="https://github.com/your_username/server.com/settings/hooks">https://github.com/your_username/server.com/settings/hooks</a></li>
+<li>Select the Post-Receive URL service hook</li>
+<li>Enter the URL to your deployment script – <a href="http://server.com/deploy.php">http://server.com/deploy.php</a></li>
+<li>Click Update Settings</li>
+<li>Bitbucket instructions</li>
+</ul>
+
+<h4 id="4-deployment-on-the-server">4. Deployment on the Server</h4>
+
+<p>Here we clone the origin repo into a chmodded <code>/var/www/html</code> folder</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo chown -R apache:apache /var/www/html
+$ sudo -Hu apache git clone git@github.com:you/server.git /var/www/html</code></pre></div>
+<p>That’s it, you’re ready to go 🙂</p>
+
+<h5 id="notes">Notes:</h5>
+
+<ul>
+<li>Navigate the the deployment script to trigger a pull and see the output:
+
+<ul>
+<li><a href="http://server.com/deploy.php">http://server.com/deploy.php</a></li>
+<li>This is useful for debugging too 😉</li>
+</ul></li>
+<li>When you push to GitHub your site will automatically ping the above url (and pull your code)</li>
+<li>When you push to Bitbucket you will need to manually ping the above url</li>
+<li>It would be trivial to setup another repo on your server for different branches (develop, release-candidate etc) – repeat most of the steps but checkout a branch after pulling the repo down</li>
+</ul>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>

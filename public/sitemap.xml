@@ -88,6 +88,21 @@
   </url>
   
   <url>
+    <loc>/posts/website-deployment-using-git/</loc>
+    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/ssh-config-file-rescue/</loc>
+    <lastmod>2017-04-01T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/installing-lamp-stack-ubuntu/</loc>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/last-flight-php7/</loc>
     <lastmod>2017-03-24T13:56:12-05:00</lastmod>
   </url>
@@ -139,7 +154,7 @@
   
   <url>
     <loc>/tags/apache/</loc>
-    <lastmod>2017-02-21T13:56:12-05:00</lastmod>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -179,8 +194,32 @@
   </url>
   
   <url>
+    <loc>/tags/config/</loc>
+    <lastmod>2017-04-01T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/deployment/</loc>
+    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/filecopy/</loc>
     <lastmod>2017-03-18T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/git/</loc>
+    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/lamp/</loc>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -192,7 +231,7 @@
   
   <url>
     <loc>/tags/mysql/</loc>
-    <lastmod>2017-03-15T13:56:12-05:00</lastmod>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -208,7 +247,7 @@
   
   <url>
     <loc>/tags/php/</loc>
-    <lastmod>2017-03-24T13:56:12-05:00</lastmod>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -231,6 +270,18 @@
   </url>
   
   <url>
+    <loc>/tags/ssh/</loc>
+    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sshconfig/</loc>
+    <lastmod>2017-04-01T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/story/</loc>
     <lastmod>2018-02-19T12:41:46-05:00</lastmod>
     <priority>0</priority>
@@ -238,7 +289,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-02-21T13:56:12-05:00</lastmod>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   

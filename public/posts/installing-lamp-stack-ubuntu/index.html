@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Installing LAMP stack on Ubuntu
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Installing LAMP stack on Ubuntu</div>
+
+        
+<div class="section" id="content">
+    Wed Mar 29, 2017 &#183; 338 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/lamp">
+                lamp
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/apache">
+                apache
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/php">
+                php
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/mysql">
+                mysql
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>LAMP is short for <strong>L</strong>inux, <strong>A</strong>pache, <strong>M</strong>ySQL, <strong>P</strong>HP. This tutorial shows how you can install LAMP stack (Apache2, PHP and MySQL) on an Ubuntu 16.04 server.</p>
+
+<h4 id="apache">Apache</h4>
+
+<p>To install Apache you must install the Metapackage apache2. This can be done by searching for and installing in the Software Centre, or by running the following command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get install apache2</code></pre></div>
+<h4 id="mysql">MySQL</h4>
+
+<p>To install MySQL you must install the Metapackage mysql-server. This can be done by searching for and installing in the Software Centre, or by running the following command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get install mysql-server</code></pre></div>
+<h4 id="php">PHP</h4>
+
+<p>To install PHP you must install the Metapackages php5 and libapache2-mod-php5. This can be done by searching for and installing in the Software Centre, or by running the following command.
+Install PHP 5:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get update
+sudo apt-get install php5 libapache2-mod-php5</code></pre></div>
+<h5 id="or-install-php-7">Or Install PHP 7:</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:ondrej/php 
+sudo apt-get update 
+sudo apt-get install -y php7.1 
+<span style="color:#75715e"># Optional modules 
+</span><span style="color:#75715e"></span>sudo apt-get -y install php7.1-mcrypt php7.1-curl php7.1-cli php7.1-mysql php7.1-gd libapache2-mod-php7.1 
+<span style="color:#75715e"># check installed version 
+</span><span style="color:#75715e"></span>php -v</code></pre></div>
+<h4 id="restart-server">Restart Server</h4>
+
+<p>Your server should restart Apache automatically after the installation of both MySQL and PHP. If it doesn’t, execute this command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo service apache2 restart</code></pre></div>
+<h4 id="check-apache">Check Apache</h4>
+
+<p>Open a web browser and navigate to <a href="http://localhost/">http://localhost</a>. You should see a message saying It works!</p>
+
+<h4 id="check-php">Check PHP</h4>
+
+<p>You can check your PHP installation by executing any PHP file from within /var/www/. Alternatively you can execute the following command, which will make PHP run the code without the need for creating a file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">php -r <span style="color:#e6db74">&#39;echo &#34;\n\nYour PHP installation is working fine.\n\n\n&#34;;&#39;</span></code></pre></div>
+<h5 id="or">Or:</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">php -v</code></pre></div>
+<p>Congratulations, you have just Installed a LAMP Server!</p>
+
+<p>I hope that some of this is useful to a few of you. There is always an room for improvements. Leave a note in the comments if you have any cool tricks for the LAMP installation. I’m always on the lookout for fun hacks.</p>
+
+<p>I have wrote another article on <a href="http://imyuvii.com/install-phpmyadmin-on-centos/">How to install PhpMyAdmin on centOS</a>. Checkout related articles section to find more relevant content.</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>

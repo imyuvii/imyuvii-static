@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Call me Yuvi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Feb 2017 13:56:12 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 29 Mar 2017 13:56:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Apache</title>
       <link>/tags/apache/</link>
-      <pubDate>Tue, 21 Feb 2017 13:56:12 -0500</pubDate>
+      <pubDate>Wed, 29 Mar 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/apache/</guid>
       <description></description>
@@ -57,11 +57,47 @@
     </item>
     
     <item>
+      <title>Config</title>
+      <link>/tags/config/</link>
+      <pubDate>Sat, 01 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/config/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deployment</title>
+      <link>/tags/deployment/</link>
+      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Filecopy</title>
       <link>/tags/filecopy/</link>
       <pubDate>Sat, 18 Mar 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/filecopy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/tags/git/</link>
+      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lamp</title>
+      <link>/tags/lamp/</link>
+      <pubDate>Wed, 29 Mar 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/lamp/</guid>
       <description></description>
     </item>
     
@@ -77,7 +113,7 @@
     <item>
       <title>Mysql</title>
       <link>/tags/mysql/</link>
-      <pubDate>Wed, 15 Mar 2017 13:56:12 -0500</pubDate>
+      <pubDate>Wed, 29 Mar 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/mysql/</guid>
       <description></description>
@@ -95,7 +131,7 @@
     <item>
       <title>Php</title>
       <link>/tags/php/</link>
-      <pubDate>Fri, 24 Mar 2017 13:56:12 -0500</pubDate>
+      <pubDate>Wed, 29 Mar 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/php/</guid>
       <description></description>
@@ -125,6 +161,24 @@
       <pubDate>Sat, 18 Mar 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/scp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssh</title>
+      <link>/tags/ssh/</link>
+      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sshconfig</title>
+      <link>/tags/sshconfig/</link>
+      <pubDate>Sat, 01 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/sshconfig/</guid>
       <description></description>
     </item>
     

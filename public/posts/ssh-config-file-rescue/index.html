@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        SSH Config to the rescue
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">SSH Config to the rescue</div>
+
+        
+<div class="section" id="content">
+    Sat Apr 01, 2017 &#183; 309 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/sshconfig">
+                sshconfig
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/config">
+                config
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>How often do you need to logged into a remote server? that to using ssh credentials. In my case I have to log in and out dozens of servers daily. And if you’re like me, you have trouble remembering all of the various usernames, remote addresses and command line options for things like specifying a non-standard connection port or forwarding local ports to the remote machine. Hence, I thought to use SSH Config file.</p>
+
+<h4 id="ssh-config-to-the-rescue">SSH Config to the rescue</h4>
+
+<p><code>~/.ssh/config</code> file is a much elegant and flexible solution to this problem. It helps you to become productive and focus on your goal rather than worrying about SSH credentials. Enter the SSH config file using <code>sudo nano ~/.ssh/config</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># contents of $HOME/.ssh/config
+</span><span style="color:#75715e"></span>Host example:dev
+    HostName dev.example.com
+    Port <span style="color:#ae81ff">22000</span>
+    User imyuvii</code></pre></div>
+<p>Now to login</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh example:dev</code></pre></div>
+<p>And the options will be read from the configuration file. Easy peasy. Let’s see what else we can do with just a few simple configuration directives.</p>
+
+<p>Personally, I user private/public keys to access servers. The use of <code>IdentityFile</code> allows me to specify exactly which private key I wish to use for authentication with the given host.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">Host example:dev
+    Hostname dev.example.com
+    Port <span style="color:#ae81ff">22000</span>
+    User imyuvii
+Host example:pro
+    Hostname example.com
+    User imyuvii
+    IdentityFile ~/.ssh/example.pem</code></pre></div>
+<p>Make sure you have read only permission <code>chmod 400 ~/.ssh/example.pem</code> for your <code>.pem</code> files.
+I hope that some of this is useful to a few of you. There is always a room for improvements, find out another options and make best use of it. Leave a note in the comments if you have any cool tricks for the SSH config file. I’m always on the lookout for fun hacks. I have wrote another article on <a href="/posts/transferring-files-between-servers/">securely transferring computer files</a> between a local host and a remote host or between two remote hosts. You can  It is based on the Secure Shell (SSH) protocol.</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>
