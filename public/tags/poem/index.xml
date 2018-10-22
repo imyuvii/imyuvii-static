@@ -32,7 +32,8 @@ console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
       <description>Pseudo code poem.
 if (this === that): try write_new_poem() except not_a_poet as e: return  Or just one long line&amp;hellip;
 console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay toooooooooooooooooooo looooooooooooooooooooooooooooooong&amp;#39;)  An embedded gist using shortcode:
- </description>
+ Hello! I&amp;rsquo;m a blog post with an image.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra. Quam vulputate dignissim suspendisse in est ante in nibh mauris.</description>
     </item>
     
     <item>
@@ -41,23 +42,6 @@ console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
       <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
       
       <guid>/portfolio/a-poem/</guid>
-      <description>Now pleasing sleep had seal&amp;rsquo;d each mortal eye,
-Stretch&amp;rsquo;d in the tents the Grecian leaders lie:
-The immortals slumber&amp;rsquo;d on their thrones above;
-All, but the ever-wakeful eyes of Jove.(76)
-To honour Thetis&amp;rsquo; son he bends his care,
-And plunge the Greeks in all the woes of war:
-Then bids an empty phantom rise to sight,
-And thus commands the vision of the night.
-&amp;ldquo;Fly hence, deluding Dream! and light as air,(77)</description>
-    </item>
-    
-    <item>
-      <title>A Poem</title>
-      <link>/posts/a-poem/</link>
-      <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
-      
-      <guid>/posts/a-poem/</guid>
       <description>Now pleasing sleep had seal&amp;rsquo;d each mortal eye,
 Stretch&amp;rsquo;d in the tents the Grecian leaders lie:
 The immortals slumber&amp;rsquo;d on their thrones above;
