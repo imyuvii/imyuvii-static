@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Installing GoDaddy SSL Certificate on Ubuntu
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Installing GoDaddy SSL Certificate on Ubuntu</div>
+
+        
+<div class="section" id="content">
+    Thu Jan 11, 2018 &#183; 921 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/apache">
+                apache
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/csr">
+                csr
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/https">
+                https
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/ssl">
+                ssl
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/ubuntu">
+                ubuntu
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/website">
+                website
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Basically in order to successfully install an SSL certificate you need the following things</p>
+
+<ul>
+<li>CSR file</li>
+<li>Private key</li>
+<li>Certificate key</li>
+<li>Certificate chain</li>
+</ul>
+
+<h4 id="download-certificates">Download Certificates</h4>
+
+<p>If your website is hosted through <a href="http://godaddy.com/">GoDaddy</a> (e.g. the primary domain on a GoDaddy shared hosting account, Website Builder), you don’t need to use these instructions; GoDaddy take care of the SSL installation for you.</p>
+
+<ol>
+<li>On your SSL certificate home page, click Download.
+
+<ul>
+<li>Not in your SSL control panel? Log in to your GoDaddy account.</li>
+<li>Click SSL Certificates.</li>
+<li>Complete step 1 above.</li>
+</ul></li>
+<li>Select the Server type you want to install the certificate on.</li>
+<li>Click Download ZIP file.</li>
+</ol>
+
+<h4 id="prepare-your-server">Prepare Your Server</h4>
+
+<p>The first step to installing your certificate is to prepare your server directories to hold the final keys later on.</p>
+
+<p>So <a href="/tags/ssh/">ssh</a> into your server and do the following</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo mkdir /etc/apache2/ssl
+chmod <span style="color:#ae81ff">700</span> /etc/apache2/ssl
+chown www-data:www-data /etc/apache2/ssl</code></pre></div>
+<p>Then to be sure, do the following to install openssl. Nothing will happen naturally if openssl is already installed.</p>
+
+<p><code>sudo apt-get install openssl</code></p>
+
+<p>Then install the required ssl mods for your apache instance and activate them:</p>
+
+<p><code>sudo a2enmod ssl</code></p>
+
+<h4 id="generate-the-csr">Generate the CSR</h4>
+
+<p>In order for GoDaddy to be able to issue our SSL certificate, we need to generate the CSR (Certificate Signing Request) key and our Private Key. In your home directory, do the following. You don’t need to do sudo at this point.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">openssl req -newkey rsa:2048 -nodes -keyout example.com_ssl.key -out example.com_ssl.csr -sha256</code></pre></div>
+<p>After running the above command you will be required to answer some identity questions. Make sure you answer them as accurate as possible. The questions will look like something below</p>
+
+<p><img src="/posts/images/csr-700x311.jpg" alt="CSR" /></p>
+
+<p>You don’t really need to use the challenge password with GoDaddy at the time of this writing.</p>
+
+<p>Now that you have completed generating the private key and the CSR, it’s time to send it through to GoDaddy.</p>
+
+<h4 id="generate-the-secure-certificate">Generate the Secure Certificate</h4>
+
+<p>Open the example.com_ssl.csr that we generated before. You can use vim or you can simply cat it to the terminal. The CSR should look like this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jshint" data-lang="jshint">-----BEGIN CERTIFICATE REQUEST-----
+MIICijCCAXICAQAwRTELMAkGA1UEBhMCQVUxEzARBgNVBAgTClNvbWUtU3RhdGUx
+ITAfBgNVBAoTGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDCCASIwDQYJKoZIhvcN
+AQEBBQADggEPADCCAQoCggEBAKMZ0czj18lWf2v2C0sl7mYVLn732G0/Pa/N3/yp
+DwdHmfkmDbRG5xDo2AQ7VzIWpXnzsz9hNhLSJx1kcwBX7N7/CAQnMYLpDm5TUYs0
+x8l5yhvXBn/QSA1ItaT2hgWixlml8zuzlucCfc6gnu+g4Bef95o1yE218AZQV1Pl
+JooiHqsDycetfl/7KEw10hfRjV8TX+vDcBUkJ/BubyPYEf1j3dbDqlUGGXco1AB1
+xiMbfFTU20uzvpaPz333vj64uKMr/+rFkso0bHy1LaLYVQCAoYhGj7SbveB5qbtO
+AkgsYKCfLbatmyBrSB2gKFbyNlRj1AH3E7NeNrkXdVcSrH8CAwEAAaAAMA0GCSqG
+SIb3DQEBCwUAA4IBAQBxWB4NHv7JtcxcyTmwTDizUG/cf0vlyZSz/mvgTUI5Vgbr
+jJsRe7d/xyIKTKpp4uhl1J96CE8Qhqy7dezEht7Y7iluzJBJV8RRuHvBc1YKBFd+
+Py5AVZwmgpdwPDj83/+yD4vuJdsBkAxCUflWzuQ35zEucCwwlcDbl/r1PJae0UdC
+mYF09YImve2G7dHvvi/hQ7AEUbaxnAX0u53HZBELJF41bW1eoInsaxnEMNMvfl/1
+xoxmfaCZiKXZWDHB+7sw3YRyxbZ7E0kwLx7xENH3FpbFCADJehLvacPA8obzsqWV
+sWVG1SDyNqrPbyFlwsTcJjkM8CfvIbE93Z5A/A0A
+-----END CERTIFICATE REQUEST-----</code></pre></div>
+<p>So copy the entire content from your CSR file, including the —–BEGIN and END.</p>
+
+<p>Then login to GoDaddy, locate your secure certificate product and click launch. After that, click on setup and choose provide CSR. Then paste the content of the CSR file that you just copied previously.</p>
+
+<p>When done, just wait until GoDaddy verifies your website’s identity and grant you access to download the certificate, in my case this happens very quick, at most within 10 minutes.</p>
+
+<h4 id="installing-the-certificate-in-your-server">Installing the Certificate in Your Server</h4>
+
+<p>Once GoDaddy email you that your certificate has been generated, follow the link and download the certificate to you computer for now. Basically it’s a zip file containing 2 files, the one that looks like a randomly generated hash is your secure certificate (let’s call it <code>7abca5c1b8.crt</code> for this article), while the one that starts with gd<em>bundle</em> is your certificate chain file.</p>
+
+<p>So upload both files to your home directory in your Ubuntu server instance. You should now have the <code>example.com_ssl.key, 7abca5c1b8.crt, gd_bundle-g2-g1.crt</code>. Then move those 3 files to the ssl directory that you created previously.</p>
+
+<p>Then make sure you set the correct permission to those files.</p>
+
+<h4 id="create-the-apache-configuration">Create the Apache Configuration</h4>
+
+<p>In this article, we’ll assume that we are using the <code>000-default.conf</code> file. This file is normally located in your <code>/etc/apache2/sites-available/</code> folder</p>
+
+<p>So make a copy of this VirtualHost configuration file and call it <code>000-default.https.conf</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.ssl.conf</code></pre></div>
+<p>Then open the file in your favourite editor such as VIM and make the following changes.</p>
+
+<p>First, update the port in the VirtualHost opening tag.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apacheconfig" data-lang="apacheconfig">&lt;VirtualHost *:80&gt;
+ 
+to
+ 
+&lt;VirtualHost *:443&gt;</code></pre></div>
+<p>Secondly, add the SSL rules at the beginning of the file, just after the opening tag. Please pay attention of the cipher suite rules as this is the combination that I found to be most acceptably secure at the moment.</p>
+
+<p>I am no security expert of course, this secure combination was found from this website and when you finish setting up your website SSL you should test your site against attacks too. One of <a href="https://testbit.eu/apache-sslciphersuite-without-poodle/">the websites</a> that you can use is <a href="https://www.ssllabs.com/">SSLlabs.com</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apacheconfig" data-lang="apacheconfig">&lt;VirtualHost *:443&gt;
+        SSLEngine On
+        SSLProtocol All -SSLv2 -SSLv3
+        SSLHonorCipherOrder on
+ 
+        # Prefer PFS, allow TLS, avoid SSL, for IE8 on XP still allow 3DES
+        SSLCipherSuite &#34;EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384 EECDH+aRSA+SHA256 EECDH+AESGCM EECDH EDH+AESGCM EDH+aRSA HIGH !MEDIUM !LOW !aNULL !eNULL !LOW !RC4 !MD5 !EXP !PSK !SRP !DSS&#34;
+ 
+        # Prevent CRIME/BREACH compression attacks
+        SSLCompression Off
+ 
+        # Commit to HTTPS only traffic for at least 180 days
+        Header add Strict-Transport-Security &#34;max-age=15552000&#34;</code></pre></div>
+<p>Now that you have added the rules for the SSL settings, you then need include the paths to the three keys that you setup before. So just after the rules above, add the following lines.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apacheconfig" data-lang="apacheconfig">SSLCertificateFile /etc/apache2/ssl/7abca5c1b8.crt
+SSLCertificateKeyFile /etc/apache2/ssl/example.com.key
+SSLCertificateChainFile /etc/apache2/ssl/gd_bundle-g2-g1.crt</code></pre></div>
+<p>That’s it, you just need to enable the secure configuration by using the a2ensite command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apacheconfig" data-lang="apacheconfig">sudo a2ensite 000-default.ssl.conf</code></pre></div>
+<p>Lastly <a href="/posts/start-stop-restart-apache/">restart your apache server</a> just to be sure.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apacheconfig" data-lang="apacheconfig">sudo /etc/init.d/apache2 restart</code></pre></div>
+<p>If you faces “headers” error that means headers doesn’t exist. Try following commands to generate headers.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apacheconfig" data-lang="apacheconfig">cd /etc/apache2/mods-enabled
+sudo ln -s ../mods-available/headers.load
+sudo /etc/init.d/apache2 restart</code></pre></div>
+<h4 id="closing">Closing</h4>
+
+<p>So that’s it. After following the instructions above, your server should now support https and you’ll get that secure lock on the browsers. Hopefully this article helps those using GoDaddy certificate and Ubuntu server.</p>
+
+<p>If you have more information to improve this instructions, please by all means leave some comments so that we all can learn 🙂</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>

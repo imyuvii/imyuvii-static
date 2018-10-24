@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Proper way to work with assets in Yii
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Proper way to work with assets in Yii</div>
+
+        
+<div class="section" id="content">
+    Tue May 02, 2017 &#183; 541 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/yii">
+                yii
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/assets">
+                assets
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/mvc">
+                mvc
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Did you notice? Yii creates strange set of directories names like 8523d23 or 10s89b92 in assets directory, and this even happens at runtime.</p>
+
+<h4 id="yii-assets">Yii Assets</h4>
+
+<p>Many applications are entirely self contained, and there’s no trouble or conflict putting necessary resources (images, CSS files, Javascript files, etc.) under the webroot:</p>
+
+<ul>
+<li>webroot/css/*</li>
+<li>webroot/js/*</li>
+<li>webroot/images/*</li>
+</ul>
+
+<p>and so on. If a module needs to add one more resources, it’s added directly and referenced by the path down from webroot.</p>
+
+<p>But if one creates a module intended for widespread reuse elsewhere, naming conflicts start to emerge: How do you insure that your filename <code>css/foo.css</code> won’t conflict with some unrelated application’s attempt to use a file of the same name? Likewise with Javascript, images, and all the rest. This gets more difficult the more popular the module gets: it’s going to eventually conflict with something.</p>
+
+<h4 id="asset-manager">Asset Manager</h4>
+
+<p>Yii addresses this by use of CAssetManager, available as <code>Yii::app()-&gt;assetManager</code>, which can take a module’s private resource files and automatically publish them to the web-visible area (typically, webroot/assets/) on demand, giving the assets a non-conflicting unique name that can be later referenced in the code.</p>
+
+<p>Module’s resources will be used first time once publishing is done and returning a URL to the application to use when generating HTML.</p>
+
+<p>By calling <code>Yii::app()-&gt;assetManager-&gt;publish()</code> some stylesheets, images, scripts, or even entire directories can be put into a web-visible folder.</p>
+
+<p>pager.css and other non-familiar files are produced by widgets (CLinkPager for example) and other components (such as CClientScript publishes jQuery whenever you need that).</p>
+
+<p>During deployment, this folder should be empty, but it doesn’t really matter.</p>
+
+<p>Adding plugins should never be done through framework folders. You can place them either in components dir and publish it runtime if necessary, or into any other convenient visible directory (like as images or css).</p>
+
+<h4 id="example">Example</h4>
+
+<p>To embed <code>jquery.charcounter.js</code>, put it in components directory, then call</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">Yii::app()-&gt;clientScript-&gt;registerScriptFile(
+    Yii::app()-&gt;assetManager-&gt;publish(
+        Yii::getPathOfAlias(&#39;application.components&#39;).&#39;/jquery.charcounter.js&#39;
+    ),
+    CClientScript::POS_END
+);</code></pre></div>
+<p>Regarding weird folder names, I firmly believe they are unique hashes (or part of), so they can be differentiated if application uses several extensions.</p>
+
+<h4 id="maintenance">Maintenance</h4>
+
+<ul>
+<li>It’s important that the directory be writable by the webserver user so that Yii can publish the resources there when needed.</li>
+<li>When a project has multiple versions (production, testing, development, etc.) do not copy the assets/folders from one area to another; allow Yii to deploy them automatically in each area.</li>
+<li>Do not manually edit any file under assets/ – if you have a real need to make a change, find the publishing module, edit the source, delete the subfolder under assets/, and let Yii re-publish the updated files.</li>
+<li>Do not reference names under the assets/ folder directly (say, to get at some other module’s assets). If you need to use that</li>
+<li>Do not add the contents of the assets/ folder to any source-code control system; these files have master source in other places.</li>
+<li>It is safe to delete everything under assets/. Yii will re-publish the assets if they are not found under assets/.</li>
+</ul>
+
+<p>I hope this article will help you in understanding one of the core area of Yii Framework. I will be writing few more articles on Yii as it is one of my favourite MVC framework. <a href="/contact-me">Write me</a> if you have any queries regarding this or simply comment below.</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>

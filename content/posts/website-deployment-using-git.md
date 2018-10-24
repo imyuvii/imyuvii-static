@@ -2,7 +2,7 @@
 title: "Website deployment using GIT"
 date: 2017-04-10T13:56:12-05:00
 showDate: true
-draft: true
+draft: false
 tags: ["deployment","git", "ssh"]
 ---
 

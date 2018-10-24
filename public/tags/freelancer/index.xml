@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Freelancer on Call me Yuvi</title>
+    <link>/tags/freelancer/</link>
+    <description>Recent content in Freelancer on Call me Yuvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Apr 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/freelancer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I am a Freelancer This does not mean i will work for free</title>
+      <link>/posts/freelancer-not-mean-will-work-free/</link>
+      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/freelancer-not-mean-will-work-free/</guid>
+      <description>Yes I am a freelancer, Yes i work from home, Yes i work hard to make money but some people unnecessary ask for extra work , some people ask for free courses , some people ask for free stuffs.
+I am a freelancer but this doesn’t mean i will work for free. I have bills just like you. I pay hefty rent , I pay for internet , I pay for themes .</description>
+    </item>
+    
+  </channel>
+</rss>

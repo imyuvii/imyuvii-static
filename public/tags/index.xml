@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Call me Yuvi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Mar 2017 13:56:12 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jan 2018 13:56:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Apache</title>
       <link>/tags/apache/</link>
-      <pubDate>Wed, 29 Mar 2017 13:56:12 -0500</pubDate>
+      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
       
       <guid>/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assets</title>
+      <link>/tags/assets/</link>
+      <pubDate>Tue, 02 May 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/assets/</guid>
       <description></description>
     </item>
     
@@ -66,11 +75,29 @@
     </item>
     
     <item>
+      <title>Csr</title>
+      <link>/tags/csr/</link>
+      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/csr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Deployment</title>
       <link>/tags/deployment/</link>
       <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distribution</title>
+      <link>/tags/distribution/</link>
+      <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/distribution/</guid>
       <description></description>
     </item>
     
@@ -84,11 +111,38 @@
     </item>
     
     <item>
+      <title>Freelancer</title>
+      <link>/tags/freelancer/</link>
+      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/freelancer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>/tags/git/</link>
       <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Https</title>
+      <link>/tags/https/</link>
+      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ipa</title>
+      <link>/tags/ipa/</link>
+      <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/ipa/</guid>
       <description></description>
     </item>
     
@@ -107,6 +161,24 @@
       <pubDate>Thu, 02 Feb 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/log/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manifest</title>
+      <link>/tags/manifest/</link>
+      <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/manifest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mvc</title>
+      <link>/tags/mvc/</link>
+      <pubDate>Tue, 02 May 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/mvc/</guid>
       <description></description>
     </item>
     
@@ -131,7 +203,7 @@
     <item>
       <title>Php</title>
       <link>/tags/php/</link>
-      <pubDate>Wed, 29 Mar 2017 13:56:12 -0500</pubDate>
+      <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/php/</guid>
       <description></description>
@@ -147,6 +219,15 @@
     </item>
     
     <item>
+      <title>Phpmyadmin</title>
+      <link>/tags/phpmyadmin/</link>
+      <pubDate>Wed, 22 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/phpmyadmin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Poem</title>
       <link>/tags/poem/</link>
       <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
@@ -156,9 +237,18 @@
     </item>
     
     <item>
+      <title>Remote</title>
+      <link>/tags/remote/</link>
+      <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/remote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Scp</title>
       <link>/tags/scp/</link>
-      <pubDate>Sat, 18 Mar 2017 13:56:12 -0500</pubDate>
+      <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/scp/</guid>
       <description></description>
@@ -167,7 +257,7 @@
     <item>
       <title>Ssh</title>
       <link>/tags/ssh/</link>
-      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/ssh/</guid>
       <description></description>
@@ -183,6 +273,15 @@
     </item>
     
     <item>
+      <title>Ssl</title>
+      <link>/tags/ssl/</link>
+      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Story</title>
       <link>/tags/story/</link>
       <pubDate>Mon, 19 Feb 2018 12:41:46 -0500</pubDate>
@@ -192,11 +291,38 @@
     </item>
     
     <item>
+      <title>Terminal</title>
+      <link>/tags/terminal/</link>
+      <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>/tags/ubuntu/</link>
+      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Web</title>
       <link>/tags/web/</link>
-      <pubDate>Mon, 27 Feb 2017 13:56:12 -0500</pubDate>
+      <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>/tags/website/</link>
+      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/website/</guid>
       <description></description>
     </item>
     
@@ -206,6 +332,15 @@
       <pubDate>Thu, 02 Feb 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yii</title>
+      <link>/tags/yii/</link>
+      <pubDate>Tue, 02 May 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/yii/</guid>
       <description></description>
     </item>
     

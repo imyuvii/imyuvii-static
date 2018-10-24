@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assets on Call me Yuvi</title>
+    <link>/tags/assets/</link>
+    <description>Recent content in Assets on Call me Yuvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 May 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/assets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Proper way to work with assets in Yii</title>
+      <link>/posts/proper-way-work-assets-yii/</link>
+      <pubDate>Tue, 02 May 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/proper-way-work-assets-yii/</guid>
+      <description>Did you notice? Yii creates strange set of directories names like 8523d23 or 10s89b92 in assets directory, and this even happens at runtime.
+Yii Assets Many applications are entirely self contained, and there’s no trouble or conflict putting necessary resources (images, CSS files, Javascript files, etc.) under the webroot:
+ webroot/css/* webroot/js/* webroot/images/*  and so on. If a module needs to add one more resources, it’s added directly and referenced by the path down from webroot.</description>
+    </item>
+    
+  </channel>
+</rss>

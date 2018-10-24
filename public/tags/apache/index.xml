@@ -6,10 +6,21 @@
     <description>Recent content in Apache on Call me Yuvi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Mar 2017 13:56:12 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jan 2018 13:56:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/apache/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Installing GoDaddy SSL Certificate on Ubuntu</title>
+      <link>/posts/installing-godaddy-ssl-ubuntu/</link>
+      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/installing-godaddy-ssl-ubuntu/</guid>
+      <description>Basically in order to successfully install an SSL certificate you need the following things
+ CSR file Private key Certificate key Certificate chain  Download Certificates If your website is hosted through GoDaddy (e.g. the primary domain on a GoDaddy shared hosting account, Website Builder), you don’t need to use these instructions; GoDaddy take care of the SSL installation for you.
+ On your SSL certificate home page, click Download.</description>
+    </item>
     
     <item>
       <title>Installing LAMP stack on Ubuntu</title>

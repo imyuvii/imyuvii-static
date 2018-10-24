@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Distribute your iPhone app over the air
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Distribute your iPhone app over the air</div>
+
+        
+<div class="section" id="content">
+    Sat Aug 05, 2017 &#183; 335 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/distribution">
+                distribution
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/ipa">
+                ipa
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/manifest">
+                manifest
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/web">
+                web
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Do you need to download and install an ipa directly from an URL? Is it possible? The answer is yes, to distribute your app over-the-air (OTA, this means without using TestFlight or the official App Store), you may need to create 3 different files, namely:</p>
+
+<ul>
+<li>your_App.ipa (The .ipa file using an ad-hoc provisioning profile)</li>
+<li>index.html</li>
+<li>manifest.plist</li>
+</ul>
+
+<p>There are two ways of generating above mentioned files:</p>
+
+<ol>
+<li>Using Beta Builder (MacOS only)</li>
+<li>Manually</li>
+</ol>
+
+<h4 id="using-beta-builder">Using Beta Builder</h4>
+
+<ul>
+<li>Archive your build.</li>
+<li>Save the .ipa on the Desktop.</li>
+<li>Download a small utility <a href="http://www.hanchorllc.com/betabuilder-for-ios/">Beta Builder</a> from here. This does most of the required task.</li>
+<li>Open the tool and select your .ipa file, then provide the path you will be placing the build on <a href="https://myWeb.com/MY_TEST_APP">https://myWeb.com/MY_TEST_APP</a> in the beta builder.</li>
+<li>Generate all the files.</li>
+<li>Now upload index.html, your_App.ipa, &amp; manifest.plist to your server path <a href="https://myWeb.com/MY_TEST_APP">https://myWeb.com/MY_TEST_APP</a></li>
+<li>Now share the link of index.html. Once you open this file, you will be asked to Tap on install.</li>
+<li>It will install your_App.ipa on your device.</li>
+</ul>
+
+<p>You can also do this more manually.</p>
+
+<h4 id="manually">Manually</h4>
+
+<p>First create index.html file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;itms-services://?action=download-manifest&amp;url=https://myWeb.com/MY_TEST_APP/manifest.plist&#34;</span>&gt;
+Tap Here to Install&lt;<span style="color:#f92672">br</span> /&gt;Your App 1.0 &lt;<span style="color:#f92672">br</span> /&gt;Directly On Your Device
+&lt;/<span style="color:#f92672">a</span>&gt;</code></pre></div>
+<p>Create manifest.plist</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#75715e">&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;</span>
+<span style="color:#f92672">&lt;plist</span> <span style="color:#a6e22e">version=</span><span style="color:#e6db74">&#34;1.0&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;dict&gt;</span>
+    <span style="color:#f92672">&lt;key&gt;</span>items<span style="color:#f92672">&lt;/key&gt;</span>
+    <span style="color:#f92672">&lt;array&gt;</span>
+        <span style="color:#f92672">&lt;dict&gt;</span>
+            <span style="color:#f92672">&lt;key&gt;</span>assets<span style="color:#f92672">&lt;/key&gt;</span>
+            <span style="color:#f92672">&lt;array&gt;</span>
+                <span style="color:#f92672">&lt;dict&gt;</span>
+                    <span style="color:#f92672">&lt;key&gt;</span>kind<span style="color:#f92672">&lt;/key&gt;</span>
+                    <span style="color:#f92672">&lt;string&gt;</span>software-package<span style="color:#f92672">&lt;/string&gt;</span>
+                    <span style="color:#f92672">&lt;key&gt;</span>url<span style="color:#f92672">&lt;/key&gt;</span>
+                    <span style="color:#f92672">&lt;string&gt;</span>https://myWeb.com/MY_TEST_APP/your_App.ipa<span style="color:#f92672">&lt;/string&gt;</span>
+                <span style="color:#f92672">&lt;/dict&gt;</span>
+            <span style="color:#f92672">&lt;/array&gt;</span>
+            <span style="color:#f92672">&lt;key&gt;</span>metadata<span style="color:#f92672">&lt;/key&gt;</span>
+            <span style="color:#f92672">&lt;dict&gt;</span>
+                <span style="color:#f92672">&lt;key&gt;</span>bundle-identifier<span style="color:#f92672">&lt;/key&gt;</span>
+                <span style="color:#f92672">&lt;string&gt;</span>com.domain.your_app<span style="color:#f92672">&lt;/string&gt;</span>
+                <span style="color:#f92672">&lt;key&gt;</span>bundle-version<span style="color:#f92672">&lt;/key&gt;</span>
+                <span style="color:#f92672">&lt;string&gt;</span>1.0 (4)<span style="color:#f92672">&lt;/string&gt;</span>
+                <span style="color:#f92672">&lt;key&gt;</span>kind<span style="color:#f92672">&lt;/key&gt;</span>
+                <span style="color:#f92672">&lt;string&gt;</span>software<span style="color:#f92672">&lt;/string&gt;</span>
+                <span style="color:#f92672">&lt;key&gt;</span>title<span style="color:#f92672">&lt;/key&gt;</span>
+                <span style="color:#f92672">&lt;string&gt;</span>Your App<span style="color:#f92672">&lt;/string&gt;</span>
+            <span style="color:#f92672">&lt;/dict&gt;</span>
+        <span style="color:#f92672">&lt;/dict&gt;</span>
+    <span style="color:#f92672">&lt;/array&gt;</span>
+<span style="color:#f92672">&lt;/dict&gt;</span>
+<span style="color:#f92672">&lt;/plist&gt;</span></code></pre></div>
+<p>Host these files on an HTTPS server. You can use Dropbox for this if necessary.</p>
+
+<p><strong>Notes:</strong> If the app refuses to install or run, you may need to check the following items:</p>
+
+<ul>
+<li>The provisioning profile you’ve used when compiling/archiving your app</li>
+<li>The URLs in both <em>index.html</em> and <em>manifest.plist</em></li>
+<li>The plist file may possibly need to be hosted on an HTTPS server. You can use Dropbox for this if necessary.</li>
+<li>Your device UUIDs may need to be registered inside Apple Developer Center unless you have an Enterprise licence</li>
+<li>You may need to manually enable access to the app within <code>Settings &gt; Profiles</code></li>
+</ul>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>

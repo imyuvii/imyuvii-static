@@ -51,19 +51,6 @@ console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     </item>
     
     <item>
-      <title>Code Poetry</title>
-      <link>/posts/code-poetry/</link>
-      <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
-      
-      <guid>/posts/code-poetry/</guid>
-      <description>Pseudo code poem.
-if (this === that): try write_new_poem() except not_a_poet as e: return  Or just one long line&amp;hellip;
-console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay toooooooooooooooooooo looooooooooooooooooooooooooooooong&amp;#39;)  An embedded gist using shortcode:
- Hello! I&amp;rsquo;m a blog post with an image.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra. Quam vulputate dignissim suspendisse in est ante in nibh mauris.</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>/about/</link>
       <pubDate>Tue, 13 Feb 2018 13:42:49 -0500</pubDate>
@@ -107,6 +94,58 @@ And plunge the Greeks in all the woes of war:
 Then bids an empty phantom rise to sight,
 And thus commands the vision of the night.
 &amp;ldquo;Fly hence, deluding Dream! and light as air,(77)</description>
+    </item>
+    
+    <item>
+      <title>Installing GoDaddy SSL Certificate on Ubuntu</title>
+      <link>/posts/installing-godaddy-ssl-ubuntu/</link>
+      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/installing-godaddy-ssl-ubuntu/</guid>
+      <description>Basically in order to successfully install an SSL certificate you need the following things
+ CSR file Private key Certificate key Certificate chain  Download Certificates If your website is hosted through GoDaddy (e.g. the primary domain on a GoDaddy shared hosting account, Website Builder), you don’t need to use these instructions; GoDaddy take care of the SSL installation for you.
+ On your SSL certificate home page, click Download.</description>
+    </item>
+    
+    <item>
+      <title>Execute Shell commands via PHP</title>
+      <link>/posts/execute-shell-commands-via-php/</link>
+      <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/execute-shell-commands-via-php/</guid>
+      <description>Not everyone aware about PHP‘s capabilities of making SSH connections and executing remote commands, but it can be very handy. I’ve been using it a lot in PHP CLI applications that I run from cronjobs, but initially it was a pain to get it to work. The PHP manual on Secure Shell2 Functions is not very practical or methodical for that matter, so I would like to share my understandings on how to make setting this up in less time.</description>
+    </item>
+    
+    <item>
+      <title>Distribute your iPhone app over the air</title>
+      <link>/posts/distribute-iphone-app-air/</link>
+      <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/distribute-iphone-app-air/</guid>
+      <description>Do you need to download and install an ipa directly from an URL? Is it possible? The answer is yes, to distribute your app over-the-air (OTA, this means without using TestFlight or the official App Store), you may need to create 3 different files, namely:
+ your_App.ipa (The .ipa file using an ad-hoc provisioning profile) index.html manifest.plist  There are two ways of generating above mentioned files:
+ Using Beta Builder (MacOS only) Manually  Using Beta Builder  Archive your build.</description>
+    </item>
+    
+    <item>
+      <title>Proper way to work with assets in Yii</title>
+      <link>/posts/proper-way-work-assets-yii/</link>
+      <pubDate>Tue, 02 May 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/proper-way-work-assets-yii/</guid>
+      <description>Did you notice? Yii creates strange set of directories names like 8523d23 or 10s89b92 in assets directory, and this even happens at runtime.
+Yii Assets Many applications are entirely self contained, and there’s no trouble or conflict putting necessary resources (images, CSS files, Javascript files, etc.) under the webroot:
+ webroot/css/* webroot/js/* webroot/images/*  and so on. If a module needs to add one more resources, it’s added directly and referenced by the path down from webroot.</description>
+    </item>
+    
+    <item>
+      <title>I am a Freelancer This does not mean i will work for free</title>
+      <link>/posts/freelancer-not-mean-will-work-free/</link>
+      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/freelancer-not-mean-will-work-free/</guid>
+      <description>Yes I am a freelancer, Yes i work from home, Yes i work hard to make money but some people unnecessary ask for extra work , some people ask for free courses , some people ask for free stuffs.
+I am a freelancer but this doesn’t mean i will work for free. I have bills just like you. I pay hefty rent , I pay for internet , I pay for themes .</description>
     </item>
     
     <item>

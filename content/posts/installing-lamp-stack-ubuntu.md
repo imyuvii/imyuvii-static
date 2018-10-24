@@ -2,7 +2,7 @@
 title: "Installing LAMP stack on Ubuntu"
 date: 2017-03-29T13:56:12-05:00
 showDate: true
-draft: true
+draft: false
 tags: ["lamp","apache","php", "mysql"]
 ---
 

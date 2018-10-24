@@ -2,7 +2,7 @@
 title: "Last flight to PHP7"
 date: 2017-03-24T13:56:12-05:00
 showDate: true
-draft: true
+draft: false
 tags: ["php","php7"]
 ---
 Eleven years after its 5.0 release, a new major version is finally coming our way!. PHP7 is out, and it’s time to get your code ready. I’ve already started migrating from [5.6 to 7](http://php.net/manual/en/migration70.php), Here is the official document for Migration PHP 5.6 to 7.

@@ -6,10 +6,31 @@
     <description>Recent content in Web on Call me Yuvi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Feb 2017 13:56:12 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 05 Aug 2017 13:56:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Distribute your iPhone app over the air</title>
+      <link>/posts/distribute-iphone-app-air/</link>
+      <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/distribute-iphone-app-air/</guid>
+      <description>Do you need to download and install an ipa directly from an URL? Is it possible? The answer is yes, to distribute your app over-the-air (OTA, this means without using TestFlight or the official App Store), you may need to create 3 different files, namely:
+ your_App.ipa (The .ipa file using an ad-hoc provisioning profile) index.html manifest.plist  There are two ways of generating above mentioned files:
+ Using Beta Builder (MacOS only) Manually  Using Beta Builder  Archive your build.</description>
+    </item>
+    
+    <item>
+      <title>I am a Freelancer This does not mean i will work for free</title>
+      <link>/posts/freelancer-not-mean-will-work-free/</link>
+      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/freelancer-not-mean-will-work-free/</guid>
+      <description>Yes I am a freelancer, Yes i work from home, Yes i work hard to make money but some people unnecessary ask for extra work , some people ask for free courses , some people ask for free stuffs.
+I am a freelancer but this doesn’t mean i will work for free. I have bills just like you. I pay hefty rent , I pay for internet , I pay for themes .</description>
+    </item>
     
     <item>
       <title>Things You need to know before hiring SEO agency</title>

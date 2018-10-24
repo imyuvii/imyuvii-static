@@ -2,7 +2,7 @@
 title: "SSH Config to the rescue"
 date: 2017-04-01T13:56:12-05:00
 showDate: true
-draft: true
+draft: false
 tags: ["sshconfig","config"]
 ---
 

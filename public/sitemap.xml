@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>/posts/code-poetry/</loc>
-    <lastmod>2018-02-13T13:56:12-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/about/</loc>
     <lastmod>2018-02-13T13:42:49-05:00</lastmod>
   </url>
@@ -55,6 +50,31 @@
   <url>
     <loc>/portfolio/a-poem/</loc>
     <lastmod>2018-02-01T12:35:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/installing-godaddy-ssl-ubuntu/</loc>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/execute-shell-commands-via-php/</loc>
+    <lastmod>2017-11-20T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/distribute-iphone-app-air/</loc>
+    <lastmod>2017-08-05T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/proper-way-work-assets-yii/</loc>
+    <lastmod>2017-05-02T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/freelancer-not-mean-will-work-free/</loc>
+    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
   </url>
   
   <url>
@@ -124,7 +144,13 @@
   
   <url>
     <loc>/tags/apache/</loc>
-    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/assets/</loc>
+    <lastmod>2017-05-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -170,8 +196,20 @@
   </url>
   
   <url>
+    <loc>/tags/csr/</loc>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/deployment/</loc>
     <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/distribution/</loc>
+    <lastmod>2017-08-05T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -182,8 +220,26 @@
   </url>
   
   <url>
+    <loc>/tags/freelancer/</loc>
+    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/git/</loc>
     <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/https/</loc>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ipa/</loc>
+    <lastmod>2017-08-05T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,6 +252,18 @@
   <url>
     <loc>/tags/log/</loc>
     <lastmod>2017-02-02T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/manifest/</loc>
+    <lastmod>2017-08-05T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mvc/</loc>
+    <lastmod>2017-05-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -217,7 +285,7 @@
   
   <url>
     <loc>/tags/php/</loc>
-    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
+    <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -228,26 +296,44 @@
   </url>
   
   <url>
+    <loc>/tags/phpmyadmin/</loc>
+    <lastmod>2017-02-22T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/poem/</loc>
     <lastmod>2018-02-13T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/tags/remote/</loc>
+    <lastmod>2017-11-20T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/scp/</loc>
-    <lastmod>2017-03-18T13:56:12-05:00</lastmod>
+    <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/ssh/</loc>
-    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+    <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/sshconfig/</loc>
     <lastmod>2017-04-01T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ssl/</loc>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -259,19 +345,43 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/terminal/</loc>
+    <lastmod>2017-11-20T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ubuntu/</loc>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/web/</loc>
-    <lastmod>2017-02-27T13:56:12-05:00</lastmod>
+    <lastmod>2017-08-05T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/website/</loc>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/wordpress/</loc>
     <lastmod>2017-02-02T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/yii/</loc>
+    <lastmod>2017-05-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   

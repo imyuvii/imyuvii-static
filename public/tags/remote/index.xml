@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Remote on Call me Yuvi</title>
+    <link>/tags/remote/</link>
+    <description>Recent content in Remote on Call me Yuvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Nov 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/remote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Execute Shell commands via PHP</title>
+      <link>/posts/execute-shell-commands-via-php/</link>
+      <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/execute-shell-commands-via-php/</guid>
+      <description>Not everyone aware about PHP‘s capabilities of making SSH connections and executing remote commands, but it can be very handy. I’ve been using it a lot in PHP CLI applications that I run from cronjobs, but initially it was a pain to get it to work. The PHP manual on Secure Shell2 Functions is not very practical or methodical for that matter, so I would like to share my understandings on how to make setting this up in less time.</description>
+    </item>
+    
+  </channel>
+</rss>

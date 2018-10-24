@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="Call me Yuvi">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Execute Shell commands via PHP
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Execute Shell commands via PHP</div>
+
+        
+<div class="section" id="content">
+    Mon Nov 20, 2017 &#183; 396 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/php">
+                php
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/scp">
+                scp
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/ssh">
+                ssh
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/terminal">
+                terminal
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/remote">
+                remote
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Not everyone aware about <a href="/tags/php/">PHP</a>‘s capabilities of making SSH connections and executing remote commands, but it can be very handy. I’ve been using it a lot in PHP CLI applications that I run from cronjobs, but initially it was a pain to get it to work. The <a href="http://www.php.net/manual/en/ref.ssh2.php">PHP manual on Secure Shell2 Functions</a> is not very practical or methodical for that matter, so I would like to share my understandings on how to make setting this up in less time.</p>
+
+<p>In this article I’m going to assume that:</p>
+
+<ul>
+<li>You’re running Debian / <a href="/tags/ubuntu/">Ubuntu</a> If not, you will have to substitute the package manager aptitude with whatever your distribution provides</li>
+<li>You’re running <a href="/posts/last-flight-php7/">PHP7</a> or at least PHP 5+ If not</li>
+<li>You have basic knowledge of PHP &amp; server administration</li>
+<li>There are two method I would like to explain:</li>
+</ul>
+
+<h4 id="using-shell-exec-and-exec">Using shell_exec and exec</h4>
+
+<p>shell_exec and exec both functions used for execute command via shell. shell_exec returns all of the output stream as a string. exec returns the last line of the output by default, but can provide all output as an array specifed as the second parameter.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">shell_exec<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SSH user@host.com mkdir /testing&#34;</span><span style="color:#f92672">)</span>;</code></pre></div>
+<p>shell_exec or exec can be very effective when you have a very small task to perform. But now when you have to execute a many task.</p>
+
+<h4 id="using-phpseclib-library">Using phpseclib Library</h4>
+
+<p>phpseclib is designed to be ultra-compatible. It works on PHP4+ (PHP4, assuming the use of <a href="http://pear.php.net/package/PHP_Compat">PHP_Compat</a>) and doesn’t require any extensions. For purposes of speed, mcrypt is used if it’s available as is gmp or bcmath (in that order), but they are not required.</p>
+
+<p>Here is how to use the <strong>phpseclib</strong> library.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<span style="color:#66d9ef">include</span>(<span style="color:#e6db74">&#39;Net/SSH2.php&#39;</span>);
+$ssh <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Net_SSH2</span>(<span style="color:#e6db74">&#39;www.example.com&#39;</span>);
+<span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>$ssh<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">login</span>(<span style="color:#e6db74">&#39;username&#39;</span>, <span style="color:#e6db74">&#39;password&#39;</span>)) {
+    <span style="color:#66d9ef">exit</span>(<span style="color:#e6db74">&#39;Could not logged in&#39;</span>);
+}
+<span style="color:#66d9ef">echo</span> $ssh<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">exec</span>(<span style="color:#e6db74">&#39;pwd&#39;</span>);
+<span style="color:#66d9ef">echo</span> $ssh<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">exec</span>(<span style="color:#e6db74">&#39;ls -la&#39;</span>);
+<span style="color:#75715e">?&gt;</span>
+</code></pre></div>
+<p>If you needed to upload or download files to remote server (<a href="/tags/scp/">SCP</a>)  command than the phpseclib now supports the SCP in recent versions (since version 0.3.5, released in June 2013). Here is the example.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<span style="color:#66d9ef">include</span>(<span style="color:#e6db74">&#39;Net/SFTP.php&#39;</span>);
+$sftp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Net_SFTP</span>(<span style="color:#e6db74">&#39;www.domain.tld&#39;</span>);
+<span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>$sftp<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">login</span>(<span style="color:#e6db74">&#39;username&#39;</span>, <span style="color:#e6db74">&#39;password&#39;</span>)) {
+    <span style="color:#66d9ef">exit</span>(<span style="color:#e6db74">&#39;Login Failed&#39;</span>);
+}
+<span style="color:#75715e">// puts a three-byte file named filename.remote on the SFTP server
+</span><span style="color:#75715e"></span>$sftp<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#39;filename.remote&#39;</span>, <span style="color:#e6db74">&#39;xxx&#39;</span>);
+<span style="color:#75715e">?&gt;</span>
+</code></pre></div>
+<p>I hope that some of this is useful to a few of you. There is always an room for improvements. Leave a note in the comments if you have any cool tricks for the LAMP installation. I’m always on the lookout for fun hacks.</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/gallery">
+                gallery
+            </a>
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>
