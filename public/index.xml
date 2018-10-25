@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Call me Yuvi</title>
+    <title>I aM YUVII</title>
     <link>/</link>
-    <description>Recent content on Call me Yuvi</description>
+    <description>Recent content on I aM YUVII</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Mar 2018 20:18:53 -0500</lastBuildDate>
@@ -58,6 +58,15 @@ console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
       <guid>/about/</guid>
       <description>Hello, I&amp;rsquo;m Yuvi. I am a web developer. If you are on the look-out for a creative yet professional web developer that has all these three qualities to build your web space so it can stand out from the crowd, then I’m the right person.
 As a proficient web developer who has over 8 years of experience, I am confident to say that not only have I managed to build some great websites and web applications but have also gained added perfection in all the codes that I have written so far.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact-me/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:49 -0500</pubDate>
+      
+      <guid>/contact-me/</guid>
+      <description>I’d Love to Hear From You, Get In Touch With Me! @Email Me or follow me on Twitter and LinkedIn</description>
     </item>
     
     <item>
