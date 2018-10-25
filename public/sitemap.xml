@@ -154,6 +154,12 @@
   </url>
   
   <url>
+    <loc>/categories/apache/</loc>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/assets/</loc>
     <lastmod>2017-05-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
@@ -167,6 +173,7 @@
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   

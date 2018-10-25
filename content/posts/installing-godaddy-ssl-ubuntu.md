@@ -3,6 +3,7 @@ title: "Installing GoDaddy SSL Certificate on Ubuntu"
 date: 2018-01-11T13:56:12-05:00
 showDate: true
 draft: false
+categories: [apache]
 tags: [apache, csr, https, ssl, ubuntu, website]
 ---
 Basically in order to successfully install an SSL certificate you need the following things
