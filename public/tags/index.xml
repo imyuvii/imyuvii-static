@@ -6,7 +6,7 @@
     <description>Recent content in Tags on I aM YUVII</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jan 2018 13:56:12 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 29 Mar 2017 13:56:12 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Apache</title>
       <link>/tags/apache/</link>
-      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      <pubDate>Wed, 29 Mar 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/apache/</guid>
       <description></description>
@@ -75,15 +75,6 @@
     </item>
     
     <item>
-      <title>Csr</title>
-      <link>/tags/csr/</link>
-      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
-      
-      <guid>/tags/csr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Deployment</title>
       <link>/tags/deployment/</link>
       <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
@@ -98,6 +89,15 @@
       <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/distribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Domain</title>
+      <link>/tags/domain/</link>
+      <pubDate>Fri, 02 Mar 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/domain/</guid>
       <description></description>
     </item>
     
@@ -120,6 +120,15 @@
     </item>
     
     <item>
+      <title>Freelancing</title>
+      <link>/tags/freelancing/</link>
+      <pubDate>Wed, 04 Apr 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/freelancing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>/tags/git/</link>
       <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
@@ -129,11 +138,11 @@
     </item>
     
     <item>
-      <title>Https</title>
-      <link>/tags/https/</link>
-      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      <title>Host</title>
+      <link>/tags/host/</link>
+      <pubDate>Fri, 02 Mar 2018 13:56:12 -0500</pubDate>
       
-      <guid>/tags/https/</guid>
+      <guid>/tags/host/</guid>
       <description></description>
     </item>
     
@@ -246,6 +255,15 @@
     </item>
     
     <item>
+      <title>Remote.com</title>
+      <link>/tags/remote.com/</link>
+      <pubDate>Wed, 04 Apr 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/tags/remote.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Scp</title>
       <link>/tags/scp/</link>
       <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
@@ -273,15 +291,6 @@
     </item>
     
     <item>
-      <title>Ssl</title>
-      <link>/tags/ssl/</link>
-      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
-      
-      <guid>/tags/ssl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Story</title>
       <link>/tags/story/</link>
       <pubDate>Mon, 19 Feb 2018 12:41:46 -0500</pubDate>
@@ -300,11 +309,11 @@
     </item>
     
     <item>
-      <title>Ubuntu</title>
-      <link>/tags/ubuntu/</link>
-      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      <title>Upwork</title>
+      <link>/tags/upwork/</link>
+      <pubDate>Wed, 04 Apr 2018 13:56:12 -0500</pubDate>
       
-      <guid>/tags/ubuntu/</guid>
+      <guid>/tags/upwork/</guid>
       <description></description>
     </item>
     
@@ -320,7 +329,7 @@
     <item>
       <title>Website</title>
       <link>/tags/website/</link>
-      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      <pubDate>Fri, 02 Mar 2018 13:56:12 -0500</pubDate>
       
       <guid>/tags/website/</guid>
       <description></description>

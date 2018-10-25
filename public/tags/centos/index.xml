@@ -21,5 +21,15 @@
 In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
     </item>
     
+    <item>
+      <title>Configure virtual hosts on CentOS</title>
+      <link>/posts/how-to-buy-domain-name/</link>
+      <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/how-to-buy-domain-name/</guid>
+      <description>About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
+In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
+    </item>
+    
   </channel>
 </rss>

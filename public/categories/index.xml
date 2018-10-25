@@ -6,17 +6,25 @@
     <description>Recent content in Categories on I aM YUVII</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jan 2018 13:56:12 -0500</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Apache</title>
-      <link>/categories/apache/</link>
-      <pubDate>Thu, 11 Jan 2018 13:56:12 -0500</pubDate>
+      <title>Freelancing</title>
+      <link>/categories/freelancing/</link>
+      <pubDate>Wed, 04 Apr 2018 13:56:12 -0500</pubDate>
       
-      <guid>/categories/apache/</guid>
+      <guid>/categories/freelancing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>/categories/web/</link>
+      <pubDate>Fri, 02 Mar 2018 13:56:12 -0500</pubDate>
+      
+      <guid>/categories/web/</guid>
       <description></description>
     </item>
     

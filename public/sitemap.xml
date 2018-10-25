@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/best-quality-upwork-clients/</loc>
+    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/freelancing-job/</loc>
+    <lastmod>2018-03-24T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/portfolio/video-post/</loc>
     <lastmod>2018-03-16T20:18:53-05:00</lastmod>
   </url>
@@ -10,6 +20,11 @@
   <url>
     <loc>/portfolio/long-form-post/</loc>
     <lastmod>2018-03-08T20:18:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/installing-godaddy-ssl-ubuntu/</loc>
+    <lastmod>2018-03-02T13:56:12-05:00</lastmod>
   </url>
   
   <url>
@@ -55,11 +70,6 @@
   <url>
     <loc>/portfolio/a-poem/</loc>
     <lastmod>2018-02-01T12:35:11-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/installing-godaddy-ssl-ubuntu/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
   </url>
   
   <url>
@@ -148,14 +158,13 @@
   </url>
   
   <url>
-    <loc>/tags/apache/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
-    <priority>0</priority>
+    <loc>/posts/how-to-buy-domain-name/</loc>
+    <lastmod>2017-01-26T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/apache/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <loc>/tags/apache/</loc>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -173,7 +182,6 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -202,12 +210,6 @@
   </url>
   
   <url>
-    <loc>/tags/csr/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/deployment/</loc>
     <lastmod>2017-04-10T13:56:12-05:00</lastmod>
     <priority>0</priority>
@@ -216,6 +218,12 @@
   <url>
     <loc>/tags/distribution/</loc>
     <lastmod>2017-08-05T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/domain/</loc>
+    <lastmod>2018-03-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -232,20 +240,32 @@
   </url>
   
   <url>
+    <loc>/tags/freelancing/</loc>
+    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/freelancing/</loc>
+    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/git/</loc>
     <lastmod>2017-04-10T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/https/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <loc>/tags/host/</loc>
+    <lastmod>2018-03-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-03-16T20:18:53-05:00</lastmod>
+    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -326,6 +346,12 @@
   </url>
   
   <url>
+    <loc>/tags/remote.com/</loc>
+    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/scp/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
@@ -344,12 +370,6 @@
   </url>
   
   <url>
-    <loc>/tags/ssl/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/story/</loc>
     <lastmod>2018-02-19T12:41:46-05:00</lastmod>
     <priority>0</priority>
@@ -357,7 +377,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -368,8 +388,8 @@
   </url>
   
   <url>
-    <loc>/tags/ubuntu/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <loc>/tags/upwork/</loc>
+    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -380,8 +400,14 @@
   </url>
   
   <url>
+    <loc>/categories/web/</loc>
+    <lastmod>2018-03-02T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/website/</loc>
-    <lastmod>2018-01-11T13:56:12-05:00</lastmod>
+    <lastmod>2018-03-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
