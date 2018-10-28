@@ -30,38 +30,11 @@
     </item>
     
     <item>
-      <title>Blog</title>
-      <link>/tags/blog/</link>
-      <pubDate>Fri, 16 Mar 2018 20:18:53 -0500</pubDate>
-      
-      <guid>/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Centos</title>
       <link>/tags/centos/</link>
       <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/centos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Classic</title>
-      <link>/tags/classic/</link>
-      <pubDate>Sun, 11 Feb 2018 12:34:41 -0500</pubDate>
-      
-      <guid>/tags/classic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Code</title>
-      <link>/tags/code/</link>
-      <pubDate>Thu, 08 Mar 2018 20:18:53 -0500</pubDate>
-      
-      <guid>/tags/code/</guid>
       <description></description>
     </item>
     
@@ -237,15 +210,6 @@
     </item>
     
     <item>
-      <title>Poem</title>
-      <link>/tags/poem/</link>
-      <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
-      
-      <guid>/tags/poem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Remote</title>
       <link>/tags/remote/</link>
       <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
@@ -287,15 +251,6 @@
       <pubDate>Sat, 01 Apr 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/sshconfig/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Story</title>
-      <link>/tags/story/</link>
-      <pubDate>Mon, 19 Feb 2018 12:41:46 -0500</pubDate>
-      
-      <guid>/tags/story/</guid>
       <description></description>
     </item>
     

@@ -33,24 +33,6 @@ So it is difficult to check the authenticity of people or client. As freelancer 
     </item>
     
     <item>
-      <title>Video post</title>
-      <link>/portfolio/video-post/</link>
-      <pubDate>Fri, 16 Mar 2018 20:18:53 -0500</pubDate>
-      
-      <guid>/portfolio/video-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pharetra magna ac placerat vestibulum lectus mauris. Eget lorem dolor sed viverra ipsum. Elementum nisi quis eleifend quam adipiscing. Aliquet nec ullamcorper sit amet risus. Auctor neque vitae tempus quam pellentesque. Tincidunt lobortis feugiat vivamus at augue.</description>
-    </item>
-    
-    <item>
-      <title>Long Form Post</title>
-      <link>/portfolio/long-form-post/</link>
-      <pubDate>Thu, 08 Mar 2018 20:18:53 -0500</pubDate>
-      
-      <guid>/portfolio/long-form-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pharetra magna ac placerat vestibulum lectus mauris. Eget lorem dolor sed viverra ipsum. Elementum nisi quis eleifend quam adipiscing. Aliquet nec ullamcorper sit amet risus. Auctor neque vitae tempus quam pellentesque. Tincidunt lobortis feugiat vivamus at augue.</description>
-    </item>
-    
-    <item>
       <title>How to buy domain name?</title>
       <link>/posts/installing-godaddy-ssl-ubuntu/</link>
       <pubDate>Fri, 02 Mar 2018 13:56:12 -0500</pubDate>
@@ -61,33 +43,12 @@ For buying domain you can go for these domain registrar . All registrar offers d
     </item>
     
     <item>
-      <title>Image post</title>
-      <link>/portfolio/image-post/</link>
-      <pubDate>Mon, 19 Feb 2018 12:41:46 -0500</pubDate>
-      
-      <guid>/portfolio/image-post/</guid>
-      <description>Hello! I&amp;rsquo;m a blog post with an image.</description>
-    </item>
-    
-    <item>
-      <title>Code Poetry</title>
-      <link>/portfolio/code-poetry/</link>
-      <pubDate>Tue, 13 Feb 2018 13:56:12 -0500</pubDate>
-      
-      <guid>/portfolio/code-poetry/</guid>
-      <description>Pseudo code poem.
-if (this === that): try write_new_poem() except not_a_poet as e: return  Or just one long line&amp;hellip;
-console.log(&amp;#39;Sometimes lines are waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay toooooooooooooooooooo looooooooooooooooooooooooooooooong&amp;#39;)  An embedded gist using shortcode:
- </description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>/about/</link>
       <pubDate>Tue, 13 Feb 2018 13:42:49 -0500</pubDate>
       
       <guid>/about/</guid>
-      <description>Hello, I&amp;rsquo;m Yuvi. I am a web developer. If you are on the look-out for a creative yet professional web developer that has all these three qualities to build your web space so it can stand out from the crowd, then I’m the right person.
+      <description>Hello, I am Yuvii. I am a web developer. If you are on the look-out for a creative yet professional web developer that has all these three qualities to build your web space so it can stand out from the crowd, then I’m the right person.
 As a proficient web developer who has over 8 years of experience, I am confident to say that not only have I managed to build some great websites and web applications but have also gained added perfection in all the codes that I have written so far.</description>
     </item>
     
@@ -101,39 +62,51 @@ As a proficient web developer who has over 8 years of experience, I am confident
     </item>
     
     <item>
-      <title>Dear Jane, regarding Mr. Bennet</title>
-      <link>/portfolio/dear-jane/</link>
-      <pubDate>Sun, 11 Feb 2018 12:34:41 -0500</pubDate>
-      
-      <guid>/portfolio/dear-jane/</guid>
-      <description>Chapter One It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters.</description>
-    </item>
-    
-    <item>
-      <title>Oh, Alice</title>
-      <link>/portfolio/oh-alice/</link>
-      <pubDate>Fri, 09 Feb 2018 12:32:12 -0500</pubDate>
-      
-      <guid>/portfolio/oh-alice/</guid>
-      <description>Nor did such soothing scenes, however temporary, fail of at least as temporary an effect on Ahab. But if these secret golden keys did seem to open in him his own secret golden treasuries, yet did his breath upon them prove but tarnishing. Alice opened the door and found that it led into a small passage, not much larger than a rat-hole: she knelt down and looked along the passage into the loveliest garden you ever saw.</description>
-    </item>
-    
-    <item>
-      <title>A Poem</title>
-      <link>/portfolio/a-poem/</link>
+      <title>Easy Google Map</title>
+      <link>/portfolio/easy-google-map/</link>
       <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
       
-      <guid>/portfolio/a-poem/</guid>
-      <description>Now pleasing sleep had seal&amp;rsquo;d each mortal eye,
-Stretch&amp;rsquo;d in the tents the Grecian leaders lie:
-The immortals slumber&amp;rsquo;d on their thrones above;
-All, but the ever-wakeful eyes of Jove.(76)
-To honour Thetis&amp;rsquo; son he bends his care,
-And plunge the Greeks in all the woes of war:
-Then bids an empty phantom rise to sight,
-And thus commands the vision of the night.
-&amp;ldquo;Fly hence, deluding Dream! and light as air,(77)</description>
+      <guid>/portfolio/easy-google-map/</guid>
+      <description> A easy to use Google Map plugin for WordPress to display your business location on map. Here are the features list:
+ Address marker based on inserted address ( i.e. New Delhi, India) 5 different colour schemas User can zoom it to any level User can set height and width  Screenshots </description>
+    </item>
+    
+    <item>
+      <title>Easy Justified Gallery</title>
+      <link>/portfolio/easy-justified-gallery/</link>
+      <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
+      
+      <guid>/portfolio/easy-justified-gallery/</guid>
+      <description>A common problem, for people who create sites, is to create an elegant image gallery that manages the various sizes of thumbnails. No Matter what size of images you have, Easy justified gallery will create a beautiful gallery using selected photos from media library. All you have to do is add [easyGallery] ShortCode. Here are some of the features:
+ An advanced algorithm to justify your images without cropping them Ready for any device and screen resolution.</description>
+    </item>
+    
+    <item>
+      <title>Instagram Post to shopable links</title>
+      <link>/portfolio/instagram-posts-shopable-links/</link>
+      <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
+      
+      <guid>/portfolio/instagram-posts-shopable-links/</guid>
+      <description>Through links.bio, seamlessly transform your Instagram feed into an engaging gallery of products, available to purchase with just a click or a WhatsApp message. Links Bio is a tracking system that cumulates information about your web presence and provides direct insights into your engagement, traffic and revenue gathered from your Instagram account. Features: Personalised Shopping Feed Predefined/ customised WhatsApp messages Instagram Analytics Multiple shopping links Advanced Analytics Coupons and advertisements.</description>
+    </item>
+    
+    <item>
+      <title>Instagram Post to shopable links</title>
+      <link>/portfolio/wordpress-travel-portal/</link>
+      <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
+      
+      <guid>/portfolio/wordpress-travel-portal/</guid>
+      <description>Through links.bio, seamlessly transform your Instagram feed into an engaging gallery of products, available to purchase with just a click or a WhatsApp message. Links Bio is a tracking system that cumulates information about your web presence and provides direct insights into your engagement, traffic and revenue gathered from your Instagram account. Features: Personalised Shopping Feed Predefined/ customised WhatsApp messages Instagram Analytics Multiple shopping links Advanced Analytics Coupons and advertisements.</description>
+    </item>
+    
+    <item>
+      <title>Practutor</title>
+      <link>/portfolio/practutor/</link>
+      <pubDate>Thu, 01 Feb 2018 12:35:11 -0500</pubDate>
+      
+      <guid>/portfolio/practutor/</guid>
+      <description> PracTutor provides detailed insight into skill gaps for individual students and offers a scope of timely interventions. Its features help teachers and students pay attention to student growth more closely. Unlike a lot of online math/ELA platforms that promise to generate grade-specific excellence, we propose to bring in holistic math/ELA growth across the span of a student’s education. Technologies
+Screenshots </description>
     </item>
     
     <item>

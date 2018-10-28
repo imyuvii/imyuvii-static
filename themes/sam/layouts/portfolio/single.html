@@ -1,0 +1,37 @@
+{{ define "section_content" }}
+<div class="section portfolio" id="content">
+    <div class="tag-container">
+        Link:&nbsp;
+        <span class="tag">
+            {{ if(.Params.link) }}
+            <a target="_blank" href="{{ .Params.link }}">
+                {{ .Params.link }}
+            </a>
+            {{ end }}
+        </span>
+    </div>
+    {{ with .Params.specs }}
+    <div class="">
+        Technologies:
+        {{ range . }}
+        <code>{{.}}</code>
+        {{ end }}
+    </div>
+    {{ end }}
+    <hr/>
+    {{ .Content }}
+</div>
+<!--<div>
+    <h4>AUTHOR</h4>
+    <h5>Yuvraj Jhala</h5>
+    <p>
+        Yuvraj is a geek from way back, having worked in IT for more than 8 years. He is working with a great team of developers and marketers, and is also the Web Development Consultant for Xovak Studio. Yuvraj is passionate about keeping up-to-date with the latest web technologies.
+    </p>
+</div>-->
+{{ end }}
+
+{{ define "bottom-menu" }}
+<div class="section bottom-menu">
+    {{ partial "bottom_menu.html" (dict "Page" . "show_back_menu_item" true) }}
+</div>
+{{ end }}
