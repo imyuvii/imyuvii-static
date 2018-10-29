@@ -20,5 +20,16 @@
       <description>What is PhpMyAdmin? PhpMyAdmin is one of the most popular applications for MySQL databases management. It is a free tool written in PHP. Through this software you can create, alter, drop, delete, import and export MySQL database tables. You can run MySQL queries, optimize, repair and check tables, change collation and execute other database management commands. Install PhpMyAdmin isn’t an easy task. You need to do several configuration after installation.</description>
     </item>
     
+    <item>
+      <title>Installing GoDaddy SSL Certificate on Ubuntu</title>
+      <link>/posts/installing-godaddy-ssl-ubuntu/</link>
+      <pubDate>Wed, 22 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/installing-godaddy-ssl-ubuntu/</guid>
+      <description>Basically in order to successfully install an SSL certificate you need the following things
+ CSR file Private key Certificate key Certificate chain  Download Certificates If your website is hosted through GoDaddy (e.g. the primary domain on a GoDaddy shared hosting account, Website Builder), you don’t need to use these instructions; GoDaddy take care of the SSL installation for you.
+ On your SSL certificate home page, click Download.</description>
+    </item>
+    
   </channel>
 </rss>

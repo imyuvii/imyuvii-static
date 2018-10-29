@@ -3,6 +3,7 @@ title: "Writing output to your own log file"
 date: 2017-02-02T13:56:12-05:00
 showDate: true
 draft: false
+categories: [web]
 tags: ["wordpress","log"]
 ---
 

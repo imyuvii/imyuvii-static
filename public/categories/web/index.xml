@@ -13,12 +13,101 @@
     
     <item>
       <title>How to buy domain name?</title>
-      <link>/posts/installing-godaddy-ssl-ubuntu/</link>
+      <link>/posts/how-to-buy-domain-name/</link>
       <pubDate>Fri, 02 Mar 2018 13:56:12 -0500</pubDate>
       
-      <guid>/posts/installing-godaddy-ssl-ubuntu/</guid>
+      <guid>/posts/how-to-buy-domain-name/</guid>
       <description>Buying domain name is the first step towards website creation. Domain name consist of nameofdomain.tld domain name you can choose any domain name and tld is .com , .net , .website , .ninga , .org , .in , .pk , .it , .net.in , .org.in and many others.
 For buying domain you can go for these domain registrar . All registrar offers different prices for same domain . Once you register domain with any of these registrar your domain would be locked against your name and will remain with you till expiration .</description>
+    </item>
+    
+    <item>
+      <title>Distribute your iPhone app over the air</title>
+      <link>/posts/distribute-iphone-app-air/</link>
+      <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/distribute-iphone-app-air/</guid>
+      <description>Do you need to download and install an ipa directly from an URL? Is it possible? The answer is yes, to distribute your app over-the-air (OTA, this means without using TestFlight or the official App Store), you may need to create 3 different files, namely:
+ your_App.ipa (The .ipa file using an ad-hoc provisioning profile) index.html manifest.plist  There are two ways of generating above mentioned files:
+ Using Beta Builder (MacOS only) Manually  Using Beta Builder  Archive your build.</description>
+    </item>
+    
+    <item>
+      <title>Proper way to work with assets in Yii</title>
+      <link>/posts/proper-way-work-assets-yii/</link>
+      <pubDate>Tue, 02 May 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/proper-way-work-assets-yii/</guid>
+      <description>Did you notice? Yii creates strange set of directories names like 8523d23 or 10s89b92 in assets directory, and this even happens at runtime.
+Yii Assets Many applications are entirely self contained, and there’s no trouble or conflict putting necessary resources (images, CSS files, Javascript files, etc.) under the webroot:
+ webroot/css/* webroot/js/* webroot/images/*  and so on. If a module needs to add one more resources, it’s added directly and referenced by the path down from webroot.</description>
+    </item>
+    
+    <item>
+      <title>Website deployment using GIT</title>
+      <link>/posts/website-deployment-using-git/</link>
+      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/website-deployment-using-git/</guid>
+      <description>Once you’ve put in all the hard work of creating a website, you need to get it on the web so people can navigate to it and access its content. This process is called deployment. Deployment is a fancy word for “getting your website on the web,”. Website deployment isn’t a simple process, mainly because there are so many different ways to do it. In this article I don’t aim to document all possible methods.</description>
+    </item>
+    
+    <item>
+      <title>SSH Config to the rescue</title>
+      <link>/posts/ssh-config-file-rescue/</link>
+      <pubDate>Sat, 01 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/ssh-config-file-rescue/</guid>
+      <description>How often do you need to logged into a remote server? that to using ssh credentials. In my case I have to log in and out dozens of servers daily. And if you’re like me, you have trouble remembering all of the various usernames, remote addresses and command line options for things like specifying a non-standard connection port or forwarding local ports to the remote machine. Hence, I thought to use SSH Config file.</description>
+    </item>
+    
+    <item>
+      <title>Installing LAMP stack on Ubuntu</title>
+      <link>/posts/installing-lamp-stack-ubuntu/</link>
+      <pubDate>Wed, 29 Mar 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/installing-lamp-stack-ubuntu/</guid>
+      <description>LAMP is short for Linux, Apache, MySQL, PHP. This tutorial shows how you can install LAMP stack (Apache2, PHP and MySQL) on an Ubuntu 16.04 server.
+Apache To install Apache you must install the Metapackage apache2. This can be done by searching for and installing in the Software Centre, or by running the following command.
+sudo apt-get install apache2 MySQL To install MySQL you must install the Metapackage mysql-server. This can be done by searching for and installing in the Software Centre, or by running the following command.</description>
+    </item>
+    
+    <item>
+      <title>SCP command to transferring files between servers</title>
+      <link>/posts/scp-command-transferring-files/</link>
+      <pubDate>Sat, 18 Mar 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/scp-command-transferring-files/</guid>
+      <description>In this tutorial, you will learn how to copy files or folders between hosts. The command we will be using is SCP command. SCP (Secure Copy) is a command line tool to copy or transfer files across hosts. It uses the same kind of security mechanism like the ssh program. Infact it uses an ssh connection in the background to perform the file transfer. scp refers both to the “protocol” that defines how secure copy should work and the “program” (command) which is installed as a part of OpenSSH suite of tools.</description>
+    </item>
+    
+    <item>
+      <title>Things You need to know before hiring SEO agency</title>
+      <link>/posts/hiring-seo-agency/</link>
+      <pubDate>Mon, 27 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/hiring-seo-agency/</guid>
+      <description>Working as Web Developer since 2010 I’ve had the opportunity to interact with thousands of clients and potential clients. As soon as website goes to production client keen to hiring SEO team and they seeking for your help. From the conversation with many of my client, I found out there are a long list of misconceptions when it comes to SEO.
+Here are some of the common misunderstandings I see amongst my client when it comes to SEO.</description>
+    </item>
+    
+    <item>
+      <title>How to optimize website performance</title>
+      <link>/posts/optimize-website-performance/</link>
+      <pubDate>Sun, 19 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/optimize-website-performance/</guid>
+      <description>What is website optimization? Website optimization (often referred to as conversion optimization) is the process of systematically improving the performance of your website to meet your business objectives. Read full article to understand importance of website optimization, And if you are in hurry than jump to Optimise website section.
+Whether your goal is to get more leads, sales, or reduce customer service phone calls, website optimization can be used to make your website more effective at meeting those goals.</description>
+    </item>
+    
+    <item>
+      <title>Writing output to your own log file</title>
+      <link>/posts/writing-log-file/</link>
+      <pubDate>Thu, 02 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/writing-log-file/</guid>
+      <description>Not able to trace issue in production environment? There are many ways to do so, XDEBUG is one of preferred way to debug php website remotely. However, installing and configuring it can be a lengthy process, Specially when web hosting is not in your control. In order to fix the issue in one of my client’s website, I came up with a solution where I can output desired part of code in my own log file.</description>
     </item>
     
   </channel>

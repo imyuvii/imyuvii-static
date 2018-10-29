@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Block on I aM YUVII</title>
+    <link>/tags/block/</link>
+    <description>Recent content in Block on I aM YUVII</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jan 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/block/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Display code on your WordPress post</title>
+      <link>/posts/display-code-block-wordpress/</link>
+      <pubDate>Fri, 27 Jan 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/display-code-block-wordpress/</guid>
+      <description>Many bloggers do not run a development blog, so they don’t need to add sample code snippets in their posts very often. For rare occasions, you can add code by encoding the code into HTML entities. Like this &amp;amp;gt;?php echo &amp;quot;Hello World&amp;quot;; ?&amp;amp;lt;
+Why Displaying Code is Difficult To understand why displaying code is difficult you need to know some basic HTML. The code for making some bold text is to surround it in a tag.</description>
+    </item>
+    
+  </channel>
+</rss>

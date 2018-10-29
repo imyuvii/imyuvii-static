@@ -23,6 +23,16 @@ sudo apt-get install apache2 MySQL To install MySQL you must install the Metapac
     </item>
     
     <item>
+      <title>Last flight to PHP7</title>
+      <link>/posts/last-flight-php7/</link>
+      <pubDate>Fri, 24 Mar 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/last-flight-php7/</guid>
+      <description>Eleven years after its 5.0 release, a new major version is finally coming our way!. PHP7 is out, and it’s time to get your code ready. I’ve already started migrating from 5.6 to 7, Here is the official document for Migration PHP 5.6 to 7.
+But how will this impact your current PHP codebase? What really changed? How safe is it to update? This post will answer these questions and give you a taste of what’s to come with PHP7</description>
+    </item>
+    
+    <item>
       <title>How to start, stop and restart apache</title>
       <link>/posts/start-stop-restart-apache/</link>
       <pubDate>Tue, 21 Feb 2017 13:56:12 -0500</pubDate>
@@ -31,26 +41,6 @@ sudo apt-get install apache2 MySQL To install MySQL you must install the Metapac
       <description>Apache is primarily used to serve both static content and dynamic Web pages on the World Wide Web. Many web applications are designed expecting the environment and features that Apache provides.It can be started or restarted using any one of the following methods
 Apache on MacOS Use following commands to start/stop/restart apache
 $ sudo /usr/sbin/apachectl start $ sudo /usr/sbin/apachectl stop $ sudo /usr/sbin/apachectl restart On CentOS The httpd RPM installs the /etc/init.</description>
-    </item>
-    
-    <item>
-      <title>Configure virtual hosts on CentOS</title>
-      <link>/posts/configure-virtual-host-centos/</link>
-      <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
-      
-      <guid>/posts/configure-virtual-host-centos/</guid>
-      <description>About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
-In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
-    </item>
-    
-    <item>
-      <title>Configure virtual hosts on CentOS</title>
-      <link>/posts/how-to-buy-domain-name/</link>
-      <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
-      
-      <guid>/posts/how-to-buy-domain-name/</guid>
-      <description>About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
-In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
     </item>
     
   </channel>

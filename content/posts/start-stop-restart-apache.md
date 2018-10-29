@@ -3,7 +3,8 @@ title: "How to start, stop and restart apache"
 date: 2017-02-21T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["apache"]
+categories: [apache]
+tags: [apache, httpd, macos, server, web, webServer]
 ---
 Apache is primarily used to serve both static content and dynamic Web pages on the World Wide Web. Many web applications are designed expecting the environment and features that Apache provides.It can be started or restarted using any one of the following methods
 

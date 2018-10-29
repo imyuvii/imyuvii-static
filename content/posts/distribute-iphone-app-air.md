@@ -3,7 +3,8 @@ title: "Distribute your iPhone app over the air"
 date: 2017-08-05T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["distribution", "ipa", "manifest", "web"]
+categories: web
+tags: [distribution, ipa, manifest, web]
 ---
 
 Do you need to download and install an ipa directly from an URL? Is it possible? The answer is yes, to distribute your app over-the-air (OTA, this means without using TestFlight or the official App Store), you may need to create 3 different files, namely:

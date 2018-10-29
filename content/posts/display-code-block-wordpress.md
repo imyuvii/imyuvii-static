@@ -3,7 +3,8 @@ title: "Display code on your WordPress post"
 date: 2017-01-27T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["wordpress"]
+categories: [wordpress]
+tags: [block, code, custom, wordpress]
 ---
 [this one]: https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder
 [Configure virtual host on CentOS]: /posts/configure-virtual-host-centos/

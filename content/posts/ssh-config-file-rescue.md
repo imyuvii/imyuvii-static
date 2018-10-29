@@ -3,7 +3,8 @@ title: "SSH Config to the rescue"
 date: 2017-04-01T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["sshconfig","config"]
+categories: [web]
+tags: [lifesaver, server, ssh, terminal]
 ---
 
 How often do you need to logged into a remote server? that to using ssh credentials. In my case I have to log in and out dozens of servers daily. And if you’re like me, you have trouble remembering all of the various usernames, remote addresses and command line options for things like specifying a non-standard connection port or forwarding local ports to the remote machine. Hence, I thought to use SSH Config file.

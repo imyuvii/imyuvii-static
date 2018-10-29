@@ -3,7 +3,8 @@ title: "Proper way to work with assets in Yii"
 date: 2017-05-02T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["yii","assets","mvc"]
+categories: [web]
+tags: [optimization, performance, website]
 ---
 Did you notice? Yii creates strange set of directories names like 8523d23 or 10s89b92 in assets directory, and this even happens at runtime.
 

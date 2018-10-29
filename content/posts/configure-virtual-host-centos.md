@@ -3,7 +3,8 @@ title: "Configure virtual hosts on CentOS"
 date: 2017-01-26T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["apache","centos"]
+categories: [apache]
+tags: [centos, host, virtual]
 ---
 
 About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.

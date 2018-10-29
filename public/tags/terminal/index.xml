@@ -20,5 +20,23 @@
       <description>Not everyone aware about PHP‘s capabilities of making SSH connections and executing remote commands, but it can be very handy. I’ve been using it a lot in PHP CLI applications that I run from cronjobs, but initially it was a pain to get it to work. The PHP manual on Secure Shell2 Functions is not very practical or methodical for that matter, so I would like to share my understandings on how to make setting this up in less time.</description>
     </item>
     
+    <item>
+      <title>SSH Config to the rescue</title>
+      <link>/posts/ssh-config-file-rescue/</link>
+      <pubDate>Sat, 01 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/ssh-config-file-rescue/</guid>
+      <description>How often do you need to logged into a remote server? that to using ssh credentials. In my case I have to log in and out dozens of servers daily. And if you’re like me, you have trouble remembering all of the various usernames, remote addresses and command line options for things like specifying a non-standard connection port or forwarding local ports to the remote machine. Hence, I thought to use SSH Config file.</description>
+    </item>
+    
+    <item>
+      <title>SCP command to transferring files between servers</title>
+      <link>/posts/scp-command-transferring-files/</link>
+      <pubDate>Sat, 18 Mar 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/scp-command-transferring-files/</guid>
+      <description>In this tutorial, you will learn how to copy files or folders between hosts. The command we will be using is SCP command. SCP (Secure Copy) is a command line tool to copy or transfer files across hosts. It uses the same kind of security mechanism like the ssh program. Infact it uses an ssh connection in the background to perform the file transfer. scp refers both to the “protocol” that defines how secure copy should work and the “program” (command) which is installed as a part of OpenSSH suite of tools.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -13,10 +13,10 @@
     
     <item>
       <title>Freelancing or Job?</title>
-      <link>/posts/best-quality-upwork-clients/</link>
+      <link>/posts/freelancing-job/</link>
       <pubDate>Wed, 04 Apr 2018 13:56:12 -0500</pubDate>
       
-      <guid>/posts/best-quality-upwork-clients/</guid>
+      <guid>/posts/freelancing-job/</guid>
       <description>Enthusiasm for freelancing is mounting day by day. Due to good income and flexible timing , Indian youth are now charmed towards it. So i am posting this blog only for them.
 Benefits of Job Static working hours In full time jobs working hours are defined , You have to work 8-9 hours daily. You have to go office at fixed time .
 Fixed holidays Some companies offers 5 holidays in a month including Sundays.</description>
@@ -24,20 +24,20 @@ Fixed holidays Some companies offers 5 holidays in a month including Sundays.</d
     
     <item>
       <title>Best quality of upwork clients</title>
-      <link>/posts/freelancing-job/</link>
+      <link>/posts/best-quality-upwork-clients/</link>
       <pubDate>Sat, 24 Mar 2018 13:56:12 -0500</pubDate>
       
-      <guid>/posts/freelancing-job/</guid>
+      <guid>/posts/best-quality-upwork-clients/</guid>
       <description>Upwork is a largest freelancing marketplace. Upwork offers wide range of jobs starting from $5. You can find clients from different part of the world , Freelancers greeting from different countries. We can say upwork is like a summation with all kind of people.
 So it is difficult to check the authenticity of people or client. As freelancer you dont know who is behind the clients id . What kinda human is he.</description>
     </item>
     
     <item>
       <title>How to buy domain name?</title>
-      <link>/posts/installing-godaddy-ssl-ubuntu/</link>
+      <link>/posts/how-to-buy-domain-name/</link>
       <pubDate>Fri, 02 Mar 2018 13:56:12 -0500</pubDate>
       
-      <guid>/posts/installing-godaddy-ssl-ubuntu/</guid>
+      <guid>/posts/how-to-buy-domain-name/</guid>
       <description>Buying domain name is the first step towards website creation. Domain name consist of nameofdomain.tld domain name you can choose any domain name and tld is .com , .net , .website , .ninga , .org , .in , .pk , .it , .net.in , .org.in and many others.
 For buying domain you can go for these domain registrar . All registrar offers different prices for same domain . Once you register domain with any of these registrar your domain would be locked against your name and will remain with you till expiration .</description>
     </item>
@@ -228,6 +228,17 @@ Here are some of the common misunderstandings I see amongst my client when it co
     </item>
     
     <item>
+      <title>Installing GoDaddy SSL Certificate on Ubuntu</title>
+      <link>/posts/installing-godaddy-ssl-ubuntu/</link>
+      <pubDate>Wed, 22 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/installing-godaddy-ssl-ubuntu/</guid>
+      <description>Basically in order to successfully install an SSL certificate you need the following things
+ CSR file Private key Certificate key Certificate chain  Download Certificates If your website is hosted through GoDaddy (e.g. the primary domain on a GoDaddy shared hosting account, Website Builder), you don’t need to use these instructions; GoDaddy take care of the SSL installation for you.
+ On your SSL certificate home page, click Download.</description>
+    </item>
+    
+    <item>
       <title>How to start, stop and restart apache</title>
       <link>/posts/start-stop-restart-apache/</link>
       <pubDate>Tue, 21 Feb 2017 13:56:12 -0500</pubDate>
@@ -273,16 +284,6 @@ Why Displaying Code is Difficult To understand why displaying code is difficult 
       <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
       
       <guid>/posts/configure-virtual-host-centos/</guid>
-      <description>About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
-In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
-    </item>
-    
-    <item>
-      <title>Configure virtual hosts on CentOS</title>
-      <link>/posts/how-to-buy-domain-name/</link>
-      <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
-      
-      <guid>/posts/how-to-buy-domain-name/</guid>
       <description>About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
 In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
     </item>

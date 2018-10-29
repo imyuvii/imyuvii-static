@@ -43,13 +43,14 @@ Here are some of the common misunderstandings I see amongst my client when it co
     </item>
     
     <item>
-      <title>How to optimize website performance</title>
-      <link>/posts/optimize-website-performance/</link>
-      <pubDate>Sun, 19 Feb 2017 13:56:12 -0500</pubDate>
+      <title>How to start, stop and restart apache</title>
+      <link>/posts/start-stop-restart-apache/</link>
+      <pubDate>Tue, 21 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/optimize-website-performance/</guid>
-      <description>What is website optimization? Website optimization (often referred to as conversion optimization) is the process of systematically improving the performance of your website to meet your business objectives. Read full article to understand importance of website optimization, And if you are in hurry than jump to Optimise website section.
-Whether your goal is to get more leads, sales, or reduce customer service phone calls, website optimization can be used to make your website more effective at meeting those goals.</description>
+      <guid>/posts/start-stop-restart-apache/</guid>
+      <description>Apache is primarily used to serve both static content and dynamic Web pages on the World Wide Web. Many web applications are designed expecting the environment and features that Apache provides.It can be started or restarted using any one of the following methods
+Apache on MacOS Use following commands to start/stop/restart apache
+$ sudo /usr/sbin/apachectl start $ sudo /usr/sbin/apachectl stop $ sudo /usr/sbin/apachectl restart On CentOS The httpd RPM installs the /etc/init.</description>
     </item>
     
   </channel>

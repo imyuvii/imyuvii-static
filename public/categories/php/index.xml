@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on I aM YUVII</title>
+    <link>/categories/php/</link>
+    <description>Recent content in Php on I aM YUVII</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Nov 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Execute Shell commands via PHP</title>
+      <link>/posts/execute-shell-commands-via-php/</link>
+      <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/execute-shell-commands-via-php/</guid>
+      <description>Not everyone aware about PHP‘s capabilities of making SSH connections and executing remote commands, but it can be very handy. I’ve been using it a lot in PHP CLI applications that I run from cronjobs, but initially it was a pain to get it to work. The PHP manual on Secure Shell2 Functions is not very practical or methodical for that matter, so I would like to share my understandings on how to make setting this up in less time.</description>
+    </item>
+    
+    <item>
+      <title>Last flight to PHP7</title>
+      <link>/posts/last-flight-php7/</link>
+      <pubDate>Fri, 24 Mar 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/last-flight-php7/</guid>
+      <description>Eleven years after its 5.0 release, a new major version is finally coming our way!. PHP7 is out, and it’s time to get your code ready. I’ve already started migrating from 5.6 to 7, Here is the official document for Migration PHP 5.6 to 7.
+But how will this impact your current PHP codebase? What really changed? How safe is it to update? This post will answer these questions and give you a taste of what’s to come with PHP7</description>
+    </item>
+    
+  </channel>
+</rss>

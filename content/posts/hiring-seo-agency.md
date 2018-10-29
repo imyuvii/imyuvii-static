@@ -3,7 +3,8 @@ title: "Things You need to know before hiring SEO agency"
 date: 2017-02-27T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["web"]
+categories: [web]
+tags: [seo, web]
 ---
 Working as Web Developer since 2010 I’ve had the opportunity to interact with thousands of clients and potential clients. As soon as website goes to production client keen to hiring SEO team and they seeking for your help. From the conversation with many of my client, I found out there are a long list of misconceptions when it comes to SEO.
 

@@ -13,12 +13,42 @@
     
     <item>
       <title>How to buy domain name?</title>
-      <link>/posts/installing-godaddy-ssl-ubuntu/</link>
+      <link>/posts/how-to-buy-domain-name/</link>
       <pubDate>Fri, 02 Mar 2018 13:56:12 -0500</pubDate>
       
-      <guid>/posts/installing-godaddy-ssl-ubuntu/</guid>
+      <guid>/posts/how-to-buy-domain-name/</guid>
       <description>Buying domain name is the first step towards website creation. Domain name consist of nameofdomain.tld domain name you can choose any domain name and tld is .com , .net , .website , .ninga , .org , .in , .pk , .it , .net.in , .org.in and many others.
 For buying domain you can go for these domain registrar . All registrar offers different prices for same domain . Once you register domain with any of these registrar your domain would be locked against your name and will remain with you till expiration .</description>
+    </item>
+    
+    <item>
+      <title>Proper way to work with assets in Yii</title>
+      <link>/posts/proper-way-work-assets-yii/</link>
+      <pubDate>Tue, 02 May 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/proper-way-work-assets-yii/</guid>
+      <description>Did you notice? Yii creates strange set of directories names like 8523d23 or 10s89b92 in assets directory, and this even happens at runtime.
+Yii Assets Many applications are entirely self contained, and there’s no trouble or conflict putting necessary resources (images, CSS files, Javascript files, etc.) under the webroot:
+ webroot/css/* webroot/js/* webroot/images/*  and so on. If a module needs to add one more resources, it’s added directly and referenced by the path down from webroot.</description>
+    </item>
+    
+    <item>
+      <title>Website deployment using GIT</title>
+      <link>/posts/website-deployment-using-git/</link>
+      <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/website-deployment-using-git/</guid>
+      <description>Once you’ve put in all the hard work of creating a website, you need to get it on the web so people can navigate to it and access its content. This process is called deployment. Deployment is a fancy word for “getting your website on the web,”. Website deployment isn’t a simple process, mainly because there are so many different ways to do it. In this article I don’t aim to document all possible methods.</description>
+    </item>
+    
+    <item>
+      <title>How to optimize website performance</title>
+      <link>/posts/optimize-website-performance/</link>
+      <pubDate>Sun, 19 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/optimize-website-performance/</guid>
+      <description>What is website optimization? Website optimization (often referred to as conversion optimization) is the process of systematically improving the performance of your website to meet your business objectives. Read full article to understand importance of website optimization, And if you are in hurry than jump to Optimise website section.
+Whether your goal is to get more leads, sales, or reduce customer service phone calls, website optimization can be used to make your website more effective at meeting those goals.</description>
     </item>
     
   </channel>

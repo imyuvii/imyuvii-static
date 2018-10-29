@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lifesaver on I aM YUVII</title>
+    <link>/tags/lifesaver/</link>
+    <description>Recent content in Lifesaver on I aM YUVII</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Apr 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/lifesaver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSH Config to the rescue</title>
+      <link>/posts/ssh-config-file-rescue/</link>
+      <pubDate>Sat, 01 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/ssh-config-file-rescue/</guid>
+      <description>How often do you need to logged into a remote server? that to using ssh credentials. In my case I have to log in and out dozens of servers daily. And if you’re like me, you have trouble remembering all of the various usernames, remote addresses and command line options for things like specifying a non-standard connection port or forwarding local ports to the remote machine. Hence, I thought to use SSH Config file.</description>
+    </item>
+    
+  </channel>
+</rss>

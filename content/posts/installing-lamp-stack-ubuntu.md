@@ -3,7 +3,8 @@ title: "Installing LAMP stack on Ubuntu"
 date: 2017-03-29T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["lamp","apache","php", "mysql"]
+categories: [web]
+tags: [apache, lamp, mysql, php, php5, php7, ubuntu]
 ---
 
 LAMP is short for **L**inux, **A**pache, **M**ySQL, **P**HP. This tutorial shows how you can install LAMP stack (Apache2, PHP and MySQL) on an Ubuntu 16.04 server.

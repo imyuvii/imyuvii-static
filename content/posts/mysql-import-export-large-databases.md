@@ -3,7 +3,8 @@ title: "MySQL Import/Export large databases"
 date: 2017-03-15T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["mysql","mysqldump"]
+categories: [mysql]
+tags: [	mysql, mysqldump]
 ---
 
 When working with MySQL I often use tools like [PhpMyAdmin](/posts/install-phpmyadmin-on-centos/) or sequelPro, which is a nice GUI way to manipulate MySQL database. But it won’t work sometime while importing/exporting larger databases. So sometimes you need to do mysql import on the command line.

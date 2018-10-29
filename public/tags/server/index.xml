@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Server on I aM YUVII</title>
+    <link>/tags/server/</link>
+    <description>Recent content in Server on I aM YUVII</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Apr 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSH Config to the rescue</title>
+      <link>/posts/ssh-config-file-rescue/</link>
+      <pubDate>Sat, 01 Apr 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/ssh-config-file-rescue/</guid>
+      <description>How often do you need to logged into a remote server? that to using ssh credentials. In my case I have to log in and out dozens of servers daily. And if you’re like me, you have trouble remembering all of the various usernames, remote addresses and command line options for things like specifying a non-standard connection port or forwarding local ports to the remote machine. Hence, I thought to use SSH Config file.</description>
+    </item>
+    
+    <item>
+      <title>How to start, stop and restart apache</title>
+      <link>/posts/start-stop-restart-apache/</link>
+      <pubDate>Tue, 21 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/start-stop-restart-apache/</guid>
+      <description>Apache is primarily used to serve both static content and dynamic Web pages on the World Wide Web. Many web applications are designed expecting the environment and features that Apache provides.It can be started or restarted using any one of the following methods
+Apache on MacOS Use following commands to start/stop/restart apache
+$ sudo /usr/sbin/apachectl start $ sudo /usr/sbin/apachectl stop $ sudo /usr/sbin/apachectl restart On CentOS The httpd RPM installs the /etc/init.</description>
+    </item>
+    
+  </channel>
+</rss>

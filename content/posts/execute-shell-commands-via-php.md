@@ -3,7 +3,8 @@ title: "Execute Shell commands via PHP"
 date: 2017-11-20T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["php","scp","ssh","terminal","remote"]
+categories: php
+tags: [php, remote, scp, ssh, terminal]
 ---
 Not everyone aware about [PHP](/tags/php/)‘s capabilities of making SSH connections and executing remote commands, but it can be very handy. I’ve been using it a lot in PHP CLI applications that I run from cronjobs, but initially it was a pain to get it to work. The [PHP manual on Secure Shell2 Functions](http://www.php.net/manual/en/ref.ssh2.php) is not very practical or methodical for that matter, so I would like to share my understandings on how to make setting this up in less time.
 

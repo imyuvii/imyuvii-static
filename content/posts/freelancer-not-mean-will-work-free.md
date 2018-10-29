@@ -3,7 +3,8 @@ title: "I am a Freelancer This does not mean i will work for free"
 date: 2017-04-10T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["freelancer","web"]
+categories: [general]
+tags: [freelancer, general, web]
 ---
 Yes I am a freelancer, Yes i work from home, Yes i work hard to make money but some people unnecessary ask for extra work , some people ask for free courses , some people ask for free stuffs.
 

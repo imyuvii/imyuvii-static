@@ -3,7 +3,8 @@ title: "How to optimize website performance"
 date: 2017-02-19T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["web"]
+categories: [web]
+tags: [optimization, performance, website]
 ---
 
 ### What is website optimization?

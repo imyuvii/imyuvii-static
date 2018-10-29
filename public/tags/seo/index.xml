@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seo on I aM YUVII</title>
+    <link>/tags/seo/</link>
+    <description>Recent content in Seo on I aM YUVII</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Feb 2017 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things You need to know before hiring SEO agency</title>
+      <link>/posts/hiring-seo-agency/</link>
+      <pubDate>Mon, 27 Feb 2017 13:56:12 -0500</pubDate>
+      
+      <guid>/posts/hiring-seo-agency/</guid>
+      <description>Working as Web Developer since 2010 I’ve had the opportunity to interact with thousands of clients and potential clients. As soon as website goes to production client keen to hiring SEO team and they seeking for your help. From the conversation with many of my client, I found out there are a long list of misconceptions when it comes to SEO.
+Here are some of the common misunderstandings I see amongst my client when it comes to SEO.</description>
+    </item>
+    
+  </channel>
+</rss>

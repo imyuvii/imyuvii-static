@@ -1,162 +1,32 @@
 ---
-title: "Configure virtual hosts on CentOS"
-date: 2017-01-26T13:56:12-05:00
+title: "How to buy domain name?"
+date: 2018-03-02T13:56:12-05:00
 showDate: true
 draft: false
-tags: ["apache","centos"]
+categories: [web]
+tags: [dns,domain,host,website]
 ---
 
-About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
+Buying domain name is the first step towards website creation. Domain name consist of nameofdomain.tld
+domain name you can choose any domain name and tld is .com , .net , .website , .ninga , .org , .in , .pk , .it , .net.in , .org.in and many others.
 
-In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.
+For buying domain you can go for these domain registrar . All registrar offers different prices for same domain . Once you register domain with any of these registrar your domain would be locked against your name and will remain with you till expiration . Usually domain like .com , .net , .org  , .in are popular than others. Domain name represents your online identity , Like agnishukla.com represents me Agni Kumar Shukla. If you google my name you will get my website in results. Here is full form of tld of domains Tld means Top Level Domain
 
-Throughout this article, we’ll use an example domain – example.com – but you should replace it with the domain name or subdomain you want to host on your server.
+- .Com is Commercial domain
+- .Net is  Network domain
+- .In is India
+- .Org is organisation
+- .US is United States
+- .It is Italy
 
-### Install the Apache web server
-To get Apache on your server, you can either install it as part of a LAMP stack, or you can install Apache by itself:
+### Here are the best domain registrars.
+1. [Godaddy](https://in.godaddy.com/) is largest of all domain sellers.You can find .com domains from Rs99 to Rs 650. They offer various offer services like Hosting , Email hosting , VPS Servers , Private servers , Dedicated services.
+2. [Bigrock](https://www.bigrock.in/) is Indian registrar , You can pay offline via bank deposit. They also offer domains from Rs99 to thousands. Bigrock provides hosting services from Rs 59 per month. which is good for small shop owners or bloggers.
+3. [Namecheap](https://www.namecheap.com/) provides free domain name privacy service to protect you from spam. Namecheap only accepts credit card or debit card with International paying ability.
+4. [1&1](https://www.1and1.com/) You can find cheapest domain here. They offer good hosting services too. But for Indian buyers i will not recommend this.
+5. [Register.com](Register.com) is also a good provider.
+6. [domain.com](domain.com) another good provider.
 
-- Update your packages using yum 
+After buying domain you need to verify your email id and credit cards in the case if you used credit card to buy domain. Then you have to buy hosting for your website. You can start with smaller hosting packages. Hosting packages start with Rs 56 per month . Almost all registrar provides hosting services , Some offers hosting with free domain but with condition of buying hosting for at least 12 months.
 
-```sh
-$ sudo yum update
-```
-- Install Apache
-
-```sh
-$ sudo yum install httpd
-```
-
-- Enable Apache Service
-
-```sh
-$ sudo systemctl enable httpd.service
-```
-
-- Start up Apache
-
-```sh
-$ sudo service httpd start
-```
-
-### Set up the virtual hosts
-
-- Create the virtual directories for your domain
-
-```sh
-$ sudo mkdir -p /var/www/example.com/public_html
-```
-
-- Change the ownership to the Apache group
-
-```sh
-$ sudo chown -R apache:apache /var/www/example.com/public_html
-# This lets Apache modify files in your web directories
-```
-
-- Change the directory’s permissions so they can be read from the internet
-
-```sh
-$ sudo chmod -R 755 /var/www/
-```
-
-### Create content for the website
-- Create the index file
-
-```sh 
-$ sudo nano /var/www/example.com/public_html/index.html
-```
-- Add some content to the file
-
-```html 
-<html>
-<head>
-    <title>Welcome to Example.com!</title>
-</head>
-<body>
-    <h1>Success! The example.com virtual host is working!</h1>
-</body>
-</html>
-```
-- Save and close the file
-
-```sh 
-Ctrl + o (Save File)
-Ctrl + x (Exit)
-```
-
-### Configure your virtual host directories
-We’re going to copy a configuration usually used in Ubuntu/Debian and create two directories: one to store the virtual host files (sites-available) and another to hold symbolic links to virtual hosts that will be published (sites-enabled).
-
-#### Create sites-available and sites-enabled directories
-- Create the directories
-
-```sh 
-$ sudo mkdir /etc/httpd/sites-available
-$ sudo mkdir /etc/httpd/sites-enabled
-```
-
-#### Edit your Apache configuration file
-Edit the main configuration file (httpd.conf) so that Apache will look for virtual hosts in the sites-enabled directory.
-
-- Open your config file
-
-```sh 
-sudo nano /etc/httpd/conf/httpd.conf
-```
-
-- Add this line at the very end of the file
-
-```sh 
-IncludeOptional sites-enabled/*.conf
-# This way, we’re telling Apache to look for additional config files in the sites-enabled directory
-```
-
-- Save and close the file
-
-```sh 
-Ctrl + o (Save File)
-Ctrl + x (Exit)
-```
-
-### Create virtual host file
-We’re going to build it from a new file in your sites-available directory.
-
-- Create a new config file
-
-```sh 
-$ sudo nano /etc/httpd/sites-available/example.com.conf
-```
-
-- Paste this code in, replacing your own domain for example.com.conf. Here’s what the whole file could look like after your changes.
-
-```apacheconfig 
-<VirtualHost *:80>
-    ServerAdmin webmaster@dummy-host.example.com    
-    ServerName www.example.com
-    ServerAlias example.com 
-    DocumentRoot /var/www/example.com/public_html 
-    ErrorLog /var/www/example.com/error.log 
-    CustomLog /var/www/example.com/requests.log combined 
-</VirtualHost>
-```
-
-The lines ErrorLog and CustomLog are not required to set up your virtual host, but we’ve included them, in case you do want to tell Apache where to keep error and request logs for your site.
-
-- Save and close the file
-
-```sh 
-Ctrl + o (Save File)
-Ctrl + x (Exit)
-```
-
-- Enable your virtual host file with a sym link to the sites-enabled directory
-
-```sh 
-$ sudo ln -s /etc/httpd/sites-available/example.com.conf /etc/httpd/sites-enabled/example.com.conf
-```
-
-- Restart Apache
-
-```sh 
-$ sudo service httpd restart
-```
+Domain name is like online asset. You can make money by reselling the domains. many domains sold for millions of dollars , So select domain as per your interest and try to create a useful website and get AdSense approval . AdSense is the best way to generate revenue from website. You can get money for both domain and website. This business is called Website flipping , Website flipping is popular among domainers , But all depends on knowledge and luck.
