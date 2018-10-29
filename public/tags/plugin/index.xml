@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wordpress on I aM YUVII</title>
-    <link>/categories/wordpress/</link>
-    <description>Recent content in Wordpress on I aM YUVII</description>
+    <title>Plugin on I aM YUVII</title>
+    <link>/tags/plugin/</link>
+    <description>Recent content in Plugin on I aM YUVII</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Jun 2017 13:56:12 -0500</lastBuildDate>
     
-	<atom:link href="/categories/wordpress/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>/posts/best-contact-plugins-wordpress/</guid>
       <description>Contact plugin are very important part of any website. Easy and effective contact plugin help business. I am sharing the list of best contact form plugins
 WPForms WPForms allow you to create beautiful contact forms, subscription forms, payment forms, and other type of forms for your site in minutes, not hours!. It is created by Syed Balki ( Owner of WPBEGINNER ) At WPForms,user experience is number one. They offer pre-built form templates and workflows make WPForms the most beginner friendly contact form plugin in the market.</description>
-    </item>
-    
-    <item>
-      <title>Display code on your WordPress post</title>
-      <link>/posts/display-code-block-wordpress/</link>
-      <pubDate>Fri, 27 Jan 2017 13:56:12 -0500</pubDate>
-      
-      <guid>/posts/display-code-block-wordpress/</guid>
-      <description>Many bloggers do not run a development blog, so they don’t need to add sample code snippets in their posts very often. For rare occasions, you can add code by encoding the code into HTML entities. Like this &amp;amp;gt;?php echo &amp;quot;Hello World&amp;quot;; ?&amp;amp;lt;
-Why Displaying Code is Difficult To understand why displaying code is difficult you need to know some basic HTML. The code for making some bold text is to surround it in a tag.</description>
     </item>
     
   </channel>
