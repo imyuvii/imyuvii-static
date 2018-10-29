@@ -3,498 +3,514 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/posts/freelancing-job/</loc>
+    <loc>//localhost:50105/posts/freelancing-job/</loc>
     <lastmod>2018-04-04T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/best-quality-upwork-clients/</loc>
+    <loc>//localhost:50105/posts/best-quality-upwork-clients/</loc>
     <lastmod>2018-03-24T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/how-to-buy-domain-name/</loc>
+    <loc>//localhost:50105/posts/how-to-buy-domain-name/</loc>
     <lastmod>2018-03-02T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>//localhost:50105/about/</loc>
     <lastmod>2018-02-13T13:42:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/contact-me/</loc>
+    <loc>//localhost:50105/contact-me/</loc>
     <lastmod>2018-02-13T13:42:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/</loc>
+    <loc>//localhost:50105/portfolio/</loc>
     <lastmod>2018-02-13T12:21:57-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>//localhost:50105/posts/</loc>
     <lastmod>2018-02-13T12:21:57-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/easy-google-map/</loc>
+    <loc>//localhost:50105/portfolio/easy-google-map/</loc>
     <lastmod>2018-02-01T12:35:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/easy-justified-gallery/</loc>
+    <loc>//localhost:50105/portfolio/easy-justified-gallery/</loc>
     <lastmod>2018-02-01T12:35:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/instagram-posts-shopable-links/</loc>
+    <loc>//localhost:50105/portfolio/instagram-posts-shopable-links/</loc>
     <lastmod>2018-02-01T12:35:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/wordpress-travel-portal/</loc>
+    <loc>//localhost:50105/portfolio/wordpress-travel-portal/</loc>
     <lastmod>2018-02-01T12:35:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/practutor/</loc>
+    <loc>//localhost:50105/portfolio/practutor/</loc>
     <lastmod>2018-02-01T12:35:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/execute-shell-commands-via-php/</loc>
+    <loc>//localhost:50105/posts/execute-shell-commands-via-php/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/distribute-iphone-app-air/</loc>
+    <loc>//localhost:50105/posts/how-get-first-job-freelancer-com/</loc>
+    <lastmod>2017-08-07T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:50105/posts/distribute-iphone-app-air/</loc>
     <lastmod>2017-08-05T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/proper-way-work-assets-yii/</loc>
+    <loc>//localhost:50105/posts/best-contact-plugins-wordpress/</loc>
+    <lastmod>2017-06-09T13:56:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:50105/posts/proper-way-work-assets-yii/</loc>
     <lastmod>2017-05-02T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/freelancer-not-mean-will-work-free/</loc>
+    <loc>//localhost:50105/posts/freelancer-not-mean-will-work-free/</loc>
     <lastmod>2017-04-10T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/website-deployment-using-git/</loc>
+    <loc>//localhost:50105/posts/website-deployment-using-git/</loc>
     <lastmod>2017-04-10T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/ssh-config-file-rescue/</loc>
+    <loc>//localhost:50105/posts/ssh-config-file-rescue/</loc>
     <lastmod>2017-04-01T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/installing-lamp-stack-ubuntu/</loc>
+    <loc>//localhost:50105/posts/installing-lamp-stack-ubuntu/</loc>
     <lastmod>2017-03-29T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/last-flight-php7/</loc>
+    <loc>//localhost:50105/posts/last-flight-php7/</loc>
     <lastmod>2017-03-24T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/scp-command-transferring-files/</loc>
+    <loc>//localhost:50105/posts/scp-command-transferring-files/</loc>
     <lastmod>2017-03-18T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/mysql-import-export-large-databases/</loc>
+    <loc>//localhost:50105/posts/mysql-import-export-large-databases/</loc>
     <lastmod>2017-03-15T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/hiring-seo-agency/</loc>
+    <loc>//localhost:50105/posts/hiring-seo-agency/</loc>
     <lastmod>2017-02-27T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/install-phpmyadmin-centos/</loc>
+    <loc>//localhost:50105/posts/install-phpmyadmin-centos/</loc>
     <lastmod>2017-02-22T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/installing-godaddy-ssl-ubuntu/</loc>
+    <loc>//localhost:50105/posts/installing-godaddy-ssl-ubuntu/</loc>
     <lastmod>2017-02-22T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/start-stop-restart-apache/</loc>
+    <loc>//localhost:50105/posts/start-stop-restart-apache/</loc>
     <lastmod>2017-02-21T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/optimize-website-performance/</loc>
+    <loc>//localhost:50105/posts/optimize-website-performance/</loc>
     <lastmod>2017-02-19T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/writing-log-file/</loc>
+    <loc>//localhost:50105/posts/writing-log-file/</loc>
     <lastmod>2017-02-02T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/display-code-block-wordpress/</loc>
+    <loc>//localhost:50105/posts/display-code-block-wordpress/</loc>
     <lastmod>2017-01-27T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/configure-virtual-host-centos/</loc>
+    <loc>//localhost:50105/posts/configure-virtual-host-centos/</loc>
     <lastmod>2017-01-26T13:56:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/apache/</loc>
+    <loc>//localhost:50105/tags/apache/</loc>
     <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/apache/</loc>
+    <loc>//localhost:50105/categories/apache/</loc>
     <lastmod>2017-02-21T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/block/</loc>
+    <loc>//localhost:50105/tags/block/</loc>
     <lastmod>2017-01-27T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>//localhost:50105/</loc>
+    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:50105/categories/</loc>
     <lastmod>2017-02-21T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/centos/</loc>
+    <loc>//localhost:50105/tags/centos/</loc>
     <lastmod>2017-02-22T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/code/</loc>
+    <loc>//localhost:50105/tags/code/</loc>
     <lastmod>2017-01-27T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/command/</loc>
+    <loc>//localhost:50105/tags/command/</loc>
     <lastmod>2017-03-18T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/custom/</loc>
+    <loc>//localhost:50105/tags/custom/</loc>
     <lastmod>2017-01-27T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/database/</loc>
+    <loc>//localhost:50105/tags/database/</loc>
     <lastmod>2017-02-22T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/deployment/</loc>
+    <loc>//localhost:50105/tags/deployment/</loc>
     <lastmod>2017-04-10T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/distribution/</loc>
+    <loc>//localhost:50105/tags/distribution/</loc>
     <lastmod>2017-08-05T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/dns/</loc>
+    <loc>//localhost:50105/tags/dns/</loc>
     <lastmod>2018-03-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/domain/</loc>
+    <loc>//localhost:50105/tags/domain/</loc>
     <lastmod>2018-03-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/freelancer/</loc>
-    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+    <loc>//localhost:50105/tags/freelancer/</loc>
+    <lastmod>2017-08-07T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/freelancing/</loc>
+    <loc>//localhost:50105/tags/freelancing/</loc>
     <lastmod>2018-04-04T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/freelancing/</loc>
+    <loc>//localhost:50105/categories/freelancing/</loc>
     <lastmod>2018-04-04T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/general/</loc>
+    <loc>//localhost:50105/tags/general/</loc>
     <lastmod>2017-04-10T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/general/</loc>
+    <loc>//localhost:50105/categories/general/</loc>
     <lastmod>2018-03-24T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/git/</loc>
+    <loc>//localhost:50105/tags/git/</loc>
     <lastmod>2017-04-10T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/host/</loc>
+    <loc>//localhost:50105/tags/host/</loc>
     <lastmod>2018-03-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/httpd/</loc>
+    <loc>//localhost:50105/tags/httpd/</loc>
     <lastmod>2017-02-21T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ipa/</loc>
+    <loc>//localhost:50105/tags/ipa/</loc>
     <lastmod>2017-08-05T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/lamp/</loc>
+    <loc>//localhost:50105/tags/lamp/</loc>
     <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/lifesaver/</loc>
+    <loc>//localhost:50105/tags/lifesaver/</loc>
     <lastmod>2017-04-01T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/log/</loc>
+    <loc>//localhost:50105/tags/log/</loc>
     <lastmod>2017-02-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/macos/</loc>
+    <loc>//localhost:50105/tags/macos/</loc>
     <lastmod>2017-02-21T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/manifest/</loc>
+    <loc>//localhost:50105/tags/manifest/</loc>
     <lastmod>2017-08-05T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/mysql/</loc>
+    <loc>//localhost:50105/tags/mysql/</loc>
     <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/mysql/</loc>
+    <loc>//localhost:50105/categories/mysql/</loc>
     <lastmod>2017-03-15T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/mysqldump/</loc>
+    <loc>//localhost:50105/tags/mysqldump/</loc>
     <lastmod>2017-03-15T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/optimization/</loc>
+    <loc>//localhost:50105/tags/optimization/</loc>
     <lastmod>2017-05-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/performance/</loc>
+    <loc>//localhost:50105/tags/performance/</loc>
     <lastmod>2017-05-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/gallery/</loc>
+    <loc>//localhost:50105/gallery/</loc>
   </url>
   
   <url>
-    <loc>/tags/php/</loc>
+    <loc>//localhost:50105/tags/php/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/php/</loc>
+    <loc>//localhost:50105/categories/php/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/php5/</loc>
+    <loc>//localhost:50105/tags/php5/</loc>
     <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/php7/</loc>
+    <loc>//localhost:50105/tags/php7/</loc>
     <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/phpmyadmin/</loc>
+    <loc>//localhost:50105/tags/phpmyadmin/</loc>
     <lastmod>2017-02-22T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/remote/</loc>
+    <loc>//localhost:50105/tags/plugin/</loc>
+    <lastmod>2017-06-09T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:50105/tags/remote/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/remote.com/</loc>
+    <loc>//localhost:50105/tags/remote.com/</loc>
     <lastmod>2018-04-04T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/scp/</loc>
+    <loc>//localhost:50105/tags/scp/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/seo/</loc>
+    <loc>//localhost:50105/tags/seo/</loc>
     <lastmod>2017-02-27T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/server/</loc>
+    <loc>//localhost:50105/tags/server/</loc>
     <lastmod>2017-04-01T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/ssh/</loc>
+    <loc>//localhost:50105/tags/ssh/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>//localhost:50105/tags/</loc>
     <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/terminal/</loc>
+    <loc>//localhost:50105/tags/terminal/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/tools/</loc>
+    <loc>//localhost:50105/tags/tools/</loc>
     <lastmod>2017-02-22T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/ubuntu/</loc>
+    <loc>//localhost:50105/tags/ubuntu/</loc>
     <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/unix/</loc>
+    <loc>//localhost:50105/tags/unix/</loc>
     <lastmod>2017-03-18T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/upwork/</loc>
+    <loc>//localhost:50105/tags/upwork/</loc>
     <lastmod>2018-04-04T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/virtual/</loc>
+    <loc>//localhost:50105/tags/virtual/</loc>
     <lastmod>2017-01-26T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/web/</loc>
-    <lastmod>2017-08-05T13:56:12-05:00</lastmod>
+    <loc>//localhost:50105/tags/web/</loc>
+    <lastmod>2017-08-07T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/web/</loc>
+    <loc>//localhost:50105/categories/web/</loc>
     <lastmod>2018-03-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/webserver/</loc>
+    <loc>//localhost:50105/tags/webserver/</loc>
     <lastmod>2017-02-21T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/website/</loc>
+    <loc>//localhost:50105/tags/website/</loc>
     <lastmod>2018-03-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/wordpress/</loc>
-    <lastmod>2017-02-02T13:56:12-05:00</lastmod>
+    <loc>//localhost:50105/tags/wordpress/</loc>
+    <lastmod>2017-06-09T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/wordpress/</loc>
-    <lastmod>2017-01-27T13:56:12-05:00</lastmod>
+    <loc>//localhost:50105/categories/wordpress/</loc>
+    <lastmod>2017-06-09T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   

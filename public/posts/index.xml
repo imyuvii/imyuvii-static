@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on I aM YUVII</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on I aM YUVII</description>
+    <title>Posts on Call me Yuvi</title>
+    <link>//localhost:50987/posts/</link>
+    <description>Recent content in Posts on Call me Yuvi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Feb 2018 12:21:57 -0500</lastBuildDate>
     
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//localhost:50987/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Freelancing or Job?</title>
-      <link>/posts/freelancing-job/</link>
+      <link>//localhost:50987/posts/freelancing-job/</link>
       <pubDate>Wed, 04 Apr 2018 13:56:12 -0500</pubDate>
       
-      <guid>/posts/freelancing-job/</guid>
+      <guid>//localhost:50987/posts/freelancing-job/</guid>
       <description>Enthusiasm for freelancing is mounting day by day. Due to good income and flexible timing , Indian youth are now charmed towards it. So i am posting this blog only for them.
 Benefits of Job Static working hours In full time jobs working hours are defined , You have to work 8-9 hours daily. You have to go office at fixed time .
 Fixed holidays Some companies offers 5 holidays in a month including Sundays.</description>
@@ -24,50 +24,72 @@ Fixed holidays Some companies offers 5 holidays in a month including Sundays.</d
     
     <item>
       <title>Best quality of upwork clients</title>
-      <link>/posts/best-quality-upwork-clients/</link>
+      <link>//localhost:50987/posts/best-quality-upwork-clients/</link>
       <pubDate>Sat, 24 Mar 2018 13:56:12 -0500</pubDate>
       
-      <guid>/posts/best-quality-upwork-clients/</guid>
+      <guid>//localhost:50987/posts/best-quality-upwork-clients/</guid>
       <description>Upwork is a largest freelancing marketplace. Upwork offers wide range of jobs starting from $5. You can find clients from different part of the world , Freelancers greeting from different countries. We can say upwork is like a summation with all kind of people.
 So it is difficult to check the authenticity of people or client. As freelancer you dont know who is behind the clients id . What kinda human is he.</description>
     </item>
     
     <item>
       <title>How to buy domain name?</title>
-      <link>/posts/how-to-buy-domain-name/</link>
+      <link>//localhost:50987/posts/how-to-buy-domain-name/</link>
       <pubDate>Fri, 02 Mar 2018 13:56:12 -0500</pubDate>
       
-      <guid>/posts/how-to-buy-domain-name/</guid>
+      <guid>//localhost:50987/posts/how-to-buy-domain-name/</guid>
       <description>Buying domain name is the first step towards website creation. Domain name consist of nameofdomain.tld domain name you can choose any domain name and tld is .com , .net , .website , .ninga , .org , .in , .pk , .it , .net.in , .org.in and many others.
 For buying domain you can go for these domain registrar . All registrar offers different prices for same domain . Once you register domain with any of these registrar your domain would be locked against your name and will remain with you till expiration .</description>
     </item>
     
     <item>
       <title>Execute Shell commands via PHP</title>
-      <link>/posts/execute-shell-commands-via-php/</link>
+      <link>//localhost:50987/posts/execute-shell-commands-via-php/</link>
       <pubDate>Mon, 20 Nov 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/execute-shell-commands-via-php/</guid>
+      <guid>//localhost:50987/posts/execute-shell-commands-via-php/</guid>
       <description>Not everyone aware about PHP‘s capabilities of making SSH connections and executing remote commands, but it can be very handy. I’ve been using it a lot in PHP CLI applications that I run from cronjobs, but initially it was a pain to get it to work. The PHP manual on Secure Shell2 Functions is not very practical or methodical for that matter, so I would like to share my understandings on how to make setting this up in less time.</description>
     </item>
     
     <item>
+      <title>How to get first job on Freelancer.com</title>
+      <link>//localhost:50987/posts/how-get-first-job-freelancer-com/</link>
+      <pubDate>Mon, 07 Aug 2017 13:56:12 -0500</pubDate>
+      
+      <guid>//localhost:50987/posts/how-get-first-job-freelancer-com/</guid>
+      <description>Getting first job is difficult task for any newbie freelancer. After paying huge membership fees and bidding on 30-50 jobs they hardly get any response from client.
+Actually 80% clients never give any chance to any newbie freelancer. So how you can get your first job?
+Let analyse what are reasons behind
+ Incomplete profile All talent marketplaces like freelancer , upwork etc insist to complete the profile , Profile information is necessary .</description>
+    </item>
+    
+    <item>
       <title>Distribute your iPhone app over the air</title>
-      <link>/posts/distribute-iphone-app-air/</link>
+      <link>//localhost:50987/posts/distribute-iphone-app-air/</link>
       <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/distribute-iphone-app-air/</guid>
+      <guid>//localhost:50987/posts/distribute-iphone-app-air/</guid>
       <description>Do you need to download and install an ipa directly from an URL? Is it possible? The answer is yes, to distribute your app over-the-air (OTA, this means without using TestFlight or the official App Store), you may need to create 3 different files, namely:
  your_App.ipa (The .ipa file using an ad-hoc provisioning profile) index.html manifest.plist  There are two ways of generating above mentioned files:
  Using Beta Builder (MacOS only) Manually  Using Beta Builder  Archive your build.</description>
     </item>
     
     <item>
+      <title>Best contact plugins for WordPress</title>
+      <link>//localhost:50987/posts/best-contact-plugins-wordpress/</link>
+      <pubDate>Fri, 09 Jun 2017 13:56:12 -0500</pubDate>
+      
+      <guid>//localhost:50987/posts/best-contact-plugins-wordpress/</guid>
+      <description>Contact plugin are very important part of any website. Easy and effective contact plugin help business. I am sharing the list of best contact form plugins
+WPForms WPForms allow you to create beautiful contact forms, subscription forms, payment forms, and other type of forms for your site in minutes, not hours!. It is created by Syed Balki ( Owner of WPBEGINNER ) At WPForms,user experience is number one. They offer pre-built form templates and workflows make WPForms the most beginner friendly contact form plugin in the market.</description>
+    </item>
+    
+    <item>
       <title>Proper way to work with assets in Yii</title>
-      <link>/posts/proper-way-work-assets-yii/</link>
+      <link>//localhost:50987/posts/proper-way-work-assets-yii/</link>
       <pubDate>Tue, 02 May 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/proper-way-work-assets-yii/</guid>
+      <guid>//localhost:50987/posts/proper-way-work-assets-yii/</guid>
       <description>Did you notice? Yii creates strange set of directories names like 8523d23 or 10s89b92 in assets directory, and this even happens at runtime.
 Yii Assets Many applications are entirely self contained, and there’s no trouble or conflict putting necessary resources (images, CSS files, Javascript files, etc.) under the webroot:
  webroot/css/* webroot/js/* webroot/images/*  and so on. If a module needs to add one more resources, it’s added directly and referenced by the path down from webroot.</description>
@@ -75,38 +97,38 @@ Yii Assets Many applications are entirely self contained, and there’s no troub
     
     <item>
       <title>I am a Freelancer This does not mean i will work for free</title>
-      <link>/posts/freelancer-not-mean-will-work-free/</link>
+      <link>//localhost:50987/posts/freelancer-not-mean-will-work-free/</link>
       <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/freelancer-not-mean-will-work-free/</guid>
+      <guid>//localhost:50987/posts/freelancer-not-mean-will-work-free/</guid>
       <description>Yes I am a freelancer, Yes i work from home, Yes i work hard to make money but some people unnecessary ask for extra work , some people ask for free courses , some people ask for free stuffs.
 I am a freelancer but this doesn’t mean i will work for free. I have bills just like you. I pay hefty rent , I pay for internet , I pay for themes .</description>
     </item>
     
     <item>
       <title>Website deployment using GIT</title>
-      <link>/posts/website-deployment-using-git/</link>
+      <link>//localhost:50987/posts/website-deployment-using-git/</link>
       <pubDate>Mon, 10 Apr 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/website-deployment-using-git/</guid>
+      <guid>//localhost:50987/posts/website-deployment-using-git/</guid>
       <description>Once you’ve put in all the hard work of creating a website, you need to get it on the web so people can navigate to it and access its content. This process is called deployment. Deployment is a fancy word for “getting your website on the web,”. Website deployment isn’t a simple process, mainly because there are so many different ways to do it. In this article I don’t aim to document all possible methods.</description>
     </item>
     
     <item>
       <title>SSH Config to the rescue</title>
-      <link>/posts/ssh-config-file-rescue/</link>
+      <link>//localhost:50987/posts/ssh-config-file-rescue/</link>
       <pubDate>Sat, 01 Apr 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/ssh-config-file-rescue/</guid>
+      <guid>//localhost:50987/posts/ssh-config-file-rescue/</guid>
       <description>How often do you need to logged into a remote server? that to using ssh credentials. In my case I have to log in and out dozens of servers daily. And if you’re like me, you have trouble remembering all of the various usernames, remote addresses and command line options for things like specifying a non-standard connection port or forwarding local ports to the remote machine. Hence, I thought to use SSH Config file.</description>
     </item>
     
     <item>
       <title>Installing LAMP stack on Ubuntu</title>
-      <link>/posts/installing-lamp-stack-ubuntu/</link>
+      <link>//localhost:50987/posts/installing-lamp-stack-ubuntu/</link>
       <pubDate>Wed, 29 Mar 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/installing-lamp-stack-ubuntu/</guid>
+      <guid>//localhost:50987/posts/installing-lamp-stack-ubuntu/</guid>
       <description>LAMP is short for Linux, Apache, MySQL, PHP. This tutorial shows how you can install LAMP stack (Apache2, PHP and MySQL) on an Ubuntu 16.04 server.
 Apache To install Apache you must install the Metapackage apache2. This can be done by searching for and installing in the Software Centre, or by running the following command.
 sudo apt-get install apache2 MySQL To install MySQL you must install the Metapackage mysql-server. This can be done by searching for and installing in the Software Centre, or by running the following command.</description>
@@ -114,58 +136,58 @@ sudo apt-get install apache2 MySQL To install MySQL you must install the Metapac
     
     <item>
       <title>Last flight to PHP7</title>
-      <link>/posts/last-flight-php7/</link>
+      <link>//localhost:50987/posts/last-flight-php7/</link>
       <pubDate>Fri, 24 Mar 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/last-flight-php7/</guid>
+      <guid>//localhost:50987/posts/last-flight-php7/</guid>
       <description>Eleven years after its 5.0 release, a new major version is finally coming our way!. PHP7 is out, and it’s time to get your code ready. I’ve already started migrating from 5.6 to 7, Here is the official document for Migration PHP 5.6 to 7.
 But how will this impact your current PHP codebase? What really changed? How safe is it to update? This post will answer these questions and give you a taste of what’s to come with PHP7</description>
     </item>
     
     <item>
       <title>SCP command to transferring files between servers</title>
-      <link>/posts/scp-command-transferring-files/</link>
+      <link>//localhost:50987/posts/scp-command-transferring-files/</link>
       <pubDate>Sat, 18 Mar 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/scp-command-transferring-files/</guid>
+      <guid>//localhost:50987/posts/scp-command-transferring-files/</guid>
       <description>In this tutorial, you will learn how to copy files or folders between hosts. The command we will be using is SCP command. SCP (Secure Copy) is a command line tool to copy or transfer files across hosts. It uses the same kind of security mechanism like the ssh program. Infact it uses an ssh connection in the background to perform the file transfer. scp refers both to the “protocol” that defines how secure copy should work and the “program” (command) which is installed as a part of OpenSSH suite of tools.</description>
     </item>
     
     <item>
       <title>MySQL Import/Export large databases</title>
-      <link>/posts/mysql-import-export-large-databases/</link>
+      <link>//localhost:50987/posts/mysql-import-export-large-databases/</link>
       <pubDate>Wed, 15 Mar 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/mysql-import-export-large-databases/</guid>
+      <guid>//localhost:50987/posts/mysql-import-export-large-databases/</guid>
       <description>When working with MySQL I often use tools like PhpMyAdmin or sequelPro, which is a nice GUI way to manipulate MySQL database. But it won’t work sometime while importing/exporting larger databases. So sometimes you need to do mysql import on the command line.
 Export a Large Database $ mysqldump -u [USERNAME] -p [DBNAME] | gzip &amp;gt; [/path_to_file/DBNAME].sql.gz MySQL Import a Large Database # First, unzip the file. $ gzip -d [/path_to_file/DBNAME].</description>
     </item>
     
     <item>
       <title>Things You need to know before hiring SEO agency</title>
-      <link>/posts/hiring-seo-agency/</link>
+      <link>//localhost:50987/posts/hiring-seo-agency/</link>
       <pubDate>Mon, 27 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/hiring-seo-agency/</guid>
+      <guid>//localhost:50987/posts/hiring-seo-agency/</guid>
       <description>Working as Web Developer since 2010 I’ve had the opportunity to interact with thousands of clients and potential clients. As soon as website goes to production client keen to hiring SEO team and they seeking for your help. From the conversation with many of my client, I found out there are a long list of misconceptions when it comes to SEO.
 Here are some of the common misunderstandings I see amongst my client when it comes to SEO.</description>
     </item>
     
     <item>
       <title>Install PhpMyAdmin on centOS</title>
-      <link>/posts/install-phpmyadmin-centos/</link>
+      <link>//localhost:50987/posts/install-phpmyadmin-centos/</link>
       <pubDate>Wed, 22 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/install-phpmyadmin-centos/</guid>
+      <guid>//localhost:50987/posts/install-phpmyadmin-centos/</guid>
       <description>What is PhpMyAdmin? PhpMyAdmin is one of the most popular applications for MySQL databases management. It is a free tool written in PHP. Through this software you can create, alter, drop, delete, import and export MySQL database tables. You can run MySQL queries, optimize, repair and check tables, change collation and execute other database management commands. Install PhpMyAdmin isn’t an easy task. You need to do several configuration after installation.</description>
     </item>
     
     <item>
       <title>Installing GoDaddy SSL Certificate on Ubuntu</title>
-      <link>/posts/installing-godaddy-ssl-ubuntu/</link>
+      <link>//localhost:50987/posts/installing-godaddy-ssl-ubuntu/</link>
       <pubDate>Wed, 22 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/installing-godaddy-ssl-ubuntu/</guid>
+      <guid>//localhost:50987/posts/installing-godaddy-ssl-ubuntu/</guid>
       <description>Basically in order to successfully install an SSL certificate you need the following things
  CSR file Private key Certificate key Certificate chain  Download Certificates If your website is hosted through GoDaddy (e.g. the primary domain on a GoDaddy shared hosting account, Website Builder), you don’t need to use these instructions; GoDaddy take care of the SSL installation for you.
  On your SSL certificate home page, click Download.</description>
@@ -173,10 +195,10 @@ Here are some of the common misunderstandings I see amongst my client when it co
     
     <item>
       <title>How to start, stop and restart apache</title>
-      <link>/posts/start-stop-restart-apache/</link>
+      <link>//localhost:50987/posts/start-stop-restart-apache/</link>
       <pubDate>Tue, 21 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/start-stop-restart-apache/</guid>
+      <guid>//localhost:50987/posts/start-stop-restart-apache/</guid>
       <description>Apache is primarily used to serve both static content and dynamic Web pages on the World Wide Web. Many web applications are designed expecting the environment and features that Apache provides.It can be started or restarted using any one of the following methods
 Apache on MacOS Use following commands to start/stop/restart apache
 $ sudo /usr/sbin/apachectl start $ sudo /usr/sbin/apachectl stop $ sudo /usr/sbin/apachectl restart On CentOS The httpd RPM installs the /etc/init.</description>
@@ -184,39 +206,39 @@ $ sudo /usr/sbin/apachectl start $ sudo /usr/sbin/apachectl stop $ sudo /usr/sbi
     
     <item>
       <title>How to optimize website performance</title>
-      <link>/posts/optimize-website-performance/</link>
+      <link>//localhost:50987/posts/optimize-website-performance/</link>
       <pubDate>Sun, 19 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/optimize-website-performance/</guid>
+      <guid>//localhost:50987/posts/optimize-website-performance/</guid>
       <description>What is website optimization? Website optimization (often referred to as conversion optimization) is the process of systematically improving the performance of your website to meet your business objectives. Read full article to understand importance of website optimization, And if you are in hurry than jump to Optimise website section.
 Whether your goal is to get more leads, sales, or reduce customer service phone calls, website optimization can be used to make your website more effective at meeting those goals.</description>
     </item>
     
     <item>
       <title>Writing output to your own log file</title>
-      <link>/posts/writing-log-file/</link>
+      <link>//localhost:50987/posts/writing-log-file/</link>
       <pubDate>Thu, 02 Feb 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/writing-log-file/</guid>
+      <guid>//localhost:50987/posts/writing-log-file/</guid>
       <description>Not able to trace issue in production environment? There are many ways to do so, XDEBUG is one of preferred way to debug php website remotely. However, installing and configuring it can be a lengthy process, Specially when web hosting is not in your control. In order to fix the issue in one of my client’s website, I came up with a solution where I can output desired part of code in my own log file.</description>
     </item>
     
     <item>
       <title>Display code on your WordPress post</title>
-      <link>/posts/display-code-block-wordpress/</link>
+      <link>//localhost:50987/posts/display-code-block-wordpress/</link>
       <pubDate>Fri, 27 Jan 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/display-code-block-wordpress/</guid>
+      <guid>//localhost:50987/posts/display-code-block-wordpress/</guid>
       <description>Many bloggers do not run a development blog, so they don’t need to add sample code snippets in their posts very often. For rare occasions, you can add code by encoding the code into HTML entities. Like this &amp;amp;gt;?php echo &amp;quot;Hello World&amp;quot;; ?&amp;amp;lt;
 Why Displaying Code is Difficult To understand why displaying code is difficult you need to know some basic HTML. The code for making some bold text is to surround it in a tag.</description>
     </item>
     
     <item>
       <title>Configure virtual hosts on CentOS</title>
-      <link>/posts/configure-virtual-host-centos/</link>
+      <link>//localhost:50987/posts/configure-virtual-host-centos/</link>
       <pubDate>Thu, 26 Jan 2017 13:56:12 -0500</pubDate>
       
-      <guid>/posts/configure-virtual-host-centos/</guid>
+      <guid>//localhost:50987/posts/configure-virtual-host-centos/</guid>
       <description>About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.
 In Apache, you can use virtual hosts to direct http traffic for a given domain name to a particular directory (i.e. the root directory of the website for the domain in the request). This feature is commonly used to host multiple websites, but we recommend using it for every website on your server including the first.</description>
     </item>
