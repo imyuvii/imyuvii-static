@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [web]
 tags: ["wordpress","log"]
+description: "This article is about writing output in a log file. It explains how to create a log file in php where one can log desired part of code."
 ---
 
 Not able to trace issue in production environment? There are many ways to do so, XDEBUG is one of preferred way to debug php website remotely. However, installing and configuring it can be a lengthy process, Specially when web hosting is not in your control. In order to fix the issue in one of my client’s website, I came up with a solution where I can output desired part of code in my own log file. Well, It is not a perpetual solution but it does the trick.

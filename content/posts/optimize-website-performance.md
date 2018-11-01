@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [web]
 tags: [optimization, performance, website]
+description: "Website optimization is the process of systematically improving the performance of your website to meet your business objectives."
 ---
 
 ### What is website optimization?

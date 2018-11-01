@@ -5,6 +5,8 @@ showDate: true
 draft: false
 categories: [wordpress]
 tags: [plugin, wordpress]
+description: "Contact plugin are very important part of any website. Easy and effective contact plugin help business. I am sharing the list of best contact form plugins."
+primaryImage: "twitter/mac-apache-720x320@2x.jpg"
 ---
 Contact plugin are very important part of any website. Easy and effective contact plugin help business. I am sharing the list of best contact form plugins
 

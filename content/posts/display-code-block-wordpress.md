@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [wordpress]
 tags: [block, code, custom, wordpress]
+description: "This article is intended to help bloggers to display sample code snippets in their posts without using any third party plugin."
 ---
 [this one]: https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder
 [Configure virtual host on CentOS]: /posts/configure-virtual-host-centos/

@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: php
 tags: [php, remote, scp, ssh, terminal]
+description: "PHP's capabilities of making SSH connections and executing remote commands using php. This will be helpful in remote access of other server."
 ---
 Not everyone aware about [PHP](/tags/php/)‘s capabilities of making SSH connections and executing remote commands, but it can be very handy. I’ve been using it a lot in PHP CLI applications that I run from cronjobs, but initially it was a pain to get it to work. The [PHP manual on Secure Shell2 Functions](http://www.php.net/manual/en/ref.ssh2.php) is not very practical or methodical for that matter, so I would like to share my understandings on how to make setting this up in less time.
 
@@ -57,4 +58,4 @@ $sftp->put('filename.remote', 'xxx');
 ?>
 ```
 
-I hope that some of this is useful to a few of you. There is always an room for improvements. Leave a note in the comments if you have any cool tricks for the LAMP installation. I’m always on the lookout for fun hacks.
+I hope that some of this is useful to a few of you. There is always room for improvements. Leave a note in the [email](mailto:png625@gmail.com?Subject=Enquiry) if you have any cool tricks for the LAMP installation. I’m always on the lookout for fun hacks.

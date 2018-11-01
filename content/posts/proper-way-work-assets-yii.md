@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [web]
 tags: [optimization, performance, website]
+description: "How does yii assets play part in yii app optimization and performance boost. It provide guidance on how to publish public assets."
 ---
 Did you notice? Yii creates strange set of directories names like 8523d23 or 10s89b92 in assets directory, and this even happens at runtime.
 

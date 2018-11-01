@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [mysql]
 tags: [centos, database, mysql, phpmyadmin, tools]
+description: "This article helps those using GoDaddy SSL certificate. This article will help Installing the SSL Certificate in Ubuntu server"
 ---
 Basically in order to successfully install an SSL certificate you need the following things
 

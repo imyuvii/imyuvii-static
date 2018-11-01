@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [web]
 tags: [deployment, git, ssh, website]
+description: "Web Deployment is a fancy word for getting your website on the web, This article explains step by step Website deployment guid through GIT."
 ---
 
 Once you’ve put in all the hard work of creating a website, you need to get it on the web so people can navigate to it and access its content. This process is called deployment. Deployment is a fancy word for “getting your website on the web,”.  Website deployment isn’t a simple process, mainly because there are so many different ways to do it. In this article I don’t aim to document all possible methods. Rather, I will walk you through one method that will work for now.

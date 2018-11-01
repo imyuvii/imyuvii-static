@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [apache]
 tags: [apache, httpd, macos, server, web, webServer]
+description: "This article intended to guide web developers in start, restart and stop apache web server on MacOs, CentOS and Ubuntu. This is quick guide."
 ---
 Apache is primarily used to serve both static content and dynamic Web pages on the World Wide Web. Many web applications are designed expecting the environment and features that Apache provides.It can be started or restarted using any one of the following methods
 

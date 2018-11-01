@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [mysql]
 tags: [	mysql, mysqldump]
+description: "This article contains information on mysql import, specifically large databases using command line. It also explain how to export database using mysqldump."
 ---
 
 When working with MySQL I often use tools like [PhpMyAdmin](/posts/install-phpmyadmin-on-centos/) or sequelPro, which is a nice GUI way to manipulate MySQL database. But it won’t work sometime while importing/exporting larger databases. So sometimes you need to do mysql import on the command line.

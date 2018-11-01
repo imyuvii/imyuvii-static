@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [general]
 tags: [freelancing, upwork]
+description: "Upwork is a largest freelancing marketplace. Upwork offers wide range of jobs starting from $5. You can find clients from different part of the world."
 ---
 
 Upwork is a largest [freelancing](/posts/freelancing-job) marketplace. Upwork offers wide range of jobs starting from $5.  You can find clients from different part of the world , Freelancers greeting from different countries. We can say upwork is like a summation with all kind of people.

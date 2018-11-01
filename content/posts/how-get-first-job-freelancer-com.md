@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [freelancing]
 tags: [freelancer, php, web]
+description: "Getting first job is difficult. Actually 80% clients never give any chance to any newbie freelancer. So how you can get your first job?"
 ---
 Getting first job is difficult task for any newbie freelancer.  After paying huge membership fees  and bidding on 30-50 jobs they hardly get any response from [client](/posts/best-quality-upwork-clients/).
 

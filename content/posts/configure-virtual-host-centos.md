@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [apache]
 tags: [centos, host, virtual]
+description: "This article explains step by step guid to create a virtual hosts on CentOs using Apache’s virtual hosts. It can be useful in hosting multiple sites."
 ---
 
 About to host websites on linux server? Using Apache? Great. This article will show you how to do exactly that using Apache’s virtual hosts.

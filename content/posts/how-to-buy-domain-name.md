@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [web]
 tags: [dns,domain,host,website]
+description: "Buying domain name is the first step towards website creation. And this article explains where to find and buy domain easily."
 ---
 
 Buying domain name is the first step towards website creation. Domain name consist of nameofdomain.tld

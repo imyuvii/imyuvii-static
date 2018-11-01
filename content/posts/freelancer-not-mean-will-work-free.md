@@ -5,10 +5,11 @@ showDate: true
 draft: false
 categories: [general]
 tags: [freelancer, general, web]
+description: "A general article to explain how a freelancer actually work. An attempt to explain freelancer's work style."
 ---
 Yes I am a freelancer, Yes i work from home, Yes i work hard to make money but some people unnecessary ask for extra work , some people ask for free courses , some people ask for free stuffs.
 
-I am a freelancer but this doesn’t mean i will work for free. I have bills just like you. I pay hefty rent , I pay for internet , I pay for themes . plugins , design modules and hosting fee . I also pay my helping hands who help me in getting jobs done on time.
+I am a freelancer but this does not mean i will work for free. I have bills just like you. I pay hefty rent , I pay for internet , I pay for themes . plugins , design modules and hosting fee . I also pay my helping hands who help me in getting jobs done on time.
 
 Still some people think freelance means free work. They ignore the fact that we (the  freelancers ) makes our living hood by doing  hard  work over 16 hours a day. Each project either it is small or big . We do all projects with same sincerity. We treat all kinda of client same. We never discriminate between clients. Some clients pay $200 for a web project. Some pays only $100. We never compromise on work quality.
 

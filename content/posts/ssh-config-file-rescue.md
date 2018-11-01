@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [web]
 tags: [lifesaver, server, ssh, terminal]
+description: "This article contains much elegant and flexible solution to logged into remote server using SSH Config file. It remembers your SSH credentials."
 ---
 
 How often do you need to logged into a remote server? that to using ssh credentials. In my case I have to log in and out dozens of servers daily. And if you’re like me, you have trouble remembering all of the various usernames, remote addresses and command line options for things like specifying a non-standard connection port or forwarding local ports to the remote machine. Hence, I thought to use SSH Config file.

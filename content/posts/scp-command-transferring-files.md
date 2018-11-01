@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [web]
 tags: [command, scp, terminal, unix]
+description: "Secure copy or SCP command, copy files and directories between remote hosts without starting an FTP session or logging into the remote systems explicitly"
 ---
 
 In this tutorial, you will learn how to copy files or folders between hosts. The command we will be using is SCP command. SCP (Secure Copy) is a command line tool to copy or transfer files across hosts. It uses the same kind of security mechanism like the ssh program. Infact it uses an ssh connection in the background to perform the file transfer. scp refers both to the “protocol” that defines how secure copy should work and the “program” (command) which is installed as a part of OpenSSH suite of tools.

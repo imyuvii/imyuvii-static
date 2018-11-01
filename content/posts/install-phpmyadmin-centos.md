@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [mysql]
 tags: [centos, database, mysql, phpmyadmin, tools]
+description: "This article information on how to install phpmyadmin on centOS. It also demonstrates the useful tips on effective use of phpmyadmin."
 ---
 #### What is PhpMyAdmin?
 PhpMyAdmin is one of the most popular applications for MySQL databases management. It is a free tool written in PHP. Through this software you can create, alter, drop, delete, import and export MySQL database tables. You can run MySQL queries, optimize, repair and check tables, change collation and execute other database management commands. Install PhpMyAdmin isn’t an easy task. You need to do several configuration after installation.

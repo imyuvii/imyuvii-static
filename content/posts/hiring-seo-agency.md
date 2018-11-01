@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [web]
 tags: [seo, web]
+description: "This article is meant to clarify doubts before hiring SEO agency. I found out there are a long list of misconceptions when it comes to Hiring SEO."
 ---
 Working as Web Developer since 2010 I’ve had the opportunity to interact with thousands of clients and potential clients. As soon as website goes to production client keen to hiring SEO team and they seeking for your help. From the conversation with many of my client, I found out there are a long list of misconceptions when it comes to SEO.
 

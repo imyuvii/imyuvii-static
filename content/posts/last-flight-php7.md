@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: [php]
 tags: [apache, lamp, mysql, php, php5, php7, ubuntu]
+description: "What really changed? How safe is it to update? This post will answer these questions and give you a taste of what's to come with PHP7"
 ---
 Eleven years after its 5.0 release, a new major version is finally coming our way!. PHP7 is out, and it’s time to get your code ready. I’ve already started migrating from [5.6 to 7](http://php.net/manual/en/migration70.php), Here is the official document for Migration PHP 5.6 to 7.
 

@@ -5,6 +5,7 @@ showDate: true
 draft: false
 categories: web
 tags: [distribution, ipa, manifest, web]
+description: "Distribution of your ipa over-the-air, something like making your own testflight. This will create manifest automatically to distribute ips using web."
 ---
 
 Do you need to download and install an ipa directly from an URL? Is it possible? The answer is yes, to distribute your app over-the-air (OTA, this means without using TestFlight or the official App Store), you may need to create 3 different files, namely:
