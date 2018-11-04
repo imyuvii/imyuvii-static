@@ -163,14 +163,14 @@
   </url>
   
   <url>
-    <loc>/tags/apache/</loc>
-    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
+    <loc>/categories/apache/</loc>
+    <lastmod>2017-02-21T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/apache/</loc>
-    <lastmod>2017-02-21T13:56:12-05:00</lastmod>
+    <loc>/tags/apache/</loc>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -247,26 +247,26 @@
   </url>
   
   <url>
-    <loc>/tags/freelancing/</loc>
-    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/freelancing/</loc>
     <lastmod>2018-04-04T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/general/</loc>
-    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
+    <loc>/tags/freelancing/</loc>
+    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/general/</loc>
     <lastmod>2018-03-24T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/general/</loc>
+    <lastmod>2017-04-10T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -331,14 +331,14 @@
   </url>
   
   <url>
-    <loc>/tags/mysql/</loc>
-    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
+    <loc>/categories/mysql/</loc>
+    <lastmod>2017-03-15T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/mysql/</loc>
-    <lastmod>2017-03-15T13:56:12-05:00</lastmod>
+    <loc>/tags/mysql/</loc>
+    <lastmod>2017-03-29T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -365,13 +365,13 @@
   </url>
   
   <url>
-    <loc>/tags/php/</loc>
+    <loc>/categories/php/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/php/</loc>
+    <loc>/tags/php/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -479,14 +479,14 @@
   </url>
   
   <url>
-    <loc>/tags/web/</loc>
-    <lastmod>2017-08-07T13:56:12-05:00</lastmod>
+    <loc>/categories/web/</loc>
+    <lastmod>2018-03-02T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/web/</loc>
-    <lastmod>2018-03-02T13:56:12-05:00</lastmod>
+    <loc>/tags/web/</loc>
+    <lastmod>2017-08-07T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -503,13 +503,13 @@
   </url>
   
   <url>
-    <loc>/tags/wordpress/</loc>
+    <loc>/categories/wordpress/</loc>
     <lastmod>2017-06-09T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/wordpress/</loc>
+    <loc>/tags/wordpress/</loc>
     <lastmod>2017-06-09T13:56:12-05:00</lastmod>
     <priority>0</priority>
   </url>
