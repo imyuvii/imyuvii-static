@@ -1,15 +1,15 @@
 {{ define "section_content" }}
 <div class="section portfolio" id="content">
+    {{ if(.Params.link) }}
     <div class="tag-container">
         Link:&nbsp;
         <span class="tag">
-            {{ if(.Params.link) }}
             <a target="_blank" href="{{ .Params.link }}">
                 {{ .Params.link }}
             </a>
-            {{ end }}
         </span>
     </div>
+    {{ end }}
     {{ with .Params.specs }}
     <div class="">
         Technologies:
