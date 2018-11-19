@@ -17,7 +17,7 @@
 <meta name="og:type" content="website">
 <meta name="og:url" content="{{.Site.BaseURL}}">
 <meta name="og:image" itemprop="image primaryImageOfPage" content="{{.Params.primaryImage | default .Site.Params.primaryImage | absURL}}">
-
+<link rel="manifest" href="/manifest.json">
 <link rel="shortcut icon" href="{{.Site.Params.favicon | default "sam.ico" | absURL }}" id="favicon">
 <link rel="stylesheet" href="{{ "css/style.css" | absURL}}">
 <!-- Google fonts-->

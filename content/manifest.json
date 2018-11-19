@@ -1,0 +1,11 @@
+{
+  "name": "I am Yuvii - A web Developer",
+  "short_name": "IMYuvii",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/images/logo-pwa.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}
