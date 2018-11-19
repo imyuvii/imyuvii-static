@@ -4,7 +4,7 @@
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
-    "src": "assets/images/logo-pwa.png",
+    "src": "img/logo.png",
     "sizes": "192x192",
     "type": "image/png"
   }]
