@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="keywords" content="aws,ssl,https,s3,CloudFront,imyuvii">
+<meta name="description" content="This article helps you hosting a static website on S3 bucket with free SSL certificate.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="/">
+
+<meta name="twitter:image" content="/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="I aM YUVII">
+<meta name="twitter:description" property="og:description" itemprop="description" content="This article helps you hosting a static website on S3 bucket with free SSL certificate.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="imyuvii">
+<meta name="apple-mobile-web-app-title" content="imyuvii">
+<meta name="theme-color" content="#39424E">
+<meta name="msapplication-navbutton-color" content="#39424E">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-starturl" content="/index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/img/icon-512.png">
+<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/img/icon-512.png">
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47388802-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-47388802-1');
+</script>
+
+    
+
+    
+    
+    
+    <title>
+        
+        Hosting a static website with HTTPS on S3 Bucket
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Hosting a static website with HTTPS on S3 Bucket</div>
+
+        
+<div class="section" id="content">
+    Thu May 23, 2019 &#183; 522 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/aws">
+                aws
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/ssl">
+                ssl
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/https">
+                https
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/s3">
+                s3
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/cloudfront">
+                CloudFront
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>Today, I&rsquo;ll host a static website with https on S3, I&rsquo;ll use <a href="http://imyuvii.com">http://imyuvii.com</a> as an example. Before starting you will need an AWS account and your DNS added in route53.</p>
+
+<h3 id="so-why-to-use-s3-and-why-not-ec2">So Why to use S3 and why not EC2?</h3>
+
+<ul>
+<li>It&rsquo;ll be cheaper because you&rsquo;re not paying for an always running instance and EBS volumes.</li>
+<li>You don&rsquo;t have to worry about stability and patching of your container.</li>
+<li>You don&rsquo;t have to worry about web servers.</li>
+</ul>
+
+<p>There are not really significant benefits to using ECS over S3 for static websites - you&rsquo;d really use it when you have dynamically generated content.</p>
+
+<p>We&rsquo;re going to use following AWS services.</p>
+
+<ul>
+<li>S3</li>
+<li>Certificate manager</li>
+<li>CloudFront</li>
+<li>Route53</li>
+</ul>
+
+<h2 id="s3-bucket">S3 bucket</h2>
+
+<p>We&rsquo;ll need two S3 buckets one for imyuvii.com and another for www.imyuvii.com
+<img src="/posts/images/s3-buckets.png" alt="S3 Bucket" /></p>
+
+<ul>
+<li>imyuvii.com contains the static content for your website.
+
+<ul>
+<li>Go to imyuvii.com bucket</li>
+<li>Go to properties</li>
+<li>Go to static website hosting</li>
+<li>Select option &ldquo;Use the bucket to host a website&rdquo;
+<img src="/posts/images/bucket-property-1.png" alt="S3 Bucket" /></li>
+</ul></li>
+<li>www.imyuvii.com is an empty bucket with redirection rules. Which will help in redirect <a href="https://www.imyuvii.com">https://www.imyuvii.com</a> to <a href="http://imyuvii.com">http://imyuvii.com</a>
+
+<ul>
+<li>Repeat the above steps for www.imyuvii.com and make little adjustment in bucket properties.
+<img src="/posts/images/bucket-property-2.png" alt="S3 Bucket" /></li>
+</ul></li>
+</ul>
+
+<p>Do you see the endpoints in above screenshot. Kindly note it down those endpoints, we&rsquo;ll use it at later stage.</p>
+
+<h2 id="certificate-manager">Certificate manager</h2>
+
+<p>Public SSL/TLS certificates provisioned through AWS Certificate Manager are free. You pay only for the AWS resources you create to run your application.</p>
+
+<ul>
+<li>Go to certificate manager, Make sure you select the N. Virginia region.</li>
+<li>Press button Request a certificate and select option &ldquo;Request a public certificate&rdquo;</li>
+<li>Add domain names (imyuvii.com, *.imyuvii.com) and press next
+<img src="/posts/images/certificate-manager.png" alt="Certificate Manager" /></li>
+<li>Request the certificate from aws, It will take you to the &ldquo;Select validation method&rdquo; screen</li>
+<li>There are two validation methods, DNS validation and Email validation. I prefer &ldquo;DNS validation&rdquo; if you wish to select email validation than here is the link (<a href="https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-validate-email.html">https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-validate-email.html</a>)</li>
+<li>Review and it will take you to the validation screen</li>
+<li>Create records in route 53, It will automatically adds the records in your route53
+<img src="/posts/images/create-record-set-route53.png" alt="Create Record sets" /></li>
+<li>Press continue and wait for certificate status changed to issued. It could take upto 30 minutes
+<img src="/posts/images/certificate-issued.png" alt="Certificates" /></li>
+</ul>
+
+<h2 id="cloudfront">CloudFront</h2>
+
+<p>S3 cannot support ssl on it&rsquo;s own, so we&rsquo;ll use CloudFront to support https on our static website which is quite straight forward.</p>
+
+<p>Go to CloudFront, We&rsquo;ll create two distribution one for imyuvii.com and another for www.imyuvii.com,</p>
+
+<p>Let&rsquo;s start with imyuvii.com</p>
+
+<p>Click on create distribution, The form contains many fields but for us required fields are &ldquo;Orignal Domain Name&rdquo;, &ldquo;Viewer protocol policy&rdquo;, &ldquo;Alternate domain name (CNAME)&rdquo; and &ldquo;SSL Certificate&rdquo;
+- Original Domain Name : S3 bucket static site endpoint, Do not select from the drop down, Copy from the S3 Bucket properties becasue &ndash;
+<img src="/posts/images/create-distribution-1.png" alt="create distribution" />
+- Viewer Protocol Policy: Redirect HTTP to HTTPS
+<img src="/posts/images/create-distribution-2.png" alt="create distribution" />
+- Alternate domain name (CNAME): imyuvii.com
+- SSL Certificate: Custom SSL Certificate (select from dropdown)
+<img src="/posts/images/create-distribution-3.png" alt="create distribution" /></p>
+
+<p>Repeat the distribution for www.imyuvii.com only difference will be the Orignal Domain Name and Alternate domain name field.</p>
+
+<h2 id="route53">Route53</h2>
+
+<p>Next we&rsquo;ll go to route53 and point domains to the cloudfront distributors.</p>
+
+<p>Edit the A records for imyuvii.com and www.imyuvii.com, map it with cloudfront distribution.
+<img src="/posts/images/route53.png" alt="Route53" /></p>
+
+<p>Now we just have to wait for cloudfront to finish the distribution. That&rsquo;s it you&rsquo;ve your <a href="https://imyuvii.com">https://imyuvii.com</a>.</p>
+
+<p>Cheers!!</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+            &#183; 
+            <a href="/contact-me">
+                contact
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        home
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">I am Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>

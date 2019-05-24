@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/hosting-static-website-with-https-on-s3-bucket/</loc>
+    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/freelancing-job/</loc>
     <lastmod>2018-04-04T13:56:12-05:00</lastmod>
   </url>
@@ -195,6 +200,12 @@
   </url>
   
   <url>
+    <loc>/tags/aws/</loc>
+    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/block/</loc>
     <lastmod>2017-01-27T13:56:12-05:00</lastmod>
     <priority>0</priority>
@@ -209,6 +220,12 @@
   <url>
     <loc>/tags/centos/</loc>
     <lastmod>2017-02-22T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/cloudfront/</loc>
+    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -309,8 +326,14 @@
   </url>
   
   <url>
+    <loc>/tags/https/</loc>
+    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2018-04-04T13:56:12-05:00</lastmod>
+    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -433,6 +456,12 @@
   </url>
   
   <url>
+    <loc>/tags/s3/</loc>
+    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/scp/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
@@ -453,6 +482,12 @@
   <url>
     <loc>/tags/ssh/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ssl/</loc>
+    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -506,7 +541,7 @@
   
   <url>
     <loc>/categories/web/</loc>
-    <lastmod>2018-03-02T13:56:12-05:00</lastmod>
+    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   
