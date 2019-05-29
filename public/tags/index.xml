@@ -192,6 +192,15 @@
     </item>
     
     <item>
+      <title>Inotify</title>
+      <link>/tags/inotify/</link>
+      <pubDate>Wed, 29 May 2019 13:27:11 +0530</pubDate>
+      
+      <guid>/tags/inotify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ipa</title>
       <link>/tags/ipa/</link>
       <pubDate>Sat, 05 Aug 2017 13:56:12 -0500</pubDate>
@@ -377,6 +386,24 @@
       <pubDate>Sat, 01 Apr 2017 13:56:12 -0500</pubDate>
       
       <guid>/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>/tags/shell/</link>
+      <pubDate>Wed, 29 May 2019 13:27:11 +0530</pubDate>
+      
+      <guid>/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slack</title>
+      <link>/tags/slack/</link>
+      <pubDate>Wed, 29 May 2019 13:27:11 +0530</pubDate>
+      
+      <guid>/tags/slack/</guid>
       <description></description>
     </item>
     
