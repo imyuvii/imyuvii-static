@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/watch-directory-file-creation-slack/</loc>
+    <lastmod>2019-05-29T13:27:11+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/hosting-static-website-with-https-on-s3-bucket/</loc>
     <lastmod>2019-05-23T18:22:01+05:30</lastmod>
   </url>
@@ -333,7 +338,13 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
+    <lastmod>2019-05-29T13:27:11+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/inotify/</loc>
+    <lastmod>2019-05-29T13:27:11+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -480,6 +491,18 @@
   </url>
   
   <url>
+    <loc>/tags/shell/</loc>
+    <lastmod>2019-05-29T13:27:11+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/slack/</loc>
+    <lastmod>2019-05-29T13:27:11+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/ssh/</loc>
     <lastmod>2017-11-20T13:56:12-05:00</lastmod>
     <priority>0</priority>
@@ -541,7 +564,7 @@
   
   <url>
     <loc>/categories/web/</loc>
-    <lastmod>2019-05-23T18:22:01+05:30</lastmod>
+    <lastmod>2019-05-29T13:27:11+05:30</lastmod>
     <priority>0</priority>
   </url>
   

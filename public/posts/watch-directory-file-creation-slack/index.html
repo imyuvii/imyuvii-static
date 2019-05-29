@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="keywords" content="inotify,shell,slack,imyuvii">
+<meta name="description" content="This article helps to watch a directory for creation of new files and notify on slack.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@imyuvii">
+<meta name="twitter:domain" content="/">
+
+
+
+<meta name="twitter:image" content="https://imyuvii.com/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="I aM YUVII">
+<meta name="twitter:description" property="og:description" itemprop="description" content="This article helps to watch a directory for creation of new files and notify on slack.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="/tn.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="imyuvii">
+<meta name="apple-mobile-web-app-title" content="imyuvii">
+<meta name="theme-color" content="#39424E">
+<meta name="msapplication-navbutton-color" content="#39424E">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-starturl" content="/index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/img/icon-512.png">
+<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/img/icon-512.png">
+<link rel="shortcut icon" href="/sam.ico" id="favicon">
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47388802-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-47388802-1');
+</script>
+
+    
+
+    
+    
+    
+    <title>
+        
+        Watch a directory for creation of new files and notify on slack
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">Watch a directory for creation of new files and notify on slack</div>
+
+        
+<div class="section" id="content">
+    Wed May 29, 2019 &#183; 559 words
+    
+    <div class="tag-container">
+        
+        <span class="tag">
+            <a href="/tags/inotify">
+                inotify
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/shell">
+                shell
+            </a>
+        </span>
+        
+        <span class="tag">
+            <a href="/tags/slack">
+                slack
+            </a>
+        </span>
+        
+    </div>
+    
+    <hr/>
+    
+
+<p>How did I came up with this? simply because, I needed to inform marketing team whenever there is a new csv uploaded. So initially we used to watch directory on daily bases whether new CSV uploaded. That was super boring so I thought to automate this process.</p>
+
+<p>I found out that <a href="https://en.wikipedia.org/wiki/Inotify">inotify</a> can help me to achieve this.</p>
+
+<p>So, let&rsquo;s do it.</p>
+
+<h3 id="install-inotify">Install inotify</h3>
+
+<p><a href="https://github.com/rvoicilas/inotify-tools/wiki#info">This library</a> provides a thin layer on top of the basic inotify interface. The primary use is to easily set up watches on files, potentially many files at once, and read events without having to deal with low-level I/O. There are also several utility functions for inotify-related string formatting.</p>
+
+<h4 id="debian-ubuntu">Debian/Ubuntu</h4>
+
+<p>inotify-tools is available in Debian’s official repositories. You can install it by:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get install inotify-tools
+Ryan Niebur is the Debian package maintainer.</code></pre></div>
+<h4 id="centos-rhel-7">CentOS/RHEL 7</h4>
+
+<p>inotify-tools is available through the EPEL repository. Install EPEL :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">yum install -y epel-release <span style="color:#f92672">&amp;&amp;</span> yum update</code></pre></div>
+<p>Then install package:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">yum install inotify-tools
+<span style="color:#75715e"># In case of CentOS-7
+</span><span style="color:#75715e"></span>yum --enablerepo<span style="color:#f92672">=</span>epel install inotify-tools</code></pre></div>
+<p>To install on any other linux distro follow <a href="https://github.com/rvoicilas/inotify-tools/wiki#getting-inotify-tools">this url</a></p>
+
+<h3 id="write-a-shell-script">Write a shell script</h3>
+
+<p>In order to watch a directory we&rsquo;ll write a shell script which will sends notifications whenever there is new file uploaded to directory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo nano watchdirectory.sh</code></pre></div>
+<p>Above script will create a file in <code>/home/ubuntu/watchdirectory.sh</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">inotifywait -m /tmp/test -e create -e moved_to |
+    <span style="color:#66d9ef">while</span> read path action file; <span style="color:#66d9ef">do</span>
+    	echo <span style="color:#e6db74">&#39;The file $file appeared in directory $path via $action&#39;</span>
+    <span style="color:#66d9ef">done</span></code></pre></div>
+<p>Test the bash script.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sh /home/ubuntu/watchdirectory.sh
+<span style="color:#75715e"># output
+</span><span style="color:#75715e"></span>Setting up watches.
+Watches established.</code></pre></div>
+<p>Keep the command running. Open new terminal and SSH to your host then create a file <code>/tmp/test/test.txt</code>
+You&rsquo;ll receive message in a terminal where we execute bash script. Output will be</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">The file test.txt appeared in directory /tmp/test/ via CREATE</code></pre></div>
+<h3 id="sending-slack-notifications">Sending slack notifications</h3>
+
+<p>Get your slack API credentials, We&rsquo;ll need slack webhook URL and a slack channel name. Which you&rsquo;ll get it from <a href="https://api.slack.com/incoming-webhooks">here</a>.</p>
+
+<p>To test your slack endpoint run following command in your terminal, Make sure you replace the required attribute.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">curl -X POST <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --data-urlencode <span style="color:#e6db74">&#34;payload={&#39;channel&#39;: &#39;#your_channel_name&#39;, &#39;username&#39;: &#39;newfilebot&#39;, &#39;text&#39;: &#39;This is a test call&#39;, &#39;icon_emoji&#39;: &#39;:ghost:&#39;}&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX</code></pre></div>
+<p>You will get slack notification in <code>#your_channel_name</code> channel.</p>
+
+<h3 id="now-let-s-modify-bash-script">Now let&rsquo;s modify bash script</h3>
+
+<p>We&rsquo;ll add slack notification snippet in <code>/home/ubuntu/watchdirectory.sh</code> bash script.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">inotifywait -m /tmp/test -e create -e moved_to |
+    <span style="color:#66d9ef">while</span> read path action file; <span style="color:#66d9ef">do</span>
+    	curl -X POST <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    		--data-urlencode <span style="color:#e6db74">&#34;payload={&#39;channel&#39;: &#39;#your_channel_name&#39;, &#39;username&#39;: &#39;newfilebot&#39;, &#39;text&#39;: &#39;This is a test call&#39;, &#39;icon_emoji&#39;: &#39;:ghost:&#39;}&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    		https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX
+    <span style="color:#66d9ef">done</span></code></pre></div>
+<p>Re-run the bash script you&rsquo;ll get slack notification.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sh /home/ubuntu/watchdirectory.sh
+<span style="color:#75715e"># output
+</span><span style="color:#75715e"></span>Setting up watches.
+Watches established.</code></pre></div>
+<p>Keep the command running. Open new terminal and SSH to your host then create a file <code>/tmp/test/test2.txt</code>
+You&rsquo;ll get notification in your slack.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">The file test2.txt appeared in directory /tmp/test/ via CREATE</code></pre></div>
+<h3 id="running-script-in-background">Running script in background</h3>
+
+<p>So above script will needs to run in background to watch directory continuously. In order to achieve that I&rsquo;ll use the <a href="https://en.wikipedia.org/wiki/Nohup">nohup</a>.</p>
+
+<p>Run script using nohup</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">nohup bash /home/ubuntu/watchdirectory.sh &lt;/dev/null &gt;/dev/null <span style="color:#ae81ff">2</span>&gt;&amp;<span style="color:#ae81ff">1</span> &amp;</code></pre></div>
+<p>This will keep script running in background and trigger the notification whenever there is a new file in the <code>/tmp/test</code> directory.</p>
+
+<p>We done here. I&rsquo;ve used slack because it was a requirement for me. But in your case you can modify based on your need, It could be email notification, sms or any api call. Possibilities are endless.</p>
+
+<p>Cheers!!</p>
+
+</div>
+
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="/posts">
+                posts
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/about">
+                who is yuvi?
+            </a>
+        
+            &#183; 
+            <a href="/contact-me">
+                contact
+            </a>
+        
+    
+    &#183; 
+    <a href="/">
+        home
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">I am Yuvi, a web developer.</div>
+    </div>
+</body>
+
+</html>
